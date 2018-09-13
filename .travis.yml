@@ -21,6 +21,8 @@ before_install: |
   source venv/bin/activate
 
 install:
+- which python3
+- ls .
 - venv/bin/pip install -U -r requirements.txt
 
 script:
