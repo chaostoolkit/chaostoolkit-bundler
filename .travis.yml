@@ -20,7 +20,7 @@ before_install: |
   python3 -m venv venv
 
 install:
-- ./venv/bin/python3 -m pip install -U pip
+- ./venv/bin/python3 -m pip install -vvv -U pip
 - ls venv/bin/
 - ./venv/bin/pip install -U -r requirements.txt
 
