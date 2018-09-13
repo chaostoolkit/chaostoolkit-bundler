@@ -1,0 +1,29 @@
+language: python
+
+os:
+  - linux
+  - osx
+
+matrix:
+    include:
+        - os: linux
+          python: 3.6
+        - os: osx
+          language: generic
+
+install:
+- python -m venv ./.venv
+- ./.venv/bin/pip install -U -r requirements.txt
+
+script:
+- bash ci.bash
+
+notifications:
+  webhooks:
+    urls:
+    - https://webhook.atomist.com/atomist/travis/teams/T76U4GPGF
+    on_cancel: always
+    on_error: always
+    on_start: always
+    on_failure: always
+    on_success: always
