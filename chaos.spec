@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['chaos'],
+a = Analysis(['<CHAOS_PATH>'],
              pathex=[],
              binaries=[],
              datas=[],

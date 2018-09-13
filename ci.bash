@@ -4,6 +4,9 @@ set -eo pipefail
 function build () {
     echo "Building the Chaos Toolkit bundle"
     
+    export CHAOSTOOLKIT=`which chaos`
+    sed -i "s|<CHAOS_PATH>|${CHAOSTOOLKIT}|" chaos.spec
+
     if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
         pyinstaller chaos.spec
     else
