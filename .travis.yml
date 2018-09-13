@@ -1,18 +1,13 @@
 language: python
+python:
+- 3.6
 
 os:
   - linux
   - osx
 
-matrix:
-    include:
-        - os: linux
-          python: 3.6
-        - os: osx
-          language: generic
-
 install:
-- python -m venv ./.venv
+- python -m venv .venv
 - ./.venv/bin/pip install -U -r requirements.txt
 
 script:
