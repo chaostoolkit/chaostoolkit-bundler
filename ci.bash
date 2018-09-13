@@ -9,8 +9,10 @@ function build () {
 
     if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
         pyinstaller chaos.spec
+        mv dist/chaos dist/chaos-darwin-amd64
     else
         pyinstaller chaos.spec
+        mv dist/chaos dist/chaos-linux-amd64
     fi
 }
 
