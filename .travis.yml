@@ -21,9 +21,7 @@ before_install: |
   source venv/bin/activate
 
 install:
-- which pip
-- ls .
-- pip install -U -r requirements.txt
+- ./venv/bin/pip install -U -r requirements.txt
 
 script:
 - bash ci.bash
