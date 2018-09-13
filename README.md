@@ -15,7 +15,14 @@ $ source .bundler/bin/activate
 (.bundler) $ pyinstaller chaos.spec
 ```
 
-You need to do that on all the platforms you want to target.
+You need to do that on all the platforms you want to target. Once generated,
+a `chaos` binary will be found in the `dist` directory. You can copy and
+run this binary without having to create a virtual environment or install
+the drivers any more.
+
+Be aware that the generated binary does not keep the drivers up-to-date by
+itself. You need to regenerate it whenever a new release of the toolkit or a
+driver is made.
 
 ## Contribute
 
