@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['/home/travis/virtualenv/python3.6.3/bin/chaos'],
+a = Analysis(['chaos'],
              pathex=[],
              binaries=[],
              datas=[],
