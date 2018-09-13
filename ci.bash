@@ -5,9 +5,9 @@ function build () {
     echo "Building the Chaos Toolkit bundle"
     
     if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
-        ./venv/bin/pyinstaller chaos.spec
+        pyinstaller chaos.spec
     else
-        ./venv/bin/pyinstaller chaos.spec
+        pyinstaller chaos.spec
     fi
 }
 
