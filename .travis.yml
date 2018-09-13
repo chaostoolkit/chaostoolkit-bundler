@@ -21,6 +21,8 @@ before_install: |
   source venv/bin/activate
 
 install:
+- ls venv
+- ls venv/bin/
 - ./venv/bin/pip install -U -r requirements.txt
 
 script:
