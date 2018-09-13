@@ -17,12 +17,11 @@ before_install: |
     brew install python3
     python --version
   fi
-  python -m venv venv
+  python3 -m venv venv
   source venv/bin/activate
-  pip install -U pip
 
 install:
-- pip install -U -r requirements.txt
+- venv/bin/pip install -U -r requirements.txt
 
 script:
 - bash ci.bash
