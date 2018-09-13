@@ -1,13 +1,11 @@
 language: python
-
 matrix:
   include:
-    - os: linux
-      dist: trusty
-      python: 3.6
-    - os: osx
-      language: generic
-
+  - os: linux
+    dist: trusty
+    python: 3.6
+  - os: osx
+    language: generic
 before_install: |
   if [ "$TRAVIS_OS_NAME" == "osx" ]; then
     # brew update
@@ -17,14 +15,11 @@ before_install: |
     python3 -m pip install -U pip
     which pip3
   fi
-
 install:
 - pip3 install -U pip setuptools
 - pip3 install -U -r requirements.txt
-
 script:
 - bash ci.bash
-
 notifications:
   webhooks:
     urls:
@@ -34,3 +29,13 @@ notifications:
     on_start: always
     on_failure: always
     on_success: always
+
+deploy:
+  provider: gcs
+  access_key_id: GOOGRURMZEDYPYL7OSSJXBMK
+  secret_access_key:
+    secure: Q39L4QzKbf43a1pt//NJ7ylAzykOPbk/71YITV0HNfMD7XLxSLU056ZoOD/EkOkhXCr+//u1Np9vJXARQq1p16QGJk+oNLJvWq/TylqcUs4VtQQ9NvpOtOXhrxKfHQ7uUSDxPHalqvHx+3baayrHiEF1qNTtTMXlkgFBBThGt6AhGqj8PW2aDmnSww3YWDNCYZy0zhBfRHA6MxAXCMXOPyBVunVPQqFImtF5BvjqJu6M1jdU4UY8EtbC6PNhTvdBDXzQzbC17Pay9anXwBI39Wdp913PhseByX8o0kvTfWrH5alqppQ+qCiAJw24TI7ojWQYnIciw+UsKYOqiflsSNN/KhPYZCkCwzqdP+7LGvcW/XR9rwExTQUg0Bi0jMO1bAraeVck8TXlEmjPUSHEoxwsmEM4JjGVQe/dVOydfnvp3pFZa48cOpPmYMS631rbudKRIT1fzX8FISqIBghi4kV/CrE/tDAne55cQm43awWA7l/C1QHbXouMhMeNQ9iuJHIPx5XUcX4+0wBpZfmn2KaLyGE12pdJ/ZCa9HLfvFNsY3S60s1s+QZyOOTGRWmJUkU2poqEtCf+qN/yAIDuIsb7wohR6Rogn5Mk8yIUWa0XEaoZdzAPBMo7sor9yQoGmV+G2s+qsXmOAOSK8ynZpRAurh/tINOqh24BfttJUis=
+  bucket: chaostoolkit
+  local-dir: cli
+  on:
+    repo: chaostoolkit/chaostoolkit-bundler
