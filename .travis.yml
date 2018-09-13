@@ -12,8 +12,8 @@ matrix:
       language: generic
 
 install:
+- pip install -U pip
 - pip install -U -r requirements.txt
-- which chaos
 
 script:
 - bash ci.bash
