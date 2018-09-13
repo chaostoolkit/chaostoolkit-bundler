@@ -18,10 +18,9 @@ before_install: |
     python --version
   fi
   python3 -m venv venv
-  ./venv/bin/python3 -m pip install -U pip
 
 install:
-- ls venv
+- ./venv/bin/python3 -m pip install -U pip
 - ls venv/bin/
 - ./venv/bin/pip install -U -r requirements.txt
 
