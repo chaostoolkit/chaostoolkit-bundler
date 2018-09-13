@@ -18,6 +18,7 @@ before_install: |
   fi
 
 install:
+- which pip
 - pip install -U pip setuptools
 - pip install -U -r requirements.txt
 
