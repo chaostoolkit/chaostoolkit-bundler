@@ -7,8 +7,7 @@ os:
   - osx
 
 install:
-- python -m venv .venv
-- ./.venv/bin/pip install -U -r requirements.txt
+- pip install --user -U -r requirements.txt
 
 script:
 - bash ci.bash
