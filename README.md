@@ -8,7 +8,7 @@ standalone binary for Linux and MacOSX platforms.
 Simply download one the binary appropriate to your platform (currently are
 only supported Linux and MacOSX both for AMD64 architecture) and copy it
 into your `PATH`. Rename the file to `chaos` and simply use it as you would
-use the [Chaos Toolkit][chaostolkit].
+use the [Chaos Toolkit][chaostoolkit].
 
 [chaostoolkit]: https://chaostoolkit.org/
 
