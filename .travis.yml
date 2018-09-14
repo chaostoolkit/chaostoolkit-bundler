@@ -31,12 +31,12 @@ notifications:
     on_success: always
 
 deploy:
-  provider: gcs
-  access_key_id: GOOGRURMZEDYPYL7OSSJXBMK
-  secret_access_key:
-    secure: Q39L4QzKbf43a1pt//NJ7ylAzykOPbk/71YITV0HNfMD7XLxSLU056ZoOD/EkOkhXCr+//u1Np9vJXARQq1p16QGJk+oNLJvWq/TylqcUs4VtQQ9NvpOtOXhrxKfHQ7uUSDxPHalqvHx+3baayrHiEF1qNTtTMXlkgFBBThGt6AhGqj8PW2aDmnSww3YWDNCYZy0zhBfRHA6MxAXCMXOPyBVunVPQqFImtF5BvjqJu6M1jdU4UY8EtbC6PNhTvdBDXzQzbC17Pay9anXwBI39Wdp913PhseByX8o0kvTfWrH5alqppQ+qCiAJw24TI7ojWQYnIciw+UsKYOqiflsSNN/KhPYZCkCwzqdP+7LGvcW/XR9rwExTQUg0Bi0jMO1bAraeVck8TXlEmjPUSHEoxwsmEM4JjGVQe/dVOydfnvp3pFZa48cOpPmYMS631rbudKRIT1fzX8FISqIBghi4kV/CrE/tDAne55cQm43awWA7l/C1QHbXouMhMeNQ9iuJHIPx5XUcX4+0wBpZfmn2KaLyGE12pdJ/ZCa9HLfvFNsY3S60s1s+QZyOOTGRWmJUkU2poqEtCf+qN/yAIDuIsb7wohR6Rogn5Mk8yIUWa0XEaoZdzAPBMo7sor9yQoGmV+G2s+qsXmOAOSK8ynZpRAurh/tINOqh24BfttJUis=
-  bucket: chaostoolkit
-  local-dir: dist
-  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: Y2xTZ2bTDFzFdAnD8wrlSi1yT/YCV9mfyJyr6mQO1UqB8AUhTZ1UguTmQWdIM/lFoLRPmo41ptNvpNqMqEGer+BsgqhVsD8DwG4E1y7IhioUJTxtdw3OvxKmG4iCosQEND/Beis+DCGe7uPJ5YCoXuCmVWLJBx3FbGwJ8z05Z5gauk/6589Usii/hReMZ4a1R5ajKd/lZK2USRMr0vBovd/HcxCJhMsF8spc43I8kiLga7ZTFru2n3FkuGeJNpT/+VjTX2WhmiGOA3LAyvdg1o57JS5bvsGHFZ0eRc1n/YnPqa8rDrwD+gV/aELqAB6cFyxrF2fBq1XxhKS5iBQV94q+wUX63mxgxSltpux15k9sPMD8/BMTiCH6akgNbriagVE9iLHVe8QCfBW6yabrTBE5bcMrugOsVbRdslhUd2BHPnosyEDXMjjKKCwLV2/dscCuardQgAyj2ANwFmS7IUgBNOmh9sm2/KPO9cPpb/ULlY6DX6NgnC0uHAV7uk7vEKMWpIf1JKD/hUckPXOPmEneXIW86z1hY0uOnVL8TPPDaY35FhrMHFU/nr2roZsSwRE4kISSb7CJ6m6tMR37rt/c3R2Btqa///4G+EAhI4kjpi0iStPrt9UMPLgCi2zmQrV2VBNuuM/53KEd4ZxmF7HXKAFzzeySehbIStPJVoI=
+  file: dist/*
+  file_glob: true
   on:
     repo: chaostoolkit/chaostoolkit-bundler
+  skip_cleanup: true
+  draft: false
