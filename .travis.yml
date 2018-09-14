@@ -8,7 +8,6 @@ matrix:
     language: generic
 before_install: |
   if [ "$TRAVIS_OS_NAME" == "osx" ]; then
-    # brew update
     brew install gnu-sed --with-default-names
     brew upgrade python3
     python3 --version
@@ -38,5 +37,7 @@ deploy:
   file_glob: true
   on:
     repo: chaostoolkit/chaostoolkit-bundler
+    tags: true
   skip_cleanup: true
+  tag_name: $TRAVIS_TAG
   draft: false
