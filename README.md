@@ -3,6 +3,20 @@
 Bundle the Chaos Toolkit CLI and all the drivers/plugins into one
 standalone binary for Linux and MacOSX platforms.
 
+## Usage
+
+Simply download one the binary appropriate to your platform (currently are
+only supported Linux and MacOSX both for AMD64 architecture) and copy it
+into your `PATH`. Rename the file to `chaos` and simply use it as you would
+use the [Chaos Toolkit][chaostolkit].
+
+[chaostoolkit]: https://chaostoolkit.org/
+
+If your platform is not supported, please see other means of
+[installing][install] the Chaos Toolkit.
+
+[install]: https://docs.chaostoolkit.org/reference/usage/install/
+
 ## Create a standalone bundle
 
 If you need to create a standalone bundle of the Chaos Toolkit with all its
@@ -29,9 +43,16 @@ driver is made.
 A bundle is automatically created and released whenever a new tag is pushed.
 
 ```
-$ git tag M.N.P
-$ git push origin M.N.P
+$ VERSION=`date +%Y.%m.%d`
+$ git tag $VERSION
+$ git push origin $VERSION
 ```
+
+The versioning follows [calendar versioning][calver] as it makes more sense
+than a semantic version here. Note, this is not the version of the chaostoolkit
+CLI itself. But a generic indication of when this was released.
+
+[calver]: https://calver.org/
 
 Note that the release will be created as soon as either the Linux or MacOSX
 build is completed, the other will simply add the asset to the release.
