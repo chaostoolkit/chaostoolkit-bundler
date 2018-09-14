@@ -24,6 +24,21 @@ Be aware that the generated binary does not keep the drivers up-to-date by
 itself. You need to regenerate it whenever a new release of the toolkit or a
 driver is made.
 
+## Release a new bundle
+
+A bundle is automatically created and released whenever a new tag is pushed.
+
+```
+$ git tag M.N.P
+$ git push origin M.N.P
+```
+
+Note that the release will be created as soon as either the Linux or MacOSX
+build is completed, the other will simply add the asset to the release.
+
+All known drivers, plugins should create a new tag of this repository when they
+pushe their own tags so new bundle release is triggered.
+
 ## Contribute
 
 If you wish to contribute more functions to this package, you are more than
