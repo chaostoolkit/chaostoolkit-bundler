@@ -26,6 +26,7 @@ drivers and plugins (except reporting for now), please do as follows:
 $ python -m venv .bundler
 $ source .bundler/bin/activate
 (.bundler) $ pip install -U -r requirements.txt
+(.bundler) $ export CHAOSTOOLKIT_PATH=`which chaos`
 (.bundler) $ pyinstaller chaos.spec
 ```
 

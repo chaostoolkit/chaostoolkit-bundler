@@ -1,9 +1,13 @@
 # -*- mode: python -*-
+import os
 
 block_cipher = None
 
+chaos_path = os.environ.get('CHAOSTOOLKIT_PATH')
+if not chaos_path:
+    raise RuntimeError("Please point CHAOSTOOLKIT_PATH to the 'chaos' CLI location")
 
-a = Analysis(['<CHAOS_PATH>'],
+a = Analysis([chaos_path],
              pathex=[],
              binaries=[],
              datas=[],

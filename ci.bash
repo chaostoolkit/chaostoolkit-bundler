@@ -4,21 +4,20 @@ set -eo pipefail
 function build () {
     echo "Building the Chaos Toolkit bundle"
     
-    export CHAOSTOOLKIT=`which chaos`
-    sed -i "s|<CHAOS_PATH>|${CHAOSTOOLKIT}|" chaos.spec
+    export CHAOSTOOLKIT_PATH=`which chaos`
 
     if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
         VERSION=$TRAVIS_TAG
     else
-        VERSION=$TRAVIS_COMMIT
+        VERSION=${TRAVIS_COMMIT::8}
     fi
 
     if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
         pyinstaller chaos.spec
-        mv dist/chaos dist/chaos-$VERSION-darwin-amd64
+        mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${VERSION}
     else
         pyinstaller chaos.spec
-        mv dist/chaos dist/chaos-$VERSION-linux-amd64
+        mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${VERSION}
     fi
 }
 
