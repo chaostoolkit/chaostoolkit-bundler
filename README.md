@@ -23,7 +23,7 @@ If you need to create a standalone bundle of the Chaos Toolkit with all its
 drivers and plugins (except reporting for now), please do as follows:
 
 ```
-$ python -m venv .bundler
+$ python3 -m venv .bundler
 $ source .bundler/bin/activate
 (.bundler) $ pip install -U -r requirements.txt
 (.bundler) $ export CHAOSTOOLKIT_PATH=`which chaos`
