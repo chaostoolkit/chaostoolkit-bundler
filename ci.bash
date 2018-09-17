@@ -22,11 +22,11 @@ function tag_if_needed () {
         
     git clone https://${GH_USER}:${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git bundler > /dev/null 2>&1
         
+    cd bundler
+
     git config user.name "${GH_USER}"
     git config user.email "${GH_EMAIL}"
     git config push.default simple
-
-    cd bundler
 
     python3 update-requirements.py
 
