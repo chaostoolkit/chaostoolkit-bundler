@@ -36,14 +36,14 @@ function tag_if_needed () {
         git config --global user.name "${GH_USER}"
         git config --global user.email "${GH_EMAIL}"
         git config --global push.default simple
-        git remote add origin https://${GH_USER}:${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git > /dev/null 2>&1
+        git remote add ghorig https://${GH_USER}:${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git > /dev/null 2>&1
 
         git add VERSION requirements-chaostoolkit.txt
         git commit -s -m "Release $CAL_VERSION"
-        git push -q origin master > /dev/null
+        git push -q ghorig master > /dev/null
 
         git tag $CAL_VERSION
-        git push -q origin $CAL_VERSION > /dev/null
+        git push -q ghorig $CAL_VERSION > /dev/null
     else
         echo "None of the dependencies have changed since the last release."
     fi
