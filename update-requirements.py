@@ -59,4 +59,4 @@ def update_requirements():
 
 
 if __name__ == '__main__':
-    run()
+    update_requirements()
