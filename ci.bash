@@ -50,7 +50,7 @@ function tag_if_needed () {
         # echo "Pushing the new version and set of dependencies"
         echo ${CAL_VERSION} > VERSION
         git add VERSION requirements-chaostoolkit.txt
-        git commit -s -m "$(printf "Prepare ${CAL_VERSION}\n\n[ci skip]")"
+        # git commit -s -m "Prepare ${CAL_VERSION}"
         # git push -q origin > /dev/null 2>&1
 
         echo "Tagging release"
