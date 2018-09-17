@@ -3,10 +3,10 @@ from datetime import date
 
 def run():
     with open('VERSION') as f:
-        current = f.read()
+        current = f.read().strip()
         new_version = date.today().strftime("%Y.%m.%d")
 
-        if current.startswith(new_version):
+        if current and current.startswith(new_version):
             if new_version == current:
                 index = 0
             else:

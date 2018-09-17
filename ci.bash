@@ -24,11 +24,15 @@ function tag_if_needed () {
         
     cd bundler
 
-    # moving to the latest tag
-    git checkout $(git describe --abbrev=0 --tags)
     git config user.name "${GH_USER}"
     git config user.email "${GH_EMAIL}"
     git config push.default simple
+
+    # moving to the latest tag (if one found)
+    local latest_tag=`git describe --abbrev=0 --tags`
+    if [[ $? == 0 ]]; then
+        git checkout $latest_tag
+    fi
 
     python3 update-requirements.py
 
