@@ -15,7 +15,7 @@ before_install: |
   fi
 install:
 - pip3 install -U pip setuptools
-- pip3 install -U -r requirements.txt
+- pip3 install -U -r requirements.txt -r requirements-chaostoolkit.txt
 script:
 - bash ci.bash
 notifications:

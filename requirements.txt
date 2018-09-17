@@ -1,14 +1,2 @@
 pyinstaller
-chaostoolkit
-chaostoolkit-lib
-chaostoolkit-aws
-chaostoolkit-azure
-chaostoolkit-cloud-foundry
-chaostoolkit-kubernetes
-chaostoolkit-google-cloud
-chaostoolkit-gremlin
-chaostoolkit-humio
-chaostoolkit-prometheus
-chaostoolkit-slack
-chaostoolkit-spring
-chaostoolkit-toxiproxy
+requests
