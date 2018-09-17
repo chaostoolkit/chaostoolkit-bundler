@@ -33,9 +33,10 @@ function tag_if_needed () {
 
         echo $CAL_VERSION > VERSION
 
-        git config --global user.name ${GH_USER}
-        git config --global user.email ${GH_EMAIL}
-        git remote add origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+        git config --global user.name "${GH_USER}"
+        git config --global user.email "${GH_EMAIL}"
+        git config --global push.default simple
+        git remote add origin https://${GH_USER}:${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
 
         git add VERSION requirements-chaostoolkit.txt
         git commit -s -m "Release $CAL_VERSION"
