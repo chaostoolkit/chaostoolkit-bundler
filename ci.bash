@@ -40,7 +40,7 @@ function tag_if_needed () {
 
         git add VERSION requirements-chaostoolkit.txt
         git commit -s -m "Release $CAL_VERSION"
-        git push -q ghorig master > /dev/null
+        git push -q ghorig > /dev/null
 
         git tag $CAL_VERSION
         git push -q ghorig $CAL_VERSION > /dev/null
