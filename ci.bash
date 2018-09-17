@@ -43,15 +43,10 @@ function tag_if_needed () {
 
         echo $CAL_VERSION > VERSION
         git add VERSION requirements-chaostoolkit.txt
-        git commit -s -m "Prepare $CAL_VERSION
-        
-        [ci skip]"
+        git commit -s -m "Prepare ${CAL_VERSION}\n[ci skip]"
         git push -q origin > /dev/null
 
-        git tag -a $CAL_VERSION -m "Release $CAL_VERSION
-        
-        Contains:
-        " + `cat requirements-chaostoolkit.txt`
+        git tag -a ${CAL_VERSION} -m "Release ${CAL_VERSION}\nContains:\n" + `cat requirements-chaostoolkit.txt`
         git push -q origin $CAL_VERSION > /dev/null
     else
         echo "None of the dependencies have changed since the last release."
