@@ -59,7 +59,9 @@ function main () {
     if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
         release || return 1
     else
-        tag_if_needed || return 1
+        if [[ $TRAVIS_OS_NAME == 'linux' ]]; then
+            tag_if_needed || return 1
+        fi
     fi
 }
 
