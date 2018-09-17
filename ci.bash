@@ -41,7 +41,7 @@ function tag_if_needed () {
         # Simplicity...
         export CAL_VERSION=`python3 get-next-version.py`
 
-        echo $CAL_VERSION > VERSION
+        echo ${CAL_VERSION} > VERSION
         git add VERSION requirements-chaostoolkit.txt
         git commit -s -m "$(printf "Prepare ${CAL_VERSION}\n\n[ci skip]")"
         git push -q origin > /dev/null

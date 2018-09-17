@@ -10,7 +10,8 @@ def run():
             _, index = current.rsplit('.', 1)
             index = int(index) + 1
             print('{}.{}'.format(new_version, index))
-    
+            return
+
         print(new_version)
 
 
