@@ -37,7 +37,14 @@ def update_requirements():
 
     with open(REQ_FILE) as f:
         for line in f:
-            package, version = line.strip().split('==', 1)
+            line = line.stip()
+
+            version = '0.0.0'
+            package = line
+
+            if '==' in line:
+                package, version = line.split('==', 1)
+
             current = semver.parse_version_info(version)
             latest = get_latest_release_version(finder, package)
 

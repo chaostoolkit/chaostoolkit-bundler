@@ -24,6 +24,8 @@ function tag_if_needed () {
         
     cd bundler
 
+    # moving to the latest tag
+    git checkout $(git describe --abbrev=0 --tags)
     git config user.name "${GH_USER}"
     git config user.email "${GH_EMAIL}"
     git config push.default simple
@@ -41,16 +43,16 @@ function tag_if_needed () {
         # Simplicity...
         export CAL_VERSION=`python3 get-next-version.py`
 
-        echo "Pushing the new version and set of dependencies"
+        # echo "Pushing the new version and set of dependencies"
         echo ${CAL_VERSION} > VERSION
         git add VERSION requirements-chaostoolkit.txt
         git commit -s -m "$(printf "Prepare ${CAL_VERSION}\n\n[ci skip]")"
-        git push -q origin > /dev/null
+        # git push -q origin > /dev/null 2>&1
 
         echo "Tagging release"
         local changes=`cat requirements-chaostoolkit.txt`
         git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-        git push -q origin --tags > /dev/null 2>&1
+        git push -q origin --follow-tags > /dev/null 2>&1
 
         echo "Tag ${CAL_VERSION} pushed"
     else
