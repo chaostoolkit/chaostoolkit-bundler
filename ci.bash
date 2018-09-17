@@ -61,10 +61,13 @@ function release () {
 }
 
 function main () {
-    # let's not build tags
     if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
         release || return 1
     else
+        if [[ $TRAVIS_BRANCH != master ]]; then
+            return 0
+        fi
+
         if [[ $TRAVIS_OS_NAME == 'linux' ]]; then
             tag_if_needed || return 1
         fi

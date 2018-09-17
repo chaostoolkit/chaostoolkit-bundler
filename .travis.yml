@@ -32,11 +32,6 @@ install: |
 script:
 - bash ci.bash
 
-branches:
-  only:
-    - master
-    - /^[0-9]+\.[0-9]+\.[0-9]+$/
-
 notifications:
   webhooks:
     urls:
