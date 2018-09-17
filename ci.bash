@@ -8,6 +8,8 @@ function build () {
 
     pyinstaller chaos.spec
 
+    export CAL_VERSION=`cat VERSION`
+
     if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
         mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
     else
@@ -71,7 +73,7 @@ function release () {
 }
 
 function main () {
-    if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+    if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+[\.[0-9]+]?$ ]]; then
         release || return 1
     else
         if [[ $TRAVIS_BRANCH != master ]]; then

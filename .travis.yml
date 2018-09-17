@@ -14,7 +14,7 @@ env:
   - secure: "MyieN7a9p87mdWON3ZtFBpS+U/N4XWeRo6bZmrhADqbzhxXYpeh2Qxztfi3WpQGuYwGQmfQAfzdZq2bGVP1gO/o58jSPTtErJivhzwZpCLPTEM5JkumOLhNbTPmf4zjyYe9uAFDQ1bn2j03N2V6tr/iyvrjxCNbiG9ecftDXJasuBZocigxNEyyRj5HKgATOz7T+/eyhiI6F/lfkOEcHeFyRMAMQXEFKlqGy5Rg2KfagJXwLKaTNuZ9/KrDb61uMlH+a+6NcXTXfxd+lcM4U/Y50uZ4Db4di8YxgeA1L4e7cnWzkQ/aYywC0YeSO/pvtlSx6Pe1DMPLR1x8r+AYkNLmAVIMrZ+1XVNZF5Wsf+rX9s7ZTezUCdDyeQ4S+YnI8ZTUkT0c0LWq3D5RV2RWe1yvvzSmOY1VTB53JL1zBICSpcnw96+A5529sRXYRbDaxKvwLsySCkzxMfQHUsYdg98GhySE1Fxm5g9ZB5j2qDmrFOO1TOIndz0hyfGif5bL80eO8TtF9CS/u9XOrdcacXG0MVaWI0mGfKKUNXohSGihEeEeGl3cVyQVPIKUFr1lRzG6wA8CH3S65R6wIJtRK24R6ZxPuABO+nOTOyosBtg7TDMAfWQ9bOwIHLXYbrZDFlrYmdgfSeap/lXmZAjAoW38JFyChXaNz+SN2nm7m+aY="
 
 before_install: |
-  if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+  if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+[\.[0-9]+]?$ ]]; then
     if [ "$TRAVIS_OS_NAME" == "osx" ]; then
       brew upgrade python3
       python3 --version
@@ -24,7 +24,7 @@ before_install: |
   fi
 
 install: |
-  if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ || "$TRAVIS_OS_NAME" == "linux" ]]; then
+  if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+[\.[0-9]+]?$ || "$TRAVIS_OS_NAME" == "linux" ]]; then
     pip3 install -U pip setuptools
     pip3 install -U -r requirements.txt -r requirements-chaostoolkit.txt
   fi
