@@ -1,6 +1,10 @@
 import sys
 
-from pip.index import PackageFinder
+try:
+    from pip.index import PackageFinder
+except ImportError:
+    from pip._internal.index import PackageFinder
+
 import requests
 import semver
 from semver import VersionInfo
