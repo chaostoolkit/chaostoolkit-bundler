@@ -23,8 +23,8 @@ before_install: |
     fi
   fi
 
-install:
-- if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+install: |
+  if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     pip3 install -U pip setuptools
     pip3 install -U -r requirements.txt -r requirements-chaostoolkit.txt
   fi
