@@ -41,14 +41,18 @@ function tag_if_needed () {
         # Simplicity...
         export CAL_VERSION=`python3 get-next-version.py`
 
+        echo "Pushing the new version and set of dependencies"
         echo ${CAL_VERSION} > VERSION
         git add VERSION requirements-chaostoolkit.txt
         git commit -s -m "$(printf "Prepare ${CAL_VERSION}\n\n[ci skip]")"
         git push -q origin > /dev/null
 
+        echo "Tagging release"
         local changes=`cat requirements-chaostoolkit.txt`
         git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-        git push -q origin $CAL_VERSION > /dev/null
+        git push -q origin --tags > /dev/null 2>&1
+
+        echo "Tag ${CAL_VERSION} pushed"
     else
         echo "None of the dependencies have changed since the last release."
     fi
