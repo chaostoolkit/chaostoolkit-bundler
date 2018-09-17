@@ -37,7 +37,7 @@ def update_requirements():
 
     with open(REQ_FILE) as f:
         for line in f:
-            line = line.stip()
+            line = line.strip()
 
             version = '0.0.0'
             package = line
