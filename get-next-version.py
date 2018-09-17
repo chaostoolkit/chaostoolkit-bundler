@@ -7,7 +7,10 @@ def run():
         new_version = date.today().strftime("%Y.%m.%d")
 
         if current.startswith(new_version):
-            _, index = current.rsplit('.', 1)
+            if new_version == current:
+                index = 0
+            else:
+                _, index = current.rsplit('.', 1)
             index = int(index) + 1
             print('{}.{}'.format(new_version, index))
             return
