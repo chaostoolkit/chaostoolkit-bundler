@@ -17,6 +17,16 @@ function build () {
 
 function tag_if_needed () {
     echo "Creating a new tag if needed"
+    
+    cd /tmp
+        
+    git clone https://${GH_USER}:${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git bundler > /dev/null 2>&1
+        
+    git config user.name "${GH_USER}"
+    git config user.email "${GH_EMAIL}"
+    git config push.default simple
+
+    cd bundler
 
     python3 update-requirements.py
 
@@ -32,18 +42,17 @@ function tag_if_needed () {
         export CAL_VERSION=`python3 get-next-version.py`
 
         echo $CAL_VERSION > VERSION
-
-        git config --global user.name "${GH_USER}"
-        git config --global user.email "${GH_EMAIL}"
-        git config --global push.default simple
-        git remote add ghorig https://${GH_USER}:${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git > /dev/null 2>&1
-
         git add VERSION requirements-chaostoolkit.txt
-        git commit -s -m "Release $CAL_VERSION"
-        git push -q ghorig > /dev/null
+        git commit -s -m "Prepare $CAL_VERSION
+        
+        [ci skip]"
+        git push -q origin > /dev/null
 
-        git tag $CAL_VERSION
-        git push -q ghorig $CAL_VERSION > /dev/null
+        git tag -a $CAL_VERSION -m "Release $CAL_VERSION
+        
+        Contains:
+        " + `cat requirements-chaostoolkit.txt`
+        git push -q origin $CAL_VERSION > /dev/null
     else
         echo "None of the dependencies have changed since the last release."
     fi
