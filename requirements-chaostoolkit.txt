@@ -6,7 +6,7 @@ chaostoolkit-google-cloud==0.2.2
 chaostoolkit-gremlin==0.3.0
 chaostoolkit-humio==0.1.1
 chaostoolkit-kubernetes==0.17.0
-chaostoolkit-lib==0.20.0
+chaostoolkit-lib==0.20.1
 chaostoolkit-prometheus==0.3.0
 chaostoolkit-slack==0.2.0
 chaostoolkit-spring==0.1.1
