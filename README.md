@@ -3,10 +3,27 @@
 Bundle the Chaos Toolkit CLI and all the drivers/plugins into one
 standalone binary for Linux and MacOSX platforms.
 
+## Why do I need this bundle?
+
+Basically, it's useful when you want to run the Chaos Toolkit without having
+to install it from its packages. It's handy when you cannot install Python 3 for
+instance.
+
+## What is included in the bundle?
+
+The bundle gathers all the latest releases of the Chaos Toolkit and well-known
+drivers and plugins. Please have a look at the the [bundled packages][deps].
+
+[deps]: https://github.com/chaostoolkit/chaostoolkit-bundler/blob/master/requirements-chaostoolkit.txt
+
+All projects part of this bundle should trigger automatically a new release
+of the bundle when they have been released themselves so that the bundle
+remains up-to-date.
+
 ## Usage
 
-Simply download one the binary appropriate to your platform (currently are
-only supported Linux and MacOSX both for AMD64 architecture) and copy it
+Simply download one of the binary for your platform (currently,
+only Linux and MacOSX are suppored, both for AMD64 architecture) and copy it
 into your `PATH`. Rename the file to `chaos` and simply use it as you would
 use the [Chaos Toolkit][chaostoolkit].
 
@@ -20,7 +37,8 @@ If your platform is not supported, please see other means of
 ## Create a standalone bundle
 
 If you need to create a standalone bundle of the Chaos Toolkit with all its
-drivers and plugins (except reporting for now), please do as follows:
+drivers and plugins (except reporting for now) for your own use case,
+please do as follows:
 
 ```
 $ python3 -m venv .bundler
@@ -49,17 +67,20 @@ $ git tag $VERSION
 $ git push origin $VERSION
 ```
 
-The versioning follows [calendar versioning][calver] as it makes more sense
-than a semantic version here. Note, this is not the version of the chaostoolkit
-CLI itself. But a generic indication of when this was released.
-
-[calver]: https://calver.org/
-
 Note that the release will be created as soon as either the Linux or MacOSX
 build is completed, the other will simply add the asset to the release.
 
 All known drivers, plugins should create a new tag of this repository when they
 pushe their own tags so new bundle release is triggered.
+
+### Calendar Versioning
+
+The versioning follows [calendar versioning][calver] as it makes more sense
+than a semantic version here. Note, this is not the version of the chaostoolkit
+CLI itself. But a generic indication of when this was released. Do not draw
+any semantic meaning from the version.
+
+[calver]: https://calver.org/
 
 ## Contribute
 

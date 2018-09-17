@@ -6,23 +6,57 @@ function build () {
     
     export CHAOSTOOLKIT_PATH=`which chaos`
 
-    if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-        VERSION=$TRAVIS_TAG
-    else
-        VERSION=${TRAVIS_COMMIT::8}
-    fi
+    pyinstaller chaos.spec
 
     if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
-        pyinstaller chaos.spec
-        mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${VERSION}
+        mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
     else
-        pyinstaller chaos.spec
-        mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${VERSION}
+        mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${CAL_VERSION}
     fi
 }
 
+function tag_if_needed () {
+    echo "Creating a new tag if needed"
+
+    python3 update-requirements.py
+
+    # have we updated the requirements?
+    if [[ $? == 1 ]]; then
+        # for debugging purpose
+        git diff requirements-chaostoolkit.txt
+
+        # today's version (suffixed if more than one per-day)
+        # potential race condition here when multiple concurrent builds
+        # let's assume it won't happen very often and we can fix it manually
+        # Simplicity...
+        export CAL_VERSION=`python3 get-next-version.py`
+
+        echo $CAL_VERSION > VERSION
+
+        git add VERSION requirements-chaostoolkit.txt
+        git commit -s -m "Release $CAL_VERSION"
+        git push
+
+        git tag $CAL_VERSION
+        git push origin $CAL_VERSION
+    else
+        echo "None of the dependencies have changed since the last release."
+    fi
+}
+
+function release () {
+    echo "Creating a new release from a tag"
+
+    build
+}
+
 function main () {
-    build || return 1
+    # let's not build tags
+    if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+        release || return 1
+    else
+        tag_if_needed || return 1
+    fi
 }
 
 main "$@" || exit 1

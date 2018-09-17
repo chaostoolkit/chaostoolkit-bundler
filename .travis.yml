@@ -18,6 +18,11 @@ install:
 - pip3 install -U -r requirements.txt -r requirements-chaostoolkit.txt
 script:
 - bash ci.bash
+
+branches:
+  only:
+    - master
+
 notifications:
   webhooks:
     urls:
