@@ -51,14 +51,16 @@ function tag_if_needed () {
 
         # echo "Pushing the new version and set of dependencies"
         echo ${CAL_VERSION} > VERSION
+
+        echo "Creating temporary branch"
+        git checkout -b "ci-${CAL_VERSION}"
         git add VERSION requirements-chaostoolkit.txt
-        # git commit -s -m "Prepare ${CAL_VERSION}"
-        # git push -q origin > /dev/null 2>&1
+        git commit -s -m "Prepare ${CAL_VERSION}"
 
         echo "Tagging release"
         local changes=`cat requirements-chaostoolkit.txt`
         git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-        git push -q origin --follow-tags > /dev/null 2>&1
+        git push --follow-tags -q origin "ci-${CAL_VERSION}" > /dev/null 2>&1
 
         echo "Tag ${CAL_VERSION} pushed"
     else
