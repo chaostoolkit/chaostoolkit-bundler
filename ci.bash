@@ -31,7 +31,7 @@ function tag_if_needed () {
     git config push.default simple
 
     # moving to the latest tag (if one found)
-    local latest_tag=`git describe --abbrev=0 --tags`
+    local latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
     if [[ $? == 0 ]]; then
         git checkout $latest_tag
     fi
