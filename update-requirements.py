@@ -17,6 +17,7 @@ def get_finder() -> PackageFinder:
     return PackageFinder(
         [],
         ['https://pypi.python.org/simple'],
+        allow_all_prereleases=True,
         session=requests.Session()
     )
 
@@ -25,7 +26,7 @@ def get_latest_release_version(finder: PackageFinder,
                                package: str) -> VersionInfo:
     results = finder.find_all_candidates(package)
     versions = sorted(set([p.version for p in results]), reverse=True)
-    return semver.parse_version_info(str(versions[0]))
+    return semver.parse_version_info(str(versions[0]).replace('rc', '-rc'))
 
 
 def update_requirements():
@@ -45,15 +46,17 @@ def update_requirements():
             if '==' in line:
                 package, version = line.split('==', 1)
 
-            current = semver.parse_version_info(version)
+            current = semver.parse_version_info(version.replace('rc', '-rc'))
             latest = get_latest_release_version(finder, package)
 
             version = latest if latest > current else current
-            reqs.append("{}=={}".format(package, str(version)))
+            reqs.append("{}=={}".format(
+                package, str(version).replace('-rc', 'rc')))
 
             if latest > current:
                 changed = True
-                updated_reqs.append("{}=={}".format(package, str(latest)))
+                updated_reqs.append("{}=={}".format(
+                    package, str(latest).replace('-rc', 'rc')))
 
     if changed:
         updates = '\n'.join(updated_reqs)
