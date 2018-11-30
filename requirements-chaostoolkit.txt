@@ -1,4 +1,4 @@
-chaostoolkit==0.17.0
+chaostoolkit==0.17.1
 chaostoolkit-aws==0.9.0
 chaostoolkit-azure==0.2.0
 chaostoolkit-cloud-foundry==0.6.0
@@ -6,7 +6,7 @@ chaostoolkit-google-cloud==0.2.2
 chaostoolkit-gremlin==0.3.0
 chaostoolkit-humio==0.1.1
 chaostoolkit-kubernetes==0.19.1
-chaostoolkit-lib==0.22.1
+chaostoolkit-lib==0.22.2
 chaostoolkit-prometheus==0.3.0
 chaostoolkit-slack==0.2.0
 chaostoolkit-spring==0.2.0
