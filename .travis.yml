@@ -29,7 +29,7 @@ before_install: |
 
 install: |
   if [[ $TRAVIS_TAG =~ ^[0-9]+\.[0-9]+\.[0-9]+[\.[0-9]+]?$ || "$TRAVIS_OS_NAME" == "linux" ]]; then
-    pip3 install -U pip setuptools
+    pip3 install pip==18.1 setuptools
     pip3 install -U -r requirements.txt -r requirements-chaostoolkit.txt
   fi
 
