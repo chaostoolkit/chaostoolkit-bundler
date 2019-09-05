@@ -5,7 +5,7 @@ chaostoolkit-cloud-foundry==0.7.1
 chaostoolkit-google-cloud==0.2.2
 chaostoolkit-gremlin==0.3.0
 chaostoolkit-humio==0.3.0
-chaostoolkit-kubernetes==0.20.0
+chaostoolkit-kubernetes==0.21.0
 chaostoolkit-lib==1.6.0
 chaostoolkit-prometheus==0.3.0
 chaostoolkit-slack==0.2.0
