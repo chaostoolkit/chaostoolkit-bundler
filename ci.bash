@@ -69,6 +69,12 @@ function tag_if_needed () {
         git push --follow-tags -q origin "ci-${CAL_VERSION}" > /dev/null 2>&1
 
         echo "Tag ${CAL_VERSION} pushed"
+
+        cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
+        git checkout master
+        cp master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
+        git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt
+        git push -q origin master > /dev/null 2>&1
     else
         echo "None of the dependencies have changed since the last release."
     fi
