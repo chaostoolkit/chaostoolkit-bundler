@@ -1,4 +1,5 @@
 import sys
+from typing import Dict
 
 try:
     from pip.index import PackageFinder
@@ -11,6 +12,7 @@ from semver import VersionInfo
 
 
 REQ_FILE = 'requirements-chaostoolkit.txt'
+MASTER_REQ_FILE = 'master-requirements-chaostoolkit.txt'
 
 
 def get_finder() -> PackageFinder:
@@ -36,7 +38,7 @@ def update_requirements():
     reqs = []
     updated_reqs = []
 
-    with open(REQ_FILE) as f:
+    with open(MASTER_REQ_FILE) as f:
         for line in f:
             line = line.strip()
 
@@ -45,6 +47,11 @@ def update_requirements():
 
             if '==' in line:
                 package, version = line.split('==', 1)
+
+            if package not in master_packages:
+                # upstream is signalling that this package is no longer
+                # to be dealt with
+                continue
 
             current = semver.parse_version_info(version.replace('rc', '-rc'))
             latest = get_latest_release_version(finder, package)

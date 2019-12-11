@@ -30,6 +30,10 @@ function tag_if_needed () {
     git config user.email "${GH_EMAIL}"
     git config push.default simple
 
+    # keep track of any change in dependencies we must not carry around in the
+    # next tag
+    cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
+
     # moving to the latest tag (if one found)
     local latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
     if [[ $? == 0 ]]; then
@@ -40,6 +44,8 @@ function tag_if_needed () {
 
     # have we updated the requirements?
     if [[ $? == 1 ]]; then
+        rm master-requirements-chaostoolkit.txt
+
         # for debugging purpose
         git diff requirements-chaostoolkit.txt
 
