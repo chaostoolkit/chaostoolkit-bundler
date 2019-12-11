@@ -33,6 +33,7 @@ function tag_if_needed () {
     # keep track of any change in dependencies we must not carry around in the
     # next tag
     cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
+    cp update-requirements.py master-update-requirements.py
 
     # moving to the latest tag (if one found)
     local latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
@@ -40,6 +41,7 @@ function tag_if_needed () {
         git checkout $latest_tag
     fi
 
+    cp master-update-requirements.py update-requirements.py
     python3 update-requirements.py
 
     # have we updated the requirements?
