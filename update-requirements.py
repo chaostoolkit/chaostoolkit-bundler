@@ -48,11 +48,6 @@ def update_requirements():
             if '==' in line:
                 package, version = line.split('==', 1)
 
-            if package not in master_packages:
-                # upstream is signalling that this package is no longer
-                # to be dealt with
-                continue
-
             current = semver.parse_version_info(version.replace('rc', '-rc'))
             latest = get_latest_release_version(finder, package)
 
