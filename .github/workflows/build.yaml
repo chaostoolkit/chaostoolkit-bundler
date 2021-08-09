@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v1
       - name: Prepare Release
         run: |
-          pip3 install -U --quiet --prefer-binary pip
+          pip3 install -U --quiet --prefer-binary pip semver requests
 
           echo "Creating a new tag if needed"
 
