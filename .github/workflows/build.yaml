@@ -49,7 +49,7 @@ jobs:
           cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
 
           # moving to the latest tag (if one found)
-          local latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
+          latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
           if [[ $? == 0 ]]; then
               git checkout $latest_tag
           fi
@@ -78,7 +78,7 @@ jobs:
               git commit -s -m "Prepare ${CAL_VERSION}"
 
               echo "Tagging release"
-              local changes=`cat requirements-chaostoolkit.txt`
+              changes=`cat requirements-chaostoolkit.txt`
               git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
               git push --follow-tags -q origin "ci-${CAL_VERSION}" > /dev/null 2>&1
 
