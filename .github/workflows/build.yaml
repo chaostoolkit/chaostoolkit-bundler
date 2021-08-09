@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install dependencies
-        run: pip install -U --prefer-binary pip -r requirements.txt -r requirements-chaostoolkit.txt
+        run: pip install -U pip -r requirements.txt -r requirements-chaostoolkit.txt
       - name: Build for MacOSX
         run: |
           export CHAOSTOOLKIT_PATH=`which chaos`
