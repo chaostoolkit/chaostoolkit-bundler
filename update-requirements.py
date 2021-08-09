@@ -1,8 +1,10 @@
+from optparse import Values
 import sys
-from typing import Dict
 
+from pip._internal.index.collector import LinkCollector
+from pip._internal.models.selection_prefs import SelectionPreferences
+from pip._internal.network.session import PipSession
 from pip._internal.index.package_finder import PackageFinder
-import requests
 import semver
 from semver import VersionInfo
 
@@ -12,11 +14,17 @@ MASTER_REQ_FILE = 'master-requirements-chaostoolkit.txt'
 
 
 def get_finder() -> PackageFinder:
-    return PackageFinder(
-        [],
-        ['https://pypi.python.org/simple'],
-        allow_all_prereleases=True,
-        session=requests.Session()
+    return PackageFinder.create(
+        LinkCollector.create(
+            session=PipSession(),
+            options=Values(defaults=dict(
+                no_index=False, index_url="https://pypi.python.org/simple",
+                find_links=None, extra_index_urls=[""]))
+        ),
+        SelectionPreferences(
+            allow_yanked=False,
+            allow_all_prereleases=True
+        )
     )
 
 
