@@ -63,6 +63,7 @@ jobs:
 
           cp master-update-requirements.py update-requirements.py
           python3 update-requirements.py
+          git checkout update-requirements.py
 
           rm master-requirements-chaostoolkit.txt
 
