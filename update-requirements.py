@@ -1,11 +1,7 @@
 import sys
 from typing import Dict
 
-try:
-    from pip.index import PackageFinder
-except ImportError:
-    from pip._internal.index import PackageFinder
-
+from pip._internal.index.package_finder import PackageFinder
 import requests
 import semver
 from semver import VersionInfo
