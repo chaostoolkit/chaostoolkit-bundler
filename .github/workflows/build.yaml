@@ -41,6 +41,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Prepare Release
+        env:
+          GH_EMAIL: ${{ secrets.SuperSecret }}
+          GH_USERNAME: ${{ secrets.GH_USERNAME }}
         run: |
           pip3 install -U --quiet --prefer-binary pip semver requests
 
