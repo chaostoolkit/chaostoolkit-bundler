@@ -1,0 +1,31 @@
+name: Build
+
+on:
+  push:
+    branches: [switch-to-gh-action]
+  pull_request:
+    branches: [switch-to-gh-action]
+
+jobs:
+  macos:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Build for MacOSX
+        run: |
+          export CHAOSTOOLKIT_PATH=`which chaos`
+          pyinstaller chaos.spec
+          export CAL_VERSION=`cat VERSION`
+          mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Build for Linux
+        run: |
+          export CHAOSTOOLKIT_PATH=`which chaos`
+          pyinstaller chaos.spec
+          export CAL_VERSION=`cat VERSION`
+          mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${CAL_VERSION}
