@@ -44,6 +44,7 @@ jobs:
         env:
           GH_EMAIL: ${{ secrets.SuperSecret }}
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           pip3 install -U --quiet --prefer-binary pip semver requests
 
@@ -71,6 +72,7 @@ jobs:
           git config --global user.email "${GH_EMAIL}"
           git config --global user.name "${GH_USERNAME}"
           git config push.default simple
+          git remote set-url --push origin https://${GH_USERNAME}:${GH_TOKEN}@github.com/chaostoolkit/chaostoolkit-bundler
 
           # today's version (suffixed if more than one per-day)
           # potential race condition here when multiple concurrent builds
