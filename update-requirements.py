@@ -71,7 +71,6 @@ def update_requirements():
             f.write('\n'.join(reqs) + '\n')
 
         print(updates)
-        sys.exit(1)
 
 
 if __name__ == '__main__':
