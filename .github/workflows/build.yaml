@@ -3,10 +3,10 @@ name: Build and Tag
 on:
   push:
     branches:
-      - switch-to-gh-action
+      - master
   pull_request:
     branches:
-      - switch-to-gh-action
+      - master
 
 jobs:
   tag-dependencies:
