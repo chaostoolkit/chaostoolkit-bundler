@@ -1,4 +1,4 @@
-chaostoolkit==1.9.0
+chaostoolkit==1.9.1
 chaostoolkit-aws==0.16.0
 chaostoolkit-azure==0.10.0
 chaostoolkit-cloud-foundry==0.7.1
