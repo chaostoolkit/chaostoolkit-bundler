@@ -42,11 +42,11 @@ jobs:
             rm has_changes.txt
             git checkout update-requirements.py
 
-            echo "Removing temporary fules"
-            rm master-requirements-chaostoolkit.txt master-update-requirements.py
-
             # for debugging purpose
             git diff requirements-chaostoolkit.txt
+
+            echo "Removing temporary files"
+            rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
             git config --global user.email "${GH_EMAIL}"
             git config --global user.name "${GH_USERNAME}"
@@ -76,8 +76,10 @@ jobs:
 
             cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
             git checkout master
-            cp master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
-            rm master-requirements-chaostoolkit.txt
+            mv master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
+
+            git status
+            git diff 
 
             git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt
             git push -q origin master > /dev/null 2>&1
