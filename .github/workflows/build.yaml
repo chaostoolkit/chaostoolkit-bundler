@@ -37,7 +37,8 @@ jobs:
           python3 update-requirements.py
           git checkout update-requirements.py
 
-          rm master-requirements-chaostoolkit.txt
+          echo "Removing temporary fules"
+          rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
           # for debugging purpose
           git diff requirements-chaostoolkit.txt
