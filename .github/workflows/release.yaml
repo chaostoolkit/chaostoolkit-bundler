@@ -1,0 +1,50 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-macosx:
+    needs: tag-dependencies
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install dependencies
+        run: pip3 install -U --prefer-binary -r requirements.txt -r requirements-chaostoolkit.txt
+      - name: Build for MacOSX
+        run: |
+          export CHAOSTOOLKIT_PATH=`which chaos`
+          pyinstaller chaos.spec
+          export CAL_VERSION=`cat VERSION`
+          mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
+  build-linux:
+    needs: tag-dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install dependencies
+        run: pip3 install -U --prefer-binary -r requirements.txt -r requirements-chaostoolkit.txt
+      - name: Build for Linux
+        run: |
+          export CHAOSTOOLKIT_PATH=`which chaos`
+          pyinstaller chaos.spec
+          export CAL_VERSION=`cat VERSION`
+          mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${CAL_VERSION}
+  release:
+    needs: [build-macosx, build-linux]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          draft: true
+          prerelease: true
+          artifacts: "dist/*"
+          bodyFile: "requirements-chaostoolkit.txt"
+          token: ${{ secrets.GITHUB_TOKEN }}
