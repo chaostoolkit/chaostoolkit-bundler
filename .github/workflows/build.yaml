@@ -75,4 +75,9 @@ jobs:
           git checkout master
           cp master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
           rm master-requirements-chaostoolkit.txt
-          git diff-index --quiet HEAD || git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt && git push -q origin master > /dev/null 2>&1
+
+          # only commit if changes happened
+          if ! git diff-index --quiet HEAD; then
+            git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt
+            git push -q origin master > /dev/null 2>&1
+          fi
