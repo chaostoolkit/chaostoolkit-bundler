@@ -39,6 +39,7 @@ jobs:
           python3 update-requirements.py
 
           if [[ -f "./has_changes.txt" ]]; then
+            rm has_changes.txt
             git checkout update-requirements.py
 
             echo "Removing temporary fules"
