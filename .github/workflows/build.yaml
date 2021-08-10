@@ -81,8 +81,7 @@ jobs:
             git status
             git diff 
 
-            git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt
-            git push -q origin master > /dev/null 2>&1
+            (git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt && git push -q origin master > /dev/null 2>&1) || true
           else
             echo "No changed since last release"
           fi
