@@ -1,12 +1,11 @@
+from optparse import Values
+from pathlib import Path
 import sys
-from typing import Dict
 
-try:
-    from pip.index import PackageFinder
-except ImportError:
-    from pip._internal.index import PackageFinder
-
-import requests
+from pip._internal.index.collector import LinkCollector
+from pip._internal.models.selection_prefs import SelectionPreferences
+from pip._internal.network.session import PipSession
+from pip._internal.index.package_finder import PackageFinder
 import semver
 from semver import VersionInfo
 
@@ -16,11 +15,17 @@ MASTER_REQ_FILE = 'master-requirements-chaostoolkit.txt'
 
 
 def get_finder() -> PackageFinder:
-    return PackageFinder(
-        [],
-        ['https://pypi.python.org/simple'],
-        allow_all_prereleases=True,
-        session=requests.Session()
+    return PackageFinder.create(
+        LinkCollector.create(
+            session=PipSession(),
+            options=Values(defaults=dict(
+                no_index=False, index_url="https://pypi.python.org/simple",
+                find_links=None, extra_index_urls=[""]))
+        ),
+        SelectionPreferences(
+            allow_yanked=False,
+            allow_all_prereleases=True
+        )
     )
 
 
@@ -67,7 +72,7 @@ def update_requirements():
             f.write('\n'.join(reqs) + '\n')
 
         print(updates)
-        sys.exit(1)
+        Path("./has_changes.txt").touch()
 
 
 if __name__ == '__main__':

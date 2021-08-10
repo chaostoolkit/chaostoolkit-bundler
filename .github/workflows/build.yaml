@@ -1,0 +1,84 @@
+name: Build and Tag
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  tag-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Prepare Release
+        env:
+          GH_EMAIL: ${{ secrets.SuperSecret }}
+          GH_USERNAME: ${{ secrets.GH_USERNAME }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          pip3 install -U --quiet --prefer-binary pip semver requests
+
+          echo "Creating a new tag if needed"
+
+          # keep track of any change in dependencies we must not carry around in the
+          # next tag
+          cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
+          cp update-requirements.py master-update-requirements.py
+
+          # moving to the latest tag (if one found)
+          latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
+          if [[ $? == 0 ]]; then
+              git checkout $latest_tag
+          fi
+
+          cp master-update-requirements.py update-requirements.py
+          python3 update-requirements.py
+
+          if [[ -f "./has_changes.txt" ]]; then
+            rm has_changes.txt
+            git checkout update-requirements.py
+
+            # for debugging purpose
+            git diff requirements-chaostoolkit.txt
+
+            echo "Removing temporary files"
+            rm master-requirements-chaostoolkit.txt master-update-requirements.py
+
+            git config --global user.email "${GH_EMAIL}"
+            git config --global user.name "${GH_USERNAME}"
+            git config push.default simple
+            git remote set-url --push origin https://${GH_USERNAME}:${GH_TOKEN}@github.com/chaostoolkit/chaostoolkit-bundler
+
+            # today's version (suffixed if more than one per-day)
+            # potential race condition here when multiple concurrent builds
+            # let's assume it won't happen very often and we can fix it manually
+            # Simplicity...
+            export CAL_VERSION=`python3 get-next-version.py`
+
+            # echo "Pushing the new version and set of dependencies"
+            echo ${CAL_VERSION} > VERSION
+
+            echo "Creating temporary branch"
+            git checkout -b "ci-${CAL_VERSION}"
+            git add VERSION requirements-chaostoolkit.txt
+            git commit -s -m "Prepare ${CAL_VERSION}"
+
+            echo "Tagging release"
+            changes=`cat requirements-chaostoolkit.txt`
+            git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
+            git push --follow-tags -q origin "ci-${CAL_VERSION}" > /dev/null 2>&1
+
+            echo "Tag ${CAL_VERSION} pushed"
+
+            cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
+            git checkout master
+            mv master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
+
+            (git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt && git push -q origin master > /dev/null 2>&1) || true
+          else
+            echo "No changed since last release"
+          fi
