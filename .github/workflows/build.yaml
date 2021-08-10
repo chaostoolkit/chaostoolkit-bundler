@@ -70,7 +70,7 @@ jobs:
             echo "Tagging release"
             changes=`cat requirements-chaostoolkit.txt`
             git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-            git push --follow-tags -q origin "ci-${CAL_VERSION}" > /dev/null 2>&1
+            git push --follow-tags -q origin "ci-${CAL_VERSION}"
 
             echo "Tag ${CAL_VERSION} pushed"
 
