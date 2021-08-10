@@ -1,4 +1,4 @@
-name: Build & Release
+name: Release
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
 
 jobs:
   build-macosx:
-    needs: tag-dependencies
     runs-on: macOS-latest
     steps:
       - name: Checkout
@@ -21,7 +20,6 @@ jobs:
           export CAL_VERSION=`cat VERSION`
           mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
   build-linux:
-    needs: tag-dependencies
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
