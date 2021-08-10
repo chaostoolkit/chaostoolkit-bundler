@@ -1,4 +1,5 @@
 from optparse import Values
+from pathlib import Path
 import sys
 
 from pip._internal.index.collector import LinkCollector
@@ -71,6 +72,7 @@ def update_requirements():
             f.write('\n'.join(reqs) + '\n')
 
         print(updates)
+        Path("./has_changes.txt").touch()
 
 
 if __name__ == '__main__':

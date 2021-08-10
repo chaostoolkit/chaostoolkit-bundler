@@ -37,47 +37,49 @@ jobs:
 
           cp master-update-requirements.py update-requirements.py
           python3 update-requirements.py
-          git checkout update-requirements.py
 
-          echo "Removing temporary fules"
-          rm master-requirements-chaostoolkit.txt master-update-requirements.py
+          if [[ -f "./has_changes.txt" ]]; then
+            git checkout update-requirements.py
 
-          # for debugging purpose
-          git diff requirements-chaostoolkit.txt
+            echo "Removing temporary fules"
+            rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
-          git config --global user.email "${GH_EMAIL}"
-          git config --global user.name "${GH_USERNAME}"
-          git config push.default simple
-          git remote set-url --push origin https://${GH_USERNAME}:${GH_TOKEN}@github.com/chaostoolkit/chaostoolkit-bundler
+            # for debugging purpose
+            git diff requirements-chaostoolkit.txt
 
-          # today's version (suffixed if more than one per-day)
-          # potential race condition here when multiple concurrent builds
-          # let's assume it won't happen very often and we can fix it manually
-          # Simplicity...
-          export CAL_VERSION=`python3 get-next-version.py`
+            git config --global user.email "${GH_EMAIL}"
+            git config --global user.name "${GH_USERNAME}"
+            git config push.default simple
+            git remote set-url --push origin https://${GH_USERNAME}:${GH_TOKEN}@github.com/chaostoolkit/chaostoolkit-bundler
 
-          # echo "Pushing the new version and set of dependencies"
-          echo ${CAL_VERSION} > VERSION
+            # today's version (suffixed if more than one per-day)
+            # potential race condition here when multiple concurrent builds
+            # let's assume it won't happen very often and we can fix it manually
+            # Simplicity...
+            export CAL_VERSION=`python3 get-next-version.py`
 
-          echo "Creating temporary branch"
-          git checkout -b "ci-${CAL_VERSION}"
-          git add VERSION requirements-chaostoolkit.txt
-          git commit -s -m "Prepare ${CAL_VERSION}"
+            # echo "Pushing the new version and set of dependencies"
+            echo ${CAL_VERSION} > VERSION
 
-          echo "Tagging release"
-          changes=`cat requirements-chaostoolkit.txt`
-          git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-          git push --follow-tags -q origin "ci-${CAL_VERSION}" > /dev/null 2>&1
+            echo "Creating temporary branch"
+            git checkout -b "ci-${CAL_VERSION}"
+            git add VERSION requirements-chaostoolkit.txt
+            git commit -s -m "Prepare ${CAL_VERSION}"
 
-          echo "Tag ${CAL_VERSION} pushed"
+            echo "Tagging release"
+            changes=`cat requirements-chaostoolkit.txt`
+            git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
+            git push --follow-tags -q origin "ci-${CAL_VERSION}" > /dev/null 2>&1
 
-          cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
-          git checkout master
-          cp master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
-          rm master-requirements-chaostoolkit.txt
+            echo "Tag ${CAL_VERSION} pushed"
 
-          # only commit if changes happened
-          if ! git diff-index --quiet HEAD; then
+            cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
+            git checkout master
+            cp master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
+            rm master-requirements-chaostoolkit.txt
+
             git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt
             git push -q origin master > /dev/null 2>&1
+          else
+            echo "No changed since last release"
           fi
