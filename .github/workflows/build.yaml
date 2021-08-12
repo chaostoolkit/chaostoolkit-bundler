@@ -34,10 +34,10 @@ jobs:
           cp update-requirements.py master-update-requirements.py
 
           # moving to the latest tag (if one found)
-          #latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
-          #if [[ $? == 0 ]]; then
-          #    git checkout $latest_tag
-          #fi
+          latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
+          if [[ $? == 0 ]]; then
+              git checkout $latest_tag
+          fi
 
           cp master-update-requirements.py update-requirements.py
           python3 update-requirements.py
