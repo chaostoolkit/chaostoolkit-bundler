@@ -21,6 +21,11 @@ jobs:
           GH_EMAIL: ${{ secrets.SuperSecret }}
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
         run: |
+          git config --global init.defaultBranch master
+          git branch -m master
+          git config --global user.email "${GH_EMAIL}"
+          git config --global user.name "${GH_USERNAME}"
+           
           pip3 install -U --quiet --prefer-binary pip semver requests
 
           echo "Creating a new tag if needed"
@@ -45,12 +50,6 @@ jobs:
             git checkout update-requirements.py
             rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
-            #git checkout master
-            git config --global init.defaultBranch master
-            git branch -m master
-            git config --global user.email "${GH_EMAIL}"
-            git config --global user.name "${GH_USERNAME}"
-           
             # today's version (suffixed if more than one per-day)
             # potential race condition here when multiple concurrent builds
             # let's assume it won't happen very often and we can fix it manually
