@@ -21,8 +21,6 @@ jobs:
           GH_EMAIL: ${{ secrets.SuperSecret }}
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
         run: |
-          git config --global init.defaultBranch master
-          git branch -m master
           git config --global user.email "${GH_EMAIL}"
           git config --global user.name "${GH_USERNAME}"
            
