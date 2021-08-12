@@ -54,7 +54,7 @@ jobs:
             # Simplicity...
             export CAL_VERSION=`python3 get-next-version.py`
 
-            git checkout master
+            git checkout --track origin/master
 
             # echo "Pushing the new version and set of dependencies"
             echo ${CAL_VERSION} > VERSION
