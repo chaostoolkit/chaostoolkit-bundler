@@ -21,7 +21,6 @@ jobs:
           GH_EMAIL: ${{ secrets.SuperSecret }}
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
         run: |
-          git reset --hard origin/master
           git config --global user.email "${GH_EMAIL}"
           git config --global user.name "${GH_USERNAME}"
            
@@ -58,13 +57,14 @@ jobs:
             # echo "Pushing the new version and set of dependencies"
             echo ${CAL_VERSION} > VERSION
 
+            git checkout -b "${CAL_VERSION}"
             git add VERSION requirements-chaostoolkit.txt
             git commit -s -m "Prepare ${CAL_VERSION}"
 
             echo "Tagging release"
             changes=`cat requirements-chaostoolkit.txt`
             git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-            git push --follow-tags -q
+            git push --follow-tags -q origin "${CAL_VERSION}"
 
             echo "Tag ${CAL_VERSION} pushed"
 
