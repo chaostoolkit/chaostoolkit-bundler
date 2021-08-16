@@ -38,6 +38,7 @@ jobs:
           if [[ $? == 0 ]]; then
               git checkout $latest_tag
           fi
+          echo "Latest tag was: ${latest_tag}"
 
           cp master-update-requirements.py update-requirements.py
           python3 update-requirements.py
@@ -59,6 +60,7 @@ jobs:
             echo ${CAL_VERSION} > VERSION
 
             git checkout -b "${CAL_VERSION}"
+            git status
             git add VERSION requirements-chaostoolkit.txt
             git commit -s -m "Prepare ${CAL_VERSION}"
 
