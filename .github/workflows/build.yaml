@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{secrets.GH_TOKEN}}
+      - name: Prepare Release
         env:
           GH_EMAIL: ${{ secrets.GH_EMAIL }}
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
