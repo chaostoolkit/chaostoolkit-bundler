@@ -59,7 +59,7 @@ jobs:
             # echo "Pushing the new version and set of dependencies"
             echo ${CAL_VERSION} > VERSION
 
-            git checkout -b "${CAL_VERSION}"
+            git checkout -b "ci-${CAL_VERSION}"
             git status
             git add VERSION requirements-chaostoolkit.txt
             git commit -s -m "Prepare ${CAL_VERSION}"
@@ -67,7 +67,7 @@ jobs:
             echo "Tagging release"
             changes=`cat requirements-chaostoolkit.txt`
             git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-            git push --follow-tags -q origin "${CAL_VERSION}"
+            git push --follow-tags -q origin "ci-${CAL_VERSION}"
 
             echo "Tag ${CAL_VERSION} pushed"
 
