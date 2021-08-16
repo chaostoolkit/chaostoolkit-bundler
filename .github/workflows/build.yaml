@@ -18,7 +18,7 @@ jobs:
           token: ${{secrets.GH_TOKEN}}
       - name: Prepare Release
         env:
-          GH_EMAIL: ${{ secrets.SuperSecret }}
+          GH_EMAIL: ${{ secrets.GH_EMAIL }}
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
         run: |
           git config --global user.email "${GH_EMAIL}"
