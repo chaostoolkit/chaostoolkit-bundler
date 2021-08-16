@@ -20,9 +20,11 @@ jobs:
         env:
           GH_EMAIL: ${{ secrets.GH_EMAIL }}
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
+          GH_TOKEN: ${{secrets.GH_TOKEN}}
         run: |
           git config --global user.email "${GH_EMAIL}"
           git config --global user.name "${GH_USERNAME}"
+          git remote set-url --push origin https://${GH_USERNAME}:${GH_TOKEN}@github.com/chaostoolkit/chaostoolkit-bundler
            
           pip3 install -U --quiet --prefer-binary pip semver requests
 
