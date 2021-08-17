@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          github_token: ${{secrets.GH_TOKEN}}
+          ssh-key: "${{secrets.CI_SSH_KEY}}"
           fetch-depth: '0'
           persist-credentials: true
       - name: Prepare Release
