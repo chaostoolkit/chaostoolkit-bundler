@@ -58,12 +58,12 @@ jobs:
             # echo "Pushing the new version and set of dependencies"
             echo ${CAL_VERSION} > VERSION
 
-            git checkout -b "ci-${CAL_VERSION}"
+            git checkout master
             git status
             git add VERSION
             git add requirements-chaostoolkit.txt
-            git commit -s -m "Prepare ci-${CAL_VERSION}"
-            git push -u origin "ci-${CAL_VERSION}"
+            git commit -s -m "Prepare ${CAL_VERSION} [skip ci]"
+            git push origin master
 
             echo "Tagging release"
             changes=`cat requirements-chaostoolkit.txt`
@@ -71,12 +71,6 @@ jobs:
             git push origin "${CAL_VERSION}"
 
             echo "Tag ${CAL_VERSION} pushed"
-
-            #cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
-            #git checkout master
-            #mv master-requirements-chaostoolkit.txt requirements-chaostoolkit.txt
-
-            #(git commit -s -m "Bump after release ${CAL_VERSION} [skip ci]" requirements-chaostoolkit.txt && git push -q origin master > /dev/null 2>&1) || true
           else
             echo "No changed since last release"
           fi
