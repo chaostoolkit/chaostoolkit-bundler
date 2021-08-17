@@ -1,12 +1,13 @@
 name: Release
 
 on:
-  create:
+  push:
     tags:
       - '*'
 
 jobs:
   build-macosx:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: macOS-latest
     steps:
       - name: Checkout
@@ -20,6 +21,7 @@ jobs:
           export CAL_VERSION=`cat VERSION`
           mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
   build-linux:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,6 +35,7 @@ jobs:
           export CAL_VERSION=`cat VERSION`
           mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${CAL_VERSION}
   release:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     needs: [build-macosx, build-linux]
     runs-on: ubuntu-latest
     steps:
