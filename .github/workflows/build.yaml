@@ -54,13 +54,11 @@ jobs:
             # Simplicity...
             export CAL_VERSION=`python3 get-next-version.py`
 
+            git checkout master
 
             # echo "Pushing the new version and set of dependencies"
             echo ${CAL_VERSION} > VERSION
 
-            git stash
-            git checkout master
-            git stash pop
             git status
             git add VERSION
             git add requirements-chaostoolkit.txt
