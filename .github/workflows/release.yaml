@@ -15,6 +15,7 @@ jobs:
         path: ~/dist
         key: chaostoolkit-bundler-pyinstaller-${{ hashFiles('**/requirements*.txt') }}
   build-macosx:
+    needs: prepare-cache
     runs-on: macOS-latest
     steps:
       - name: Checkout
@@ -28,6 +29,7 @@ jobs:
           export CAL_VERSION=`cat VERSION`
           mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
   build-linux:
+    needs: prepare-cache
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
