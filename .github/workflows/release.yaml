@@ -46,6 +46,8 @@ jobs:
     needs: [build-macosx, build-linux]
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
