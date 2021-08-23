@@ -18,7 +18,7 @@ jobs:
           export CHAOSTOOLKIT_PATH=`which chaos`
           pyinstaller chaos.spec
           export CAL_VERSION=`cat VERSION`
-          mv dist/chaos ~/dist/chaostoolkit-bundle_linux-amd64-${CAL_VERSION}
+          mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${CAL_VERSION}
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
@@ -41,7 +41,7 @@ jobs:
           export CHAOSTOOLKIT_PATH=`which chaos`
           pyinstaller chaos.spec
           export CAL_VERSION=`cat VERSION`
-          mv dist/chaos ~/dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
+          mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
       - name: Update Release
         uses: ncipollo/release-action@v1
         with:
