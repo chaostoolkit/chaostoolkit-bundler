@@ -23,7 +23,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          draft: true
+          draft: false
           prerelease: false
           fail_on_unmatched_files: true
           files: "dist/chaostoolkit-bundle*"
@@ -48,8 +48,6 @@ jobs:
       - name: Update Release
         uses: softprops/action-gh-release@v1
         with:
-          draft: false
-          prerelease: false
           fail_on_unmatched_files: true
           files: "dist/chaostoolkit-bundle*"
           token: ${{ secrets.GITHUB_TOKEN }}
