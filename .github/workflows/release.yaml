@@ -21,12 +21,13 @@ jobs:
           mv dist/chaos dist/chaostoolkit-bundle_linux-amd64-${CAL_VERSION}
           ls dist/
       - name: Create Release
-        uses: ncipollo/release-action@v1
+        uses: softprops/action-gh-release@v1
         with:
           draft: true
           prerelease: true
-          artifacts: "dist/chaostoolkit-bundle*"
-          bodyFile: "requirements-chaostoolkit.txt"
+          fail_on_unmatched_files: true
+          files: "dist/chaostoolkit-bundle*"
+          body_path: "requirements-chaostoolkit.txt"
           token: ${{ secrets.GITHUB_TOKEN }}
 
   release-macosx:
@@ -45,11 +46,8 @@ jobs:
           mv dist/chaos dist/chaostoolkit-bundle_darwin-amd64-${CAL_VERSION}
           ls dist/
       - name: Update Release
-        uses: ncipollo/release-action@v1
+        uses: softprops/action-gh-release@v1
         with:
-          draft: true
-          allowUpdates: true
-          prerelease: true
-          artifacts: "dist/chaostoolkit-bundle*"
-          bodyFile: "requirements-chaostoolkit.txt"
+          fail_on_unmatched_files: true
+          files: "dist/chaostoolkit-bundle*"
           token: ${{ secrets.GITHUB_TOKEN }}
