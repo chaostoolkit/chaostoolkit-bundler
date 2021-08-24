@@ -25,7 +25,7 @@ jobs:
         with:
           draft: true
           prerelease: true
-          artifacts: "dist/*"
+          artifacts: "dist/chaostoolkit-bundle*"
           bodyFile: "requirements-chaostoolkit.txt"
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -50,6 +50,6 @@ jobs:
           draft: true
           allowUpdates: true
           prerelease: true
-          artifacts: "dist/*"
+          artifacts: "dist/chaostoolkit-bundle*"
           bodyFile: "requirements-chaostoolkit.txt"
           token: ${{ secrets.GITHUB_TOKEN }}
