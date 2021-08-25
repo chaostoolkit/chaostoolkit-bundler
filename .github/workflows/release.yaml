@@ -23,8 +23,8 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
-          draft: false
-          prerelease: false
+          draft: true
+          prerelease: true
           artifacts: "dist/chaostoolkit-bundle*"
           bodyFile: "requirements-chaostoolkit.txt"
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -47,6 +47,11 @@ jobs:
       - name: Update Release
         uses: ncipollo/release-action@v1
         with:
+          draft: false
+          prerelease: false
           allowUpdates: true
+          omitBodyDuringUpdate: true
+          omitNameDuringUpdate: true
+          omitPrereleaseDuringUpdate: false
           artifacts: "dist/chaostoolkit-bundle*"
           token: ${{ secrets.GITHUB_TOKEN }}
