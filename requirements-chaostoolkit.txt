@@ -1,4 +1,4 @@
-chaostoolkit==1.9.2
+chaostoolkit==1.9.3
 chaostoolkit-aws==0.17.0
 chaostoolkit-azure==0.10.0
 chaostoolkit-cloud-foundry==0.7.1
@@ -10,4 +10,4 @@ chaostoolkit-lib==1.21.0
 chaostoolkit-prometheus==0.3.0
 chaostoolkit-slack==0.3.0
 chaostoolkit-spring==0.2.0
-chaostoolkit-toxiproxy==0.2.1
+chaostoolkit-toxiproxy==0.3.0
