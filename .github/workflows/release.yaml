@@ -64,11 +64,11 @@ jobs:
         run: pip3 install -U --prefer-binary -r requirements.txt -r requirements-chaostoolkit.txt
       - name: Build for Windows
         run: |
-          export CHAOSTOOLKIT_PATH=`which chaos`
+          for /f "delims=" %a in ('where chaos.exe') do @set CHAOSTOOLKIT_PATH=%a
           pyinstaller chaos.spec
-          export CAL_VERSION=`cat VERSION`
-          mv dist/chaos dist/chaostoolkit-bundle_windows-amd64-${CAL_VERSION}
-          ls dist/
+          for /f "delims=" %a in ('type VERSION') do @set CAL_VERSION=%a
+          mv dist/chaos dist/chaostoolkit-bundle_windows-amd64-%CAL_VERSION%
+          dir dist/
       - name: Update Release
         uses: ncipollo/release-action@v1
         with:
