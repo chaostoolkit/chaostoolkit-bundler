@@ -1,4 +1,5 @@
-# -*- mode: python -*-
+#-*- coding: utf-8 -*-
+#-*- mode: python -*-
 import os
 
 block_cipher = None

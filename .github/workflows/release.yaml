@@ -56,18 +56,20 @@ jobs:
 
   release-windows:
     needs: release-linux
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install dependencies
-        run: pip3 install -U --prefer-binary -r requirements.txt -r requirements-chaostoolkit.txt
+        run: |
+          pip3 install -U --prefer-binary wheel -r requirements.txt -r requirements-chaostoolkit.txt
       - name: Build for Windows
         run: |
-          for /f "delims=" %a in ('where chaos.exe') do @set CHAOSTOOLKIT_PATH=%a
+          $env:CHAOSTOOLKIT_PATH=$(python -c "import importlib;print(importlib.import_module('chaostoolkit.__main__').__file__)")
+          $env:CAL_VERSION=$(type VERSION)
+          $env:PYTHONUTF8=1
           pyinstaller chaos.spec
-          for /f "delims=" %a in ('type VERSION') do @set CAL_VERSION=%a
-          mv dist/chaos dist/chaostoolkit-bundle_windows-amd64-%CAL_VERSION%
+          Rename-Item -Path "dist/chaos.exe" -NewName "chaostoolkit-bundle_windows-amd64-$env:CAL_VERSION"
           dir dist/
       - name: Update Release
         uses: ncipollo/release-action@v1
