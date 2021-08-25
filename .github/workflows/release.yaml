@@ -23,8 +23,8 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
-          draft: true
-          prerelease: true
+          draft: false
+          prerelease: false
           artifacts: "dist/chaostoolkit-bundle*"
           bodyFile: "requirements-chaostoolkit.txt"
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -47,8 +47,31 @@ jobs:
       - name: Update Release
         uses: ncipollo/release-action@v1
         with:
-          draft: false
-          prerelease: false
+          allowUpdates: true
+          omitBodyDuringUpdate: true
+          omitNameDuringUpdate: true
+          omitPrereleaseDuringUpdate: false
+          artifacts: "dist/chaostoolkit-bundle*"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  release-windows:
+    needs: release-linux
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install dependencies
+        run: pip3 install -U --prefer-binary -r requirements.txt -r requirements-chaostoolkit.txt
+      - name: Build for Windows
+        run: |
+          export CHAOSTOOLKIT_PATH=`which chaos`
+          pyinstaller chaos.spec
+          export CAL_VERSION=`cat VERSION`
+          mv dist/chaos dist/chaostoolkit-bundle_windows-amd64-${CAL_VERSION}
+          ls dist/
+      - name: Update Release
+        uses: ncipollo/release-action@v1
+        with:
           allowUpdates: true
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true
