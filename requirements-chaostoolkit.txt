@@ -12,3 +12,4 @@ chaostoolkit-slack==0.3.0
 chaostoolkit-spring==0.2.0
 chaostoolkit-toxiproxy==0.3.0
 chaostoolkit-reliably==0.2.2
+chaostoolkit-addons==0.2.0
