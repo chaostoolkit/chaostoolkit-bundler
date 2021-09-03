@@ -23,7 +23,8 @@ a = Analysis([chaos_path],
                  'chaoscf',
                  'chaosgremlin',
                  'chaosslack',
-                 'chaostoxi'
+                 'chaostoxi',
+                 'chaosreliably'
              ],
              hookspath=['./hooks'],
              runtime_hooks=[],
