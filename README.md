@@ -1,7 +1,7 @@
 # Chaos Toolkit Bundler
 
 Bundle the Chaos Toolkit CLI and all the drivers/plugins into one
-standalone binary for Linux and MacOSX platforms.
+standalone binary for Linux, MacOSX and Windows platforms.
 
 ## Why do I need this bundle?
 
@@ -22,8 +22,7 @@ remains up-to-date.
 
 ## Usage
 
-Simply [download][] one of the binary for your platform (currently,
-only Linux and MacOSX are suppored, both for AMD64 architecture) and copy it
+Simply [download][] one of the binary for your platform and copy it
 into your `PATH`. Rename the file to `chaos` then make it executable with
 `chmod a+x chaos` and simply use it as you would use the
 [Chaos Toolkit][chaostoolkit].
@@ -83,24 +82,6 @@ CLI itself. But a generic indication of when this was released. Do not draw
 any semantic meaning from the version.
 
 [calver]: https://calver.org/
-
-### Trigger new build from another allowed project
-
-If you wish to trigger a new release of the bundler whenever your project has
-been tagged and released, please add the following call to your build file:
-
-```
-echo "Creating a new binary bundle of the toolkit and all known drivers/plugins"
-curl -s -X POST \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -H "Travis-API-Version: 3" \
-    -H "Authorization: token "$TRAVIS_CI_TOKEN"" \
-    -d '{"request": {"branch":"master", "message": "Rebuilding after new release"}}' \
-    https://api.travis-ci.org/repo/chaostoolkit%2Fchaostoolkit-bundler/requests
-```
-
-Note, only allows projects can perform this operation.
 
 ## Contribute
 
