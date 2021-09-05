@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install dependencies
-        run: pip3 install -U --prefer-binary -r requirements.txt -r requirements-chaostoolkit.txt
+        run: pip3 install -U --prefer-binary pyasn1-modules -r requirements.txt -r requirements-chaostoolkit.txt
       - name: Build for Linux
         run: |
           export CHAOSTOOLKIT_PATH=`which chaos`
