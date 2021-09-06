@@ -35,6 +35,18 @@ If your platform is not supported, please see other means of
 
 [install]: https://docs.chaostoolkit.org/reference/usage/install/
 
+### MacOS
+
+As we do not sign the binary, you will have to specifically allow the
+`chaos` binary to run (as well as `chmod +x`).
+
+There are two ways to do this: you can find the binary within `Finder`,
+right click it and select `Open`, then when the warning appears, select
+`Open` again.
+
+The other way is to run: `spctl --add chaos` which will add the `chaos`
+binary to allowed applications.
+
 ## Create a standalone bundle
 
 If you need to create a standalone bundle of the Chaos Toolkit with all its
