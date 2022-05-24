@@ -25,7 +25,8 @@ def get_finder() -> PackageFinder:
         SelectionPreferences(
             allow_yanked=False,
             allow_all_prereleases=True
-        )
+        ),
+        use_deprecated_html5lib=False,
     )
 
 
