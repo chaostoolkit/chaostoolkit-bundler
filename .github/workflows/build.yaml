@@ -45,6 +45,7 @@ jobs:
           if [[ -f "./has_changes.txt" ]]; then
               echo "Removing temporary files"
               rm has_changes.txt
+              git stash
               git checkout update-requirements.py
               rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
