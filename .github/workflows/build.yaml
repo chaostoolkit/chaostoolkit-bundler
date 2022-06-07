@@ -45,35 +45,30 @@ jobs:
           cp master-update-requirements.py update-requirements.py
           python3 update-requirements.py
 
-          if [[ -f "./has_changes.txt" ]]; then
-              echo "Removing temporary files"
-              rm has_changes.txt
-              git stash
-              git checkout update-requirements.py
-              rm master-requirements-chaostoolkit.txt master-update-requirements.py
+          echo "Removing temporary files"
+          git stash
+          git checkout update-requirements.py
+          rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
-              # today's version (suffixed if more than one per-day)
-              # potential race condition here when multiple concurrent builds
-              # let's assume it won't happen very often and we can fix it manually
-              # Simplicity...
-              export CAL_VERSION=`python3 get-next-version.py`
+          # today's version (suffixed if more than one per-day)
+          # potential race condition here when multiple concurrent builds
+          # let's assume it won't happen very often and we can fix it manually
+          # Simplicity...
+          export CAL_VERSION=`python3 get-next-version.py`
 
-              git checkout master
+          git checkout master
 
-              # echo "Pushing the new version and set of dependencies"
-              echo ${CAL_VERSION} > VERSION
+          # echo "Pushing the new version and set of dependencies"
+          echo ${CAL_VERSION} > VERSION
 
-              git status
-              git add VERSION
-              git add requirements-chaostoolkit.txt
-              git commit -s -m "Prepare ${CAL_VERSION}"
+          git status
+          git add VERSION
+          git add requirements-chaostoolkit.txt
+          git commit -s -m "Prepare ${CAL_VERSION}"
 
-              echo "Tagging release"
-              changes=`cat requirements-chaostoolkit.txt`
-              git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
-              git push --follow-tags origin "${CAL_VERSION}"
+          echo "Tagging release"
+          changes=`cat requirements-chaostoolkit.txt`
+          git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
+          git push --follow-tags origin "${CAL_VERSION}"
 
-              echo "Tag ${CAL_VERSION} pushed"
-          #else
-          #  echo "No changed since last release"
-          fi
+          echo "Tag ${CAL_VERSION} pushed"
