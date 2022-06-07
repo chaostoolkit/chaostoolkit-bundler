@@ -42,9 +42,9 @@ jobs:
           cp master-update-requirements.py update-requirements.py
           python3 update-requirements.py
 
-          #if [[ -f "./has_changes.txt" ]]; then
+          if [[ -f "./has_changes.txt" ]]; then
           echo "Removing temporary files"
-          #rm has_changes.txt
+          rm has_changes.txt
           git checkout update-requirements.py
           rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
