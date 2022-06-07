@@ -46,7 +46,6 @@ jobs:
           python3 update-requirements.py
 
           echo "Removing temporary files"
-          git stash
           git checkout update-requirements.py
           rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
