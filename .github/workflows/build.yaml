@@ -54,7 +54,7 @@ jobs:
           # Simplicity...
           export CAL_VERSION=`python3 get-next-version.py`
 
-          git stash requirements-chaostoolkit.txt
+          git stash push requirements-chaostoolkit.txt
           git checkout master
           git stash pop
 
