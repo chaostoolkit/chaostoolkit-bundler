@@ -6,4 +6,6 @@ hiddenimports = (
     collect_submodules('chaostracing')
 ) + (
     collect_submodules('opentelemetry')
+) + (
+    collect_submodules('opentelemetry.sdk')
 )
