@@ -45,7 +45,6 @@ jobs:
           python3 update-requirements.py
 
           echo "Removing temporary files"
-          git stash
           git checkout update-requirements.py
           rm master-requirements-chaostoolkit.txt master-update-requirements.py
 
@@ -55,7 +54,9 @@ jobs:
           # Simplicity...
           export CAL_VERSION=`python3 get-next-version.py`
 
+          git stash requirements-chaostoolkit.txt
           git checkout master
+          git stash pop
 
           # echo "Pushing the new version and set of dependencies"
           echo ${CAL_VERSION} > VERSION
