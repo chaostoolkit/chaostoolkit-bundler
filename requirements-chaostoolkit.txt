@@ -8,7 +8,7 @@ chaostoolkit-humio==0.5.1
 chaostoolkit-kubernetes==0.26.2
 chaostoolkit-lib==1.27.3
 chaostoolkit-prometheus==0.4.0
-chaostoolkit-slack==0.4.1
+chaostoolkit-slack==0.4.2
 chaostoolkit-spring==0.3.1
 chaostoolkit-toxiproxy==0.3.0
 chaostoolkit-reliably==0.8.1
