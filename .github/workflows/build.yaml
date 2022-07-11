@@ -56,7 +56,7 @@ jobs:
 
           rm -f has_changes.txt
           git stash push requirements-chaostoolkit.txt
-          git checkout master
+          git merge '@{u}'
           git stash pop || true
 
           # echo "Pushing the new version and set of dependencies"
