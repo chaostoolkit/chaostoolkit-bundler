@@ -1,14 +1,19 @@
 chaostoolkit==1.12.0
+<<<<<<< Updated upstream
 chaostoolkit-aws==0.19.0
 chaostoolkit-azure==0.10.0
+=======
+chaostoolkit-aws==0.20.0
+chaostoolkit-azure==0.11.0
+>>>>>>> Stashed changes
 chaostoolkit-cloud-foundry==0.7.1
 chaostoolkit-google-cloud-platform==0.3.0
 chaostoolkit-gremlin==0.3.0
 chaostoolkit-humio==0.5.1
 chaostoolkit-kubernetes==0.26.2
-chaostoolkit-lib==1.27.3
+chaostoolkit-lib==1.28.0
 chaostoolkit-prometheus==0.4.0
-chaostoolkit-slack==0.4.1
+chaostoolkit-slack==0.4.2
 chaostoolkit-spring==0.3.1
 chaostoolkit-toxiproxy==0.3.0
 chaostoolkit-reliably==0.8.1
