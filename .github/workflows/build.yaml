@@ -57,7 +57,7 @@ jobs:
           rm -f has_changes.txt
           git stash push requirements-chaostoolkit.txt
           git merge '@{u}'
-          git stash pop || true
+          git stash show -p | git apply && git stash drop || true
 
           # echo "Pushing the new version and set of dependencies"
           echo ${CAL_VERSION} > VERSION
