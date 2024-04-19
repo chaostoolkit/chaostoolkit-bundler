@@ -19,6 +19,7 @@ jobs:
         run: pdm install --prod -G chaostoolkit -G extra
       - name: Build for Linux
         run: |
+          $(pdm venv activate)
           export CHAOSTOOLKIT_PATH=`which chaos`
           pyinstaller chaos.spec
           export CAL_VERSION=`cat VERSION`
@@ -47,6 +48,7 @@ jobs:
         run: pdm install --prod -G chaostoolkit -G extra
       - name: Build for MacOSX
         run: |
+          $(pdm venv activate)
           export CHAOSTOOLKIT_PATH=`which chaos`
           pyinstaller chaos.spec
           export CAL_VERSION=`cat VERSION`
@@ -76,6 +78,7 @@ jobs:
         run: pdm install --prod -G chaostoolkit -G extra
       - name: Build for Windows
         run: |
+          Invoke-Expression (pdm venv activate)
           $env:CHAOSTOOLKIT_PATH=$(python -c "import importlib;print(importlib.import_module('chaostoolkit.__main__').__file__)")
           $env:CAL_VERSION=$(type VERSION)
           $env:PYTHONUTF8=1
