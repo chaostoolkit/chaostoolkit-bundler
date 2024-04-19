@@ -1,0 +1,56 @@
+[project]
+name = "chaostoolkit-bundler"
+version = "2021.08.25"
+description = "Default template for PDM package"
+authors = [
+    {name = "Sylvain Hellegouarch", email = "sh@defuze.org"},
+]
+dependencies = [
+    "pyasn1-modules>=0.4.0",
+    "semver>=3.0.2",
+    "requests>=2.31.0",
+    "pyinstaller>=6.6",
+]
+requires-python = ">=3.8,<3.13"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+
+
+[project.optional-dependencies]
+chaostoolkit = [
+    "chaostoolkit>=1.19.0",
+    "chaostoolkit-aws>=0.33.0",
+    "chaostoolkit-azure>=0.17.0",
+    "chaostoolkit-cloud-foundry>=0.7.3",
+    "chaostoolkit-google-cloud-platform>=0.23.0",
+    "chaostoolkit-gremlin>=0.3.0",
+    "chaostoolkit-humio>=0.6.0",
+    "chaostoolkit-kubernetes>=0.38.2",
+    "chaostoolkit-lib>=1.42.1",
+    "chaostoolkit-prometheus>=0.6.0",
+    "chaostoolkit-slack>=0.10.0",
+    "chaostoolkit-spring>=0.3.2",
+    "chaostoolkit-toxiproxy>=0.3.1",
+    "chaostoolkit-addons>=0.11.0",
+    "chaostoolkit-opentracing>=0.17.0",
+]
+extra = [
+    "opentracing>=2.4.0",
+    "opentelemetry-api>=1.24.0",
+    "opentelemetry-sdk>=1.24.0",
+    "opentelemetry-semantic-conventions>=0.45b0",
+    "opentelemetry-exporter-otlp-proto-http>=1.24.0",
+    "opentelemetry-instrumentation-httpx>=0.45b0",
+    "opentelemetry-instrumentation-requests>=0.45b0",
+    "opentelemetry-instrumentation-botocore>=0.45b0",
+    "opentelemetry-exporter-gcp-trace>=1.6.0",
+    "opentelemetry-resourcedetector-gcp>=1.6.0a0",
+    "opentelemetry-propagator-gcp>=1.6.0",
+    "opentelemetry-exporter-prometheus>=0.45b0",
+    "opentelemetry-propagator-b3>=1.24.0",
+    "opentelemetry-sdk-extension-aws>=2.0.1",
+    "opentelemetry-propagator-aws-xray>=1.0.1",
+    "opentelemetry-instrumentation-urllib3>=0.45b0",
+]
+[tool.pdm]
+distribution = false

@@ -104,3 +104,6 @@ venv.bak/
 .mypy_cache/
 
 !chaos.spec
+
+# pdm
+.pdm-python

@@ -12,11 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ssh-key: "${{secrets.CI_SSH_KEY}}"
           fetch-depth: '0'
           persist-credentials: true
+      - name: Set up PDM
+        uses: pdm-project/setup-pdm@v4
+        with:
+          python-version: "3.8"
       - name: Prepare Release
         env:
           GH_EMAIL: ${{ secrets.GH_EMAIL }}
@@ -25,14 +29,7 @@ jobs:
           git config --global user.email "${GH_EMAIL}"
           git config --global user.name "${GH_USERNAME}"
 
-          pip3 install -U --quiet --prefer-binary pip semver requests
-
           echo "Creating a new tag if needed"
-
-          # keep track of any change in dependencies we must not carry around in the
-          # next tag
-          cp requirements-chaostoolkit.txt master-requirements-chaostoolkit.txt
-          cp update-requirements.py master-update-requirements.py
 
           # moving to the latest tag (if one found)
           latest_tag=$(git describe --tags `git rev-list --tags --max-count=1`)
@@ -41,12 +38,7 @@ jobs:
           fi
           echo "Latest tag was: ${latest_tag}"
 
-          cp master-update-requirements.py update-requirements.py
-          python3 update-requirements.py
-
-          echo "Removing temporary files"
-          git checkout update-requirements.py
-          rm master-requirements-chaostoolkit.txt master-update-requirements.py
+          pdm update --update-eager
 
           # today's version (suffixed if more than one per-day)
           # potential race condition here when multiple concurrent builds
@@ -54,22 +46,16 @@ jobs:
           # Simplicity...
           export CAL_VERSION=`python3 get-next-version.py`
 
-          rm -f has_changes.txt
-          git stash push requirements-chaostoolkit.txt
-          git checkout stash -- .
-          #git stash show -p | git apply && git stash drop || true
-
           # echo "Pushing the new version and set of dependencies"
           echo ${CAL_VERSION} > VERSION
 
           git status
           git add VERSION
-          git add requirements-chaostoolkit.txt
+          git add pdm.lock
           git commit -s -m "Prepare ${CAL_VERSION}"
 
           echo "Tagging release"
-          changes=`cat requirements-chaostoolkit.txt`
-          git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\nContains:\n${changes}")"
+          git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\n")"
           git push --follow-tags origin "${CAL_VERSION}"
 
           echo "Tag ${CAL_VERSION} pushed"

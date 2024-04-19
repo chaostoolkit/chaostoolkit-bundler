@@ -1,4 +1,0 @@
-pyinstaller
-requests
-semver
-pyasn1-modules

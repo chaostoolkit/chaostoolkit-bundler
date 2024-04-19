@@ -10,9 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4
+      - name: Set up PDM
+        uses: pdm-project/setup-pdm@v4
+        with:
+          python-version: "3.11"
       - name: Install dependencies
-        run: pip3 install -U --prefer-binary pyasn1-modules -r requirements.txt -r requirements-extra.txt -r requirements-chaostoolkit.txt
+        run: pdm install --prod -G chaostoolkit -G extra
       - name: Build for Linux
         run: |
           export CHAOSTOOLKIT_PATH=`which chaos`
@@ -34,9 +38,13 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4
+      - name: Set up PDM
+        uses: pdm-project/setup-pdm@v4
+        with:
+          python-version: "3.11"
       - name: Install dependencies
-        run: pip3 install -U --prefer-binary -r requirements.txt -r requirements-extra.txt -r requirements-chaostoolkit.txt
+        run: pdm install --prod -G chaostoolkit -G extra
       - name: Build for MacOSX
         run: |
           export CHAOSTOOLKIT_PATH=`which chaos`
@@ -59,10 +67,13 @@ jobs:
     runs-on: windows-2022
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4
+      - name: Set up PDM
+        uses: pdm-project/setup-pdm@v4
+        with:
+          python-version: "3.11"
       - name: Install dependencies
-        run: |
-          pip3 install -U --prefer-binary wheel -r requirements.txt -r requirements-extra.txt -r requirements-chaostoolkit.txt
+        run: pdm install --prod -G chaostoolkit -G extra
       - name: Build for Windows
         run: |
           $env:CHAOSTOOLKIT_PATH=$(python -c "import importlib;print(importlib.import_module('chaostoolkit.__main__').__file__)")
