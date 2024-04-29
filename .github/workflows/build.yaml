@@ -44,6 +44,7 @@ jobs:
           git status
           git add VERSION pdm.lock
           git commit -s -m "Prepare ${CAL_VERSION}"
+          git push
 
           echo "Tagging release"
           git tag -a ${CAL_VERSION} -m "$(printf "Release ${CAL_VERSION}\n\n")"
