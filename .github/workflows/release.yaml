@@ -20,6 +20,7 @@ jobs:
       - name: Build for Linux
         run: |
           $(pdm venv activate)
+          pdm export  -f requirements --no-markers --no-hashes -G chaostoolkit --no-default --pyproject -o requirements-chaostoolkit.txt
           export CHAOSTOOLKIT_PATH=`which chaos`
           pyinstaller chaos.spec
           export CAL_VERSION=`cat VERSION`
