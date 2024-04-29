@@ -45,7 +45,7 @@ jobs:
           echo "Committing current changes"
           git status
           git add VERSION pdm.lock
-          git commit -s -m "Prepare ${CAL_VERSION}"
+          git commit -s -m "Prepare ${CAL_VERSION} [no ci]"
           git push
 
           echo "Tagging release"
