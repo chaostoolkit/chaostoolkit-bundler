@@ -33,11 +33,14 @@ jobs:
           pdm init -n
           pdm update --update-eager
 
+          # directory created by pdm init but that we don't need
+          rm -rf src/
+
           echo "Updating version"
           export CAL_VERSION=`python3 get-next-version.py`
           echo ${CAL_VERSION} > VERSION
 
-          echo "Comitting current changes"
+          echo "Committing current changes"
           git status
           git add VERSION pdm.lock
           git commit -s -m "Prepare ${CAL_VERSION}"
