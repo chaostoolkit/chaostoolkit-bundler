@@ -2,6 +2,8 @@ name: Build and Tag
 
 on:
   push:
+    tags-ignore:
+      - '*'
     branches:
       - master
   workflow_dispatch:
