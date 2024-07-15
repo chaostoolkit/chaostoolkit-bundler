@@ -300,23 +300,23 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.34.140"
+version = "1.34.144"
 requires_python = ">=3.8"
 summary = "The AWS SDK for Python"
 groups = ["chaostoolkit"]
 dependencies = [
-    "botocore<1.35.0,>=1.34.140",
+    "botocore<1.35.0,>=1.34.144",
     "jmespath<2.0.0,>=0.7.1",
     "s3transfer<0.11.0,>=0.10.0",
 ]
 files = [
-    {file = "boto3-1.34.140-py3-none-any.whl", hash = "sha256:23ca8d8f7a30c3bbd989808056b5fc5d68ff5121c02c722c6167b6b1bb7f8726"},
-    {file = "boto3-1.34.140.tar.gz", hash = "sha256:578bbd5e356005719b6b610d03edff7ea1b0824d078afe62d3fb8bea72f83a87"},
+    {file = "boto3-1.34.144-py3-none-any.whl", hash = "sha256:b8433d481d50b68a0162c0379c0dd4aabfc3d1ad901800beb5b87815997511c1"},
+    {file = "boto3-1.34.144.tar.gz", hash = "sha256:2f3e88b10b8fcc5f6100a9d74cd28230edc9d4fa226d99dd40a3ab38ac213673"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.34.140"
+version = "1.34.144"
 requires_python = ">=3.8"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["chaostoolkit"]
@@ -326,8 +326,8 @@ dependencies = [
     "urllib3!=2.2.0,<3,>=1.25.4; python_version >= \"3.10\"",
 ]
 files = [
-    {file = "botocore-1.34.140-py3-none-any.whl", hash = "sha256:43940d3a67d946ba3301631ba4078476a75f1015d4fb0fb0272d0b754b2cf9de"},
-    {file = "botocore-1.34.140.tar.gz", hash = "sha256:86302b2226c743b9eec7915a4c6cfaffd338ae03989cd9ee181078ef39d1ab39"},
+    {file = "botocore-1.34.144-py3-none-any.whl", hash = "sha256:a2cf26e1bf10d5917a2285e50257bc44e94a1d16574f282f3274f7a5d8d1f08b"},
+    {file = "botocore-1.34.144.tar.gz", hash = "sha256:4215db28d25309d59c99507f1f77df9089e5bebbad35f6e19c7c44ec5383a3e8"},
 ]
 
 [[package]]
@@ -869,7 +869,7 @@ files = [
 
 [[package]]
 name = "google-api-python-client"
-version = "2.136.0"
+version = "2.137.0"
 requires_python = ">=3.7"
 summary = "Google API Client Library for Python"
 groups = ["chaostoolkit"]
@@ -881,13 +881,13 @@ dependencies = [
     "uritemplate<5,>=3.0.1",
 ]
 files = [
-    {file = "google-api-python-client-2.136.0.tar.gz", hash = "sha256:161c722c8864e7ed39393e2b7eea76ef4e1c933a6a59f9d7c70409b6635f225d"},
-    {file = "google_api_python_client-2.136.0-py2.py3-none-any.whl", hash = "sha256:5a554c8b5edf0a609b905d89d7ced82e8f6ac31da1e4d8d5684ef63dbc0e49f5"},
+    {file = "google_api_python_client-2.137.0-py2.py3-none-any.whl", hash = "sha256:a8b5c5724885e5be9f5368739aa0ccf416627da4ebd914b410a090c18f84d692"},
+    {file = "google_api_python_client-2.137.0.tar.gz", hash = "sha256:e739cb74aac8258b1886cb853b0722d47c81fe07ad649d7f2206f06530513c04"},
 ]
 
 [[package]]
 name = "google-auth"
-version = "2.31.0"
+version = "2.32.0"
 requires_python = ">=3.7"
 summary = "Google Authentication Library"
 groups = ["chaostoolkit", "extra"]
@@ -897,8 +897,8 @@ dependencies = [
     "rsa<5,>=3.1.4",
 ]
 files = [
-    {file = "google-auth-2.31.0.tar.gz", hash = "sha256:87805c36970047247c8afe614d4e3af8eceafc1ebba0c679fe75ddd1d575e871"},
-    {file = "google_auth-2.31.0-py2.py3-none-any.whl", hash = "sha256:042c4702efa9f7d3c48d3a69341c209381b125faa6dbf3ebe56bc7e40ae05c23"},
+    {file = "google_auth-2.32.0-py2.py3-none-any.whl", hash = "sha256:53326ea2ebec768070a94bee4e1b9194c9646ea0c2bd72422785bd0f9abfad7b"},
+    {file = "google_auth-2.32.0.tar.gz", hash = "sha256:49315be72c55a6a37d62819e3573f6b416aca00721f7e3e31a008d928bf64022"},
 ]
 
 [[package]]
@@ -917,7 +917,7 @@ files = [
 
 [[package]]
 name = "google-cloud-appengine-logging"
-version = "1.4.3"
+version = "1.4.4"
 requires_python = ">=3.7"
 summary = "Google Cloud Appengine Logging API client library"
 groups = ["chaostoolkit"]
@@ -925,16 +925,16 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-appengine-logging-1.4.3.tar.gz", hash = "sha256:fb504e6199fe8de85baa9d31cecf6776877851fe58867de603317ec7cc739987"},
-    {file = "google_cloud_appengine_logging-1.4.3-py2.py3-none-any.whl", hash = "sha256:8e30af51d853f219caf29e8b8b342b9ce8214b29f334dafae38d39aaaff7d372"},
+    {file = "google-cloud-appengine-logging-1.4.4.tar.gz", hash = "sha256:8b4427f06fba669a959fd54c8da63560ff4cf2f8e2c158c20d5479b088904795"},
+    {file = "google_cloud_appengine_logging-1.4.4-py2.py3-none-any.whl", hash = "sha256:bb1f776211d7902213fec2ed6e9080166ac9966494eb61c6543b681084530230"},
 ]
 
 [[package]]
 name = "google-cloud-artifact-registry"
-version = "1.11.3"
+version = "1.11.4"
 requires_python = ">=3.7"
 summary = "Google Cloud Artifact Registry API client library"
 groups = ["chaostoolkit"]
@@ -943,11 +943,11 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-artifact-registry-1.11.3.tar.gz", hash = "sha256:c2c49e15bb591d65dea22c82da55148c5134f71919baef8eb4d35be1d1cb20cd"},
-    {file = "google_cloud_artifact_registry-1.11.3-py2.py3-none-any.whl", hash = "sha256:8337161ecb918e389dfa3858ec133572c21eabd564404c3c5a7125af1e85c3a9"},
+    {file = "google-cloud-artifact-registry-1.11.4.tar.gz", hash = "sha256:45fd640be5d215c89731e6762e3764a90d0061067471d3764ef71c1af3978249"},
+    {file = "google_cloud_artifact_registry-1.11.4-py2.py3-none-any.whl", hash = "sha256:ca95d7662b3f26b0e6dcb3efb95a171e102a3c7637b2cdb22996a410957b9349"},
 ]
 
 [[package]]
@@ -967,7 +967,7 @@ files = [
 
 [[package]]
 name = "google-cloud-compute"
-version = "1.19.0"
+version = "1.19.1"
 requires_python = ">=3.7"
 summary = "Google Cloud Compute API client library"
 groups = ["chaostoolkit"]
@@ -975,16 +975,16 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-compute-1.19.0.tar.gz", hash = "sha256:a07b3408b3f77786dcb196669ff3767bc51080718a7c2d3fd779defc8d817b4d"},
-    {file = "google_cloud_compute-1.19.0-py2.py3-none-any.whl", hash = "sha256:48d5582dd257fc817113556ab40990ec7a50fb6b2e341bc8a55ef90e2e66501d"},
+    {file = "google-cloud-compute-1.19.1.tar.gz", hash = "sha256:6b4a5b86c2cbbcda5dd90f4e338c5103f3e84604ecfb002d4ecb3a0c5d41531b"},
+    {file = "google_cloud_compute-1.19.1-py2.py3-none-any.whl", hash = "sha256:9744c6b393a8b41d972e163d2f780a6c24c8bc706d091dfc60a7b6013de49e87"},
 ]
 
 [[package]]
 name = "google-cloud-container"
-version = "2.47.0"
+version = "2.49.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Container API client library"
 groups = ["chaostoolkit"]
@@ -992,16 +992,16 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-container-2.47.0.tar.gz", hash = "sha256:b6fcce293bb69f96fd243a3d109c38f0152b26e3b0391f492ba3d0ca2e381df2"},
-    {file = "google_cloud_container-2.47.0-py2.py3-none-any.whl", hash = "sha256:327e7b3ff68dbaca367c1840e8c2b0fc8a3d922264faf96dd0233c98785ee42a"},
+    {file = "google-cloud-container-2.49.0.tar.gz", hash = "sha256:1c1645279a14552d4f212fd6066e17b7f0f44be386b8cee0578de622737c2eff"},
+    {file = "google_cloud_container-2.49.0-py2.py3-none-any.whl", hash = "sha256:6dc147254100f715645ebaab1f2f20b9257a99b02f34b4f25b4571819a074352"},
 ]
 
 [[package]]
 name = "google-cloud-containeranalysis"
-version = "2.14.3"
+version = "2.14.4"
 requires_python = ">=3.7"
 summary = "Google Cloud Containeranalysis API client library"
 groups = ["chaostoolkit"]
@@ -1011,11 +1011,11 @@ dependencies = [
     "grafeas<2.0dev,>=1.4.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-containeranalysis-2.14.3.tar.gz", hash = "sha256:d551844a92326ad54d78d34b5a6c1fcba20e3ed48ed6826846e01d3a860ade4c"},
-    {file = "google_cloud_containeranalysis-2.14.3-py2.py3-none-any.whl", hash = "sha256:379fbdd517eb9c4f42b2a7d1d76ca98719fe860f9f9231589178f0c2ba1e6466"},
+    {file = "google-cloud-containeranalysis-2.14.4.tar.gz", hash = "sha256:4bcd80411d3283ca7607ac091d4a9b76d4acd027902e801c642683c28d7b62ca"},
+    {file = "google_cloud_containeranalysis-2.14.4-py2.py3-none-any.whl", hash = "sha256:266728f64213ebe96658d29ed83e981b89866c5d5b4779a840ec912b2465d3f6"},
 ]
 
 [[package]]
@@ -1057,7 +1057,7 @@ files = [
 
 [[package]]
 name = "google-cloud-monitoring"
-version = "2.22.0"
+version = "2.22.1"
 requires_python = ">=3.7"
 summary = "Google Cloud Monitoring API client library"
 groups = ["chaostoolkit"]
@@ -1065,16 +1065,16 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-monitoring-2.22.0.tar.gz", hash = "sha256:494696e1788c55ef5b2fad464813fdd9f59117fc28819b7d9d27a1873d7b7fad"},
-    {file = "google_cloud_monitoring-2.22.0-py2.py3-none-any.whl", hash = "sha256:ae22c2e0f0229e99705a80f9682b1a30a89c13c934212850d7c621b44e2b7c90"},
+    {file = "google-cloud-monitoring-2.22.1.tar.gz", hash = "sha256:db17b15af8d47da0cf8fb0e365faafbcd11f9aa62781ce048c29988808b3dc7d"},
+    {file = "google_cloud_monitoring-2.22.1-py2.py3-none-any.whl", hash = "sha256:cae904d5fd2fc4af02014a10866061faba5848efddc173d853e5343dc054fa47"},
 ]
 
 [[package]]
 name = "google-cloud-network-connectivity"
-version = "2.4.3"
+version = "2.4.4"
 requires_python = ">=3.7"
 summary = "Google Cloud Network Connectivity API client library"
 groups = ["chaostoolkit"]
@@ -1083,16 +1083,16 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-network-connectivity-2.4.3.tar.gz", hash = "sha256:d5fb763723fef1824f657c04be508eaa0b87132a53850ee2c1a3d7c8f5cb873e"},
-    {file = "google_cloud_network_connectivity-2.4.3-py2.py3-none-any.whl", hash = "sha256:7fd2b34e146fbac864ce254df67315eb1c7eb749a76ceec61f1ef8bfa2f703a4"},
+    {file = "google-cloud-network-connectivity-2.4.4.tar.gz", hash = "sha256:61592df57539a19d30a4f769c553e7340f41addc4e9443e0d7c4242673ae0f74"},
+    {file = "google_cloud_network_connectivity-2.4.4-py2.py3-none-any.whl", hash = "sha256:566255745143e41f16df9a1607766eaa9126b3b2907e90de7f28f4a7f1961138"},
 ]
 
 [[package]]
 name = "google-cloud-run"
-version = "0.10.5"
+version = "0.10.7"
 requires_python = ">=3.7"
 summary = "Google Cloud Run API client library"
 groups = ["chaostoolkit"]
@@ -1101,11 +1101,11 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-run-0.10.5.tar.gz", hash = "sha256:d6c546693ad1232794b75c617871f2e46283c0cd0c4cc3886b85b8f0a3ba575f"},
-    {file = "google_cloud_run-0.10.5-py2.py3-none-any.whl", hash = "sha256:0f68125f13d1a87f74e1e78c37fa6afb4b094d76dad2b9f951d5526648e8939c"},
+    {file = "google-cloud-run-0.10.7.tar.gz", hash = "sha256:0bedd03eb36f185ab9abfc6d2bd22d9fc75f25acabcde75d5b4b1a050e14e336"},
+    {file = "google_cloud_run-0.10.7-py2.py3-none-any.whl", hash = "sha256:2501d9dfd1e88f8f8c474e7432e31b0056be2ab64a876a6857ae7ac1c62cec48"},
 ]
 
 [[package]]
@@ -1129,7 +1129,7 @@ files = [
 
 [[package]]
 name = "google-cloud-trace"
-version = "1.13.3"
+version = "1.13.4"
 requires_python = ">=3.7"
 summary = "Google Cloud Trace API client library"
 groups = ["chaostoolkit", "extra"]
@@ -1137,11 +1137,11 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google-cloud-trace-1.13.3.tar.gz", hash = "sha256:36ac2e33de0db017ffd2f63d8d64dcb75be9113ccfa4de4962f4737efd6cac80"},
-    {file = "google_cloud_trace-1.13.3-py2.py3-none-any.whl", hash = "sha256:20b47e4514721c57360d4ac12d07c3dc025eb0cd0c13c85d91bde5d6e8ec60a4"},
+    {file = "google-cloud-trace-1.13.4.tar.gz", hash = "sha256:c023bcc92a03da202c034c9db50922eb9cb0d6ab5e0079f511414b161574a9d4"},
+    {file = "google_cloud_trace-1.13.4-py2.py3-none-any.whl", hash = "sha256:2ace0eb460bc3b3c3da0e1525c2fea624c1f9fbce8e6e45828c7eb800f1eed97"},
 ]
 
 [[package]]
@@ -1225,7 +1225,7 @@ files = [
 
 [[package]]
 name = "grafeas"
-version = "1.10.0"
+version = "1.10.1"
 requires_python = ">=3.7"
 summary = "Grafeas API client library"
 groups = ["chaostoolkit"]
@@ -1233,11 +1233,11 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
-    "protobuf!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.19.5",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "grafeas-1.10.0-py2.py3-none-any.whl", hash = "sha256:fb66dadec816d8c9153f5daa7da56624a419daff2e6c53354e31b1e0ed2c13b3"},
-    {file = "grafeas-1.10.0.tar.gz", hash = "sha256:7f7809e52cb60ce9ce82f3a951c11f4c196232d52ca3e002cda9f1a8b73f351e"},
+    {file = "grafeas-1.10.1-py2.py3-none-any.whl", hash = "sha256:9ed4bf7ae53b1d656c5fd45e1a01bd42a3c08fd79adb533ac3684457776bd538"},
+    {file = "grafeas-1.10.1.tar.gz", hash = "sha256:c6c9271319614912fbc9c1148bd01d0eae6a7119ded03c08f1406f2b24cb617d"},
 ]
 
 [[package]]
@@ -1307,13 +1307,13 @@ files = [
 
 [[package]]
 name = "humanize"
-version = "4.9.0"
+version = "4.10.0"
 requires_python = ">=3.8"
 summary = "Python humanize utilities"
 groups = ["chaostoolkit"]
 files = [
-    {file = "humanize-4.9.0-py3-none-any.whl", hash = "sha256:ce284a76d5b1377fd8836733b983bfb0b76f1aa1c090de2566fcf008d7f6ab16"},
-    {file = "humanize-4.9.0.tar.gz", hash = "sha256:582a265c931c683a7e9b8ed9559089dea7edcf6cc95be39a3cbc2c5d5ac2bcfa"},
+    {file = "humanize-4.10.0-py3-none-any.whl", hash = "sha256:39e7ccb96923e732b5c2e27aeaa3b10a8dfeeba3eb965ba7b74a3eb0e30040a6"},
+    {file = "humanize-4.10.0.tar.gz", hash = "sha256:06b6eb0293e4b85e8d385397c5868926820db32b9b654b932f57fa41c23c9978"},
 ]
 
 [[package]]
@@ -1915,7 +1915,7 @@ files = [
 
 [[package]]
 name = "portalocker"
-version = "2.10.0"
+version = "2.10.1"
 requires_python = ">=3.8"
 summary = "Wraps the portalocker recipe for easy usage"
 groups = ["chaostoolkit"]
@@ -1923,8 +1923,8 @@ dependencies = [
     "pywin32>=226; platform_system == \"Windows\"",
 ]
 files = [
-    {file = "portalocker-2.10.0-py3-none-any.whl", hash = "sha256:48944147b2cd42520549bc1bb8fe44e220296e56f7c3d551bc6ecce69d9b0de1"},
-    {file = "portalocker-2.10.0.tar.gz", hash = "sha256:49de8bc0a2f68ca98bf9e219c81a3e6b27097c7bf505a87c5a112ce1aaeb9b81"},
+    {file = "portalocker-2.10.1-py3-none-any.whl", hash = "sha256:53a5984ebc86a025552264b459b46a2086e269b21823cb572f8f28ee759e45bf"},
+    {file = "portalocker-2.10.1.tar.gz", hash = "sha256:ef1bf844e878ab08aee7e40184156e1151f228f103aa5c6bd0724cc330960f8f"},
 ]
 
 [[package]]
@@ -2289,13 +2289,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "70.2.0"
+version = "70.3.0"
 requires_python = ">=3.8"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["chaostoolkit", "default", "extra"]
 files = [
-    {file = "setuptools-70.2.0-py3-none-any.whl", hash = "sha256:b8b8060bb426838fbe942479c90296ce976249451118ef566a5a0b7d8b78fb05"},
-    {file = "setuptools-70.2.0.tar.gz", hash = "sha256:bd63e505105011b25c3c11f753f7e3b8465ea739efddaccef8f0efac2137bac1"},
+    {file = "setuptools-70.3.0-py3-none-any.whl", hash = "sha256:fe384da74336c398e0d956d1cae0669bc02eed936cdb1d49b57de1990dc11ffc"},
+    {file = "setuptools-70.3.0.tar.gz", hash = "sha256:f171bab1dfbc86b132997f26a119f6056a57950d058587841a0082e8830f9dc5"},
 ]
 
 [[package]]
