@@ -229,7 +229,7 @@ files = [
 
 [[package]]
 name = "azure-mgmt-netapp"
-version = "13.2.0"
+version = "13.3.0"
 requires_python = ">=3.8"
 summary = "Microsoft Azure NetApp Files Management Client Library for Python"
 groups = ["chaostoolkit"]
@@ -240,8 +240,8 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure-mgmt-netapp-13.2.0.tar.gz", hash = "sha256:df5c33cc3790aecd3800bf10b33d39d1163f02596f5f0cbef0d83e41b522863a"},
-    {file = "azure_mgmt_netapp-13.2.0-py3-none-any.whl", hash = "sha256:3241c66f4de73da02460220f495a86819b900ee81d1ef187e58a6802975afc77"},
+    {file = "azure_mgmt_netapp-13.3.0-py3-none-any.whl", hash = "sha256:3d4c9e65e6500d0d446f2bcdc3dcb84b672bc8232974e06e747c7eca2409afa4"},
+    {file = "azure_mgmt_netapp-13.3.0.tar.gz", hash = "sha256:3741679e2830eac9393360b1f53d82b4c01ed12eb858def7b21ba49163248849"},
 ]
 
 [[package]]
@@ -328,23 +328,23 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.35.44"
+version = "1.35.49"
 requires_python = ">=3.8"
 summary = "The AWS SDK for Python"
 groups = ["chaostoolkit"]
 dependencies = [
-    "botocore<1.36.0,>=1.35.44",
+    "botocore<1.36.0,>=1.35.49",
     "jmespath<2.0.0,>=0.7.1",
     "s3transfer<0.11.0,>=0.10.0",
 ]
 files = [
-    {file = "boto3-1.35.44-py3-none-any.whl", hash = "sha256:18416d07b41e6094101a44f8b881047dcec6b846dad0b9f83b9bbf2f0cd93d07"},
-    {file = "boto3-1.35.44.tar.gz", hash = "sha256:7f8e8a252458d584d8cf7877c372c4f74ec103356eedf43d2dd9e479f47f3639"},
+    {file = "boto3-1.35.49-py3-none-any.whl", hash = "sha256:b660c649a27a6b47a34f6f858f5bd7c3b0a798a16dec8dda7cbebeee80fd1f60"},
+    {file = "boto3-1.35.49.tar.gz", hash = "sha256:ddecb27f5699ca9f97711c52b6c0652c2e63bf6c2bfbc13b819b4f523b4d30ff"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.35.44"
+version = "1.35.49"
 requires_python = ">=3.8"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["chaostoolkit"]
@@ -355,8 +355,8 @@ dependencies = [
     "urllib3<1.27,>=1.25.4; python_version < \"3.10\"",
 ]
 files = [
-    {file = "botocore-1.35.44-py3-none-any.whl", hash = "sha256:55388e80624401d017a9a2b8109afd94814f7e666b53e28fce51375cfa8d9326"},
-    {file = "botocore-1.35.44.tar.gz", hash = "sha256:1fcd97b966ad8a88de4106fe1bd3bbd6d8dadabe99bbd4a6aadcf11cb6c66b39"},
+    {file = "botocore-1.35.49-py3-none-any.whl", hash = "sha256:aed4d3643afd702920792b68fbe712a8c3847993820d1048cd238a6469354da1"},
+    {file = "botocore-1.35.49.tar.gz", hash = "sha256:07d0c1325fdbfa49a4a054413dbdeab0a6030449b2aa66099241af2dac48afd8"},
 ]
 
 [[package]]
@@ -836,28 +836,28 @@ files = [
 
 [[package]]
 name = "frozenlist"
-version = "1.4.1"
+version = "1.5.0"
 requires_python = ">=3.8"
 summary = "A list-like structure which implements collections.abc.MutableSequence"
 groups = ["chaostoolkit"]
 files = [
-    {file = "frozenlist-1.4.1-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:a0cb6f11204443f27a1628b0e460f37fb30f624be6051d490fa7d7e26d4af3d0"},
-    {file = "frozenlist-1.4.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:b46c8ae3a8f1f41a0d2ef350c0b6e65822d80772fe46b653ab6b6274f61d4a49"},
-    {file = "frozenlist-1.4.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:fde5bd59ab5357e3853313127f4d3565fc7dad314a74d7b5d43c22c6a5ed2ced"},
-    {file = "frozenlist-1.4.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:722e1124aec435320ae01ee3ac7bec11a5d47f25d0ed6328f2273d287bc3abb0"},
-    {file = "frozenlist-1.4.1-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:2471c201b70d58a0f0c1f91261542a03d9a5e088ed3dc6c160d614c01649c106"},
-    {file = "frozenlist-1.4.1-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:c757a9dd70d72b076d6f68efdbb9bc943665ae954dad2801b874c8c69e185068"},
-    {file = "frozenlist-1.4.1-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:f146e0911cb2f1da549fc58fc7bcd2b836a44b79ef871980d605ec392ff6b0d2"},
-    {file = "frozenlist-1.4.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4f9c515e7914626b2a2e1e311794b4c35720a0be87af52b79ff8e1429fc25f19"},
-    {file = "frozenlist-1.4.1-cp311-cp311-musllinux_1_1_aarch64.whl", hash = "sha256:c302220494f5c1ebeb0912ea782bcd5e2f8308037b3c7553fad0e48ebad6ad82"},
-    {file = "frozenlist-1.4.1-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:442acde1e068288a4ba7acfe05f5f343e19fac87bfc96d89eb886b0363e977ec"},
-    {file = "frozenlist-1.4.1-cp311-cp311-musllinux_1_1_ppc64le.whl", hash = "sha256:1b280e6507ea8a4fa0c0a7150b4e526a8d113989e28eaaef946cc77ffd7efc0a"},
-    {file = "frozenlist-1.4.1-cp311-cp311-musllinux_1_1_s390x.whl", hash = "sha256:fe1a06da377e3a1062ae5fe0926e12b84eceb8a50b350ddca72dc85015873f74"},
-    {file = "frozenlist-1.4.1-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:db9e724bebd621d9beca794f2a4ff1d26eed5965b004a97f1f1685a173b869c2"},
-    {file = "frozenlist-1.4.1-cp311-cp311-win32.whl", hash = "sha256:e774d53b1a477a67838a904131c4b0eef6b3d8a651f8b138b04f748fccfefe17"},
-    {file = "frozenlist-1.4.1-cp311-cp311-win_amd64.whl", hash = "sha256:fb3c2db03683b5767dedb5769b8a40ebb47d6f7f45b1b3e3b4b51ec8ad9d9825"},
-    {file = "frozenlist-1.4.1-py3-none-any.whl", hash = "sha256:04ced3e6a46b4cfffe20f9ae482818e34eba9b5fb0ce4056e4cc9b6e212d09b7"},
-    {file = "frozenlist-1.4.1.tar.gz", hash = "sha256:c037a86e8513059a2613aaba4d817bb90b9d9b6b69aace3ce9c877e8c8ed402b"},
+    {file = "frozenlist-1.5.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:fd74520371c3c4175142d02a976aee0b4cb4a7cc912a60586ffd8d5929979b30"},
+    {file = "frozenlist-1.5.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:2f3f7a0fbc219fb4455264cae4d9f01ad41ae6ee8524500f381de64ffaa077d5"},
+    {file = "frozenlist-1.5.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:f47c9c9028f55a04ac254346e92977bf0f166c483c74b4232bee19a6697e4778"},
+    {file = "frozenlist-1.5.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0996c66760924da6e88922756d99b47512a71cfd45215f3570bf1e0b694c206a"},
+    {file = "frozenlist-1.5.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:a2fe128eb4edeabe11896cb6af88fca5346059f6c8d807e3b910069f39157869"},
+    {file = "frozenlist-1.5.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:1a8ea951bbb6cacd492e3948b8da8c502a3f814f5d20935aae74b5df2b19cf3d"},
+    {file = "frozenlist-1.5.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:de537c11e4aa01d37db0d403b57bd6f0546e71a82347a97c6a9f0dcc532b3a45"},
+    {file = "frozenlist-1.5.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9c2623347b933fcb9095841f1cc5d4ff0b278addd743e0e966cb3d460278840d"},
+    {file = "frozenlist-1.5.0-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:cee6798eaf8b1416ef6909b06f7dc04b60755206bddc599f52232606e18179d3"},
+    {file = "frozenlist-1.5.0-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:f5f9da7f5dbc00a604fe74aa02ae7c98bcede8a3b8b9666f9f86fc13993bc71a"},
+    {file = "frozenlist-1.5.0-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:90646abbc7a5d5c7c19461d2e3eeb76eb0b204919e6ece342feb6032c9325ae9"},
+    {file = "frozenlist-1.5.0-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:bdac3c7d9b705d253b2ce370fde941836a5f8b3c5c2b8fd70940a3ea3af7f4f2"},
+    {file = "frozenlist-1.5.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:03d33c2ddbc1816237a67f66336616416e2bbb6beb306e5f890f2eb22b959cdf"},
+    {file = "frozenlist-1.5.0-cp311-cp311-win32.whl", hash = "sha256:237f6b23ee0f44066219dae14c70ae38a63f0440ce6750f868ee08775073f942"},
+    {file = "frozenlist-1.5.0-cp311-cp311-win_amd64.whl", hash = "sha256:0cc974cc93d32c42e7b0f6cf242a6bd941c57c61b618e78b6c0a96cb72788c1d"},
+    {file = "frozenlist-1.5.0-py3-none-any.whl", hash = "sha256:d994863bba198a4a518b467bb971c56e1db3f180a25c6cf7bb1949c267f748c3"},
+    {file = "frozenlist-1.5.0.tar.gz", hash = "sha256:81d5af29e61b9c8348e876d442253723928dce6433e0e76cd925cd83f1b4b817"},
 ]
 
 [[package]]
@@ -947,7 +947,7 @@ files = [
 
 [[package]]
 name = "google-cloud-appengine-logging"
-version = "1.4.5"
+version = "1.5.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Appengine Logging API client library"
 groups = ["chaostoolkit"]
@@ -955,16 +955,17 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_appengine_logging-1.4.5-py2.py3-none-any.whl", hash = "sha256:344e0244404049b42164e4d6dc718ca2c81b393d066956e7cb85fd9407ed9c48"},
-    {file = "google_cloud_appengine_logging-1.4.5.tar.gz", hash = "sha256:de7d766e5d67b19fc5833974b505b32d2a5bbdfb283fd941e320e7cfdae4cb83"},
+    {file = "google_cloud_appengine_logging-1.5.0-py2.py3-none-any.whl", hash = "sha256:81e36606e13c377c4898c918542888abb7a6896837ac5f559011c7729fc63d8a"},
+    {file = "google_cloud_appengine_logging-1.5.0.tar.gz", hash = "sha256:39a2df694d97981ed00ef5df541f7cfcca920a92496707557f2b07bb7ba9d67a"},
 ]
 
 [[package]]
 name = "google-cloud-apphub"
-version = "0.1.2"
+version = "0.1.3"
 requires_python = ">=3.7"
 summary = "Google Cloud Apphub API client library"
 groups = ["chaostoolkit"]
@@ -973,16 +974,17 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_apphub-0.1.2-py3-none-any.whl", hash = "sha256:30c8d44b6b75578a2b2bb038a42913f6693650890c7cebddf55e7d663fb60863"},
-    {file = "google_cloud_apphub-0.1.2.tar.gz", hash = "sha256:9115181cc3ef4f698364244f3b6714652d83ce5fffff33c3c26db0476d96dd37"},
+    {file = "google_cloud_apphub-0.1.3-py3-none-any.whl", hash = "sha256:18bd841aba6f3c698ac6482d09f7a7250a9c986fb0662152d7b1f8ea72233e6c"},
+    {file = "google_cloud_apphub-0.1.3.tar.gz", hash = "sha256:38c39fa638dd45a0a4cc30f42745b1f48bf6fe42ec8736d7923a7d3915a45a6f"},
 ]
 
 [[package]]
 name = "google-cloud-artifact-registry"
-version = "1.11.5"
+version = "1.12.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Artifact Registry API client library"
 groups = ["chaostoolkit"]
@@ -991,11 +993,12 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_artifact_registry-1.11.5-py2.py3-none-any.whl", hash = "sha256:6212873f48949d69d4e764aaf268189cb02c7117963d6f93a20bf39653021574"},
-    {file = "google_cloud_artifact_registry-1.11.5.tar.gz", hash = "sha256:94d5836e0bbd0c33514a1edc0b54df898bf2db7edb1f5e9076eb243f342df4c8"},
+    {file = "google_cloud_artifact_registry-1.12.0-py2.py3-none-any.whl", hash = "sha256:aa0adb51fd3d58dad0ad9bb59c2c2c989188187084d1c905a52be105a440344f"},
+    {file = "google_cloud_artifact_registry-1.12.0.tar.gz", hash = "sha256:5ee3e9b3820127121f17ef6a9aa0d8cd90f0dc13ab65e554ce793fdda7f7dd74"},
 ]
 
 [[package]]
@@ -1015,7 +1018,7 @@ files = [
 
 [[package]]
 name = "google-cloud-compute"
-version = "1.19.2"
+version = "1.20.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Compute API client library"
 groups = ["chaostoolkit"]
@@ -1023,16 +1026,17 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_compute-1.19.2-py2.py3-none-any.whl", hash = "sha256:e15b03da54fef17be18a20ebd8716e12aa5e17379e63042d15e8b6a3a4f08597"},
-    {file = "google_cloud_compute-1.19.2.tar.gz", hash = "sha256:3fce82abe14e76faaa81234d9a7be1e634b2ed8a27f55feefcf2b146467f7fab"},
+    {file = "google_cloud_compute-1.20.0-py2.py3-none-any.whl", hash = "sha256:cb733475412e9c9dea65254163b2c0788824fe584c5d38da556edce462bdd742"},
+    {file = "google_cloud_compute-1.20.0.tar.gz", hash = "sha256:ab7db162a2c2595fada492a0067015dc30e3582c4f14e4ed6cc7433721c8729d"},
 ]
 
 [[package]]
 name = "google-cloud-container"
-version = "2.52.0"
+version = "2.53.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Container API client library"
 groups = ["chaostoolkit"]
@@ -1040,16 +1044,17 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_container-2.52.0-py2.py3-none-any.whl", hash = "sha256:a62ede7256cf113bbb134685c703ea2dc4cbf60e08875e23dc4369c46743adaa"},
-    {file = "google_cloud_container-2.52.0.tar.gz", hash = "sha256:7a2fac7680a6a5bb2776b494a1fd1e2e64e4935643b2a01fb93bb8d1bb73b0ef"},
+    {file = "google_cloud_container-2.53.0-py2.py3-none-any.whl", hash = "sha256:dea106f5f3317f932530402122c634e6dd851621910d9709af4e1e2ff622989b"},
+    {file = "google_cloud_container-2.53.0.tar.gz", hash = "sha256:be0bdca70f03ac1c116e9564cb0a4d6191976a0a4d855d813bdf824add4b1550"},
 ]
 
 [[package]]
 name = "google-cloud-containeranalysis"
-version = "2.14.5"
+version = "2.15.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Containeranalysis API client library"
 groups = ["chaostoolkit"]
@@ -1059,11 +1064,12 @@ dependencies = [
     "grafeas<2.0dev,>=1.4.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_containeranalysis-2.14.5-py2.py3-none-any.whl", hash = "sha256:00dcb77c7e2db62c4745303cab5d7203fe3d6de603df1788a1dbd6759450ca74"},
-    {file = "google_cloud_containeranalysis-2.14.5.tar.gz", hash = "sha256:cba235417c14ce50b74fc935f17949a2e39889f68ecee0ecfc58a24aab88bd52"},
+    {file = "google_cloud_containeranalysis-2.15.0-py2.py3-none-any.whl", hash = "sha256:127d1aeda076e910bfd9c6be6020e824f71651845594708c39cedee10d60964c"},
+    {file = "google_cloud_containeranalysis-2.15.0.tar.gz", hash = "sha256:449ed5339364865faba92749b819ce65b6b5276f7d6f595deb1c407cf2f739ee"},
 ]
 
 [[package]]
@@ -1107,7 +1113,7 @@ files = [
 
 [[package]]
 name = "google-cloud-monitoring"
-version = "2.22.2"
+version = "2.23.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Monitoring API client library"
 groups = ["chaostoolkit"]
@@ -1115,16 +1121,17 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_monitoring-2.22.2-py2.py3-none-any.whl", hash = "sha256:3f07aead6a80a894c5f8e151f1cccf78478eab14e14294f4b83aaa3f478b5c4e"},
-    {file = "google_cloud_monitoring-2.22.2.tar.gz", hash = "sha256:9fc22dac48d14dd1c7fb83ee4a54f7a57bf9852ee6b5c9dca9e3bb093b04c7ee"},
+    {file = "google_cloud_monitoring-2.23.0-py2.py3-none-any.whl", hash = "sha256:7c402d1d23d8626ec18e7280f6d438e08f16fc55ca844b37ebe063265c1d2cfb"},
+    {file = "google_cloud_monitoring-2.23.0.tar.gz", hash = "sha256:a4c24131ab197da6882bcf3435c4b29df7b52b999cc4d45533cf4c2936bebf99"},
 ]
 
 [[package]]
 name = "google-cloud-network-connectivity"
-version = "2.4.5"
+version = "2.5.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Network Connectivity API client library"
 groups = ["chaostoolkit"]
@@ -1133,16 +1140,17 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_network_connectivity-2.4.5-py2.py3-none-any.whl", hash = "sha256:e113d2d96653ca997a451b94e13940226a9ccb71e05c61665e4e1e089915a9f5"},
-    {file = "google_cloud_network_connectivity-2.4.5.tar.gz", hash = "sha256:836377f692a4d071bc7fd3644a1fe23a60d035aa674f231ff3998f04cd0b21ee"},
+    {file = "google_cloud_network_connectivity-2.5.0-py2.py3-none-any.whl", hash = "sha256:be7ad70860c3cbc218d66e8219dde7e31eccc194b6ab8bae36486ae23118509f"},
+    {file = "google_cloud_network_connectivity-2.5.0.tar.gz", hash = "sha256:faa092090242b26b51b7212eea6f539ce6b8d1b6462884b0ffbfb21d43125c3d"},
 ]
 
 [[package]]
 name = "google-cloud-resource-manager"
-version = "1.12.5"
+version = "1.13.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Resource Manager API client library"
 groups = ["chaostoolkit"]
@@ -1151,16 +1159,17 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_resource_manager-1.12.5-py2.py3-none-any.whl", hash = "sha256:2708a718b45c79464b7b21559c701b5c92e6b0b1ab2146d0a256277a623dc175"},
-    {file = "google_cloud_resource_manager-1.12.5.tar.gz", hash = "sha256:b7af4254401ed4efa3aba3a929cb3ddb803fa6baf91a78485e45583597de5891"},
+    {file = "google_cloud_resource_manager-1.13.0-py2.py3-none-any.whl", hash = "sha256:33beb4528c2b7aee7a97ed843710581a7b4a27f3dd1fa41a0bf3359b3d68853f"},
+    {file = "google_cloud_resource_manager-1.13.0.tar.gz", hash = "sha256:ae4bf69443f14b37007d4d84150115b0942e8b01650fd7a1fc6ff4dc1760e5c4"},
 ]
 
 [[package]]
 name = "google-cloud-run"
-version = "0.10.9"
+version = "0.10.10"
 requires_python = ">=3.7"
 summary = "Google Cloud Run API client library"
 groups = ["chaostoolkit"]
@@ -1169,11 +1178,12 @@ dependencies = [
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "grpc-google-iam-v1<1.0.0dev,>=0.12.4",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_run-0.10.9-py2.py3-none-any.whl", hash = "sha256:5eed2fa7bbf59cceb9b7065880b2fb3ade1dbdf3720d1eb5adbe3fddad579c17"},
-    {file = "google_cloud_run-0.10.9.tar.gz", hash = "sha256:a9766b981e77a795de2b31c660fb2d3899fbb41e28d0a3c81ad08bd2e122ca13"},
+    {file = "google_cloud_run-0.10.10-py2.py3-none-any.whl", hash = "sha256:6971ff81457cc15459e66418561deeb63f674b3353c5aa760be05a6822cc1dc1"},
+    {file = "google_cloud_run-0.10.10.tar.gz", hash = "sha256:bea8cabb9418a846a691556ed0a5f00ec0c5c15aa7f15edcca88bce62f590113"},
 ]
 
 [[package]]
@@ -1197,7 +1207,7 @@ files = [
 
 [[package]]
 name = "google-cloud-trace"
-version = "1.13.5"
+version = "1.14.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Trace API client library"
 groups = ["chaostoolkit", "extra"]
@@ -1205,11 +1215,12 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_trace-1.13.5-py2.py3-none-any.whl", hash = "sha256:9e22f2eb8a07b7614f889ef59c041458d3241d3fbb76455acd2b4c9264429755"},
-    {file = "google_cloud_trace-1.13.5.tar.gz", hash = "sha256:68954c1c4ae2536f5cc374736d065ce963708bd35c9d95ef36e8b3d4bf07c6a2"},
+    {file = "google_cloud_trace-1.14.0-py2.py3-none-any.whl", hash = "sha256:447dfa2cbbf5b2ef0f8cd7afc09d94b77067c90a0ba6e3f649f9d05372d2356f"},
+    {file = "google_cloud_trace-1.14.0.tar.gz", hash = "sha256:6e1b16842067cc28f5b36cf68f11e32f38bb87e3d2450484da5cf9be051879fc"},
 ]
 
 [[package]]
@@ -1276,7 +1287,7 @@ files = [
 
 [[package]]
 name = "grafeas"
-version = "1.11.0"
+version = "1.12.0"
 requires_python = ">=3.7"
 summary = "Grafeas API client library"
 groups = ["chaostoolkit"]
@@ -1284,11 +1295,12 @@ dependencies = [
     "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
     "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
     "proto-plus<2.0.0dev,>=1.22.3",
+    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
 ]
 files = [
-    {file = "grafeas-1.11.0-py2.py3-none-any.whl", hash = "sha256:2c9a9b4f2ed57412f759e87d56ef034b1f3f2a88ce425e5f01df5fed3fe6c3cc"},
-    {file = "grafeas-1.11.0.tar.gz", hash = "sha256:4660e871210c9aba265cb7d375abf2627dd0ec543c615cd002d23dbf345548e2"},
+    {file = "grafeas-1.12.0-py2.py3-none-any.whl", hash = "sha256:27cb49e36146fe23f7aff929d1b4ddf7f80b09622c380afd4b83cf1cd6518ce7"},
+    {file = "grafeas-1.12.0.tar.gz", hash = "sha256:e992848ad7462f588ec0076d6d967a8a68346d7bbcbcc5b551d7f69051d861b6"},
 ]
 
 [[package]]
@@ -2002,7 +2014,7 @@ files = [
 
 [[package]]
 name = "proto-plus"
-version = "1.24.0"
+version = "1.25.0"
 requires_python = ">=3.7"
 summary = "Beautiful, Pythonic protocol buffers."
 groups = ["chaostoolkit", "extra"]
@@ -2010,8 +2022,8 @@ dependencies = [
     "protobuf<6.0.0dev,>=3.19.0",
 ]
 files = [
-    {file = "proto-plus-1.24.0.tar.gz", hash = "sha256:30b72a5ecafe4406b0d339db35b56c4059064e69227b8c3bda7462397f966445"},
-    {file = "proto_plus-1.24.0-py3-none-any.whl", hash = "sha256:402576830425e5f6ce4c2a6702400ac79897dab0b4343821aa5188b0fab81a12"},
+    {file = "proto_plus-1.25.0-py3-none-any.whl", hash = "sha256:c91fc4a65074ade8e458e95ef8bac34d4008daa7cce4a12d6707066fca648961"},
+    {file = "proto_plus-1.25.0.tar.gz", hash = "sha256:fbb17f57f7bd05a68b7707e745e26528b0b3c34e378db91eef93912c54982d91"},
 ]
 
 [[package]]
@@ -2376,13 +2388,13 @@ files = [
 
 [[package]]
 name = "slack-sdk"
-version = "3.33.1"
+version = "3.33.2"
 requires_python = ">=3.6"
 summary = "The Slack API Platform SDK for Python"
 groups = ["chaostoolkit"]
 files = [
-    {file = "slack_sdk-3.33.1-py2.py3-none-any.whl", hash = "sha256:ef93beec3ce9c8f64da02fd487598a05ec4bc9c92ceed58f122dbe632691cbe2"},
-    {file = "slack_sdk-3.33.1.tar.gz", hash = "sha256:e328bb661d95db5f66b993b1d64288ac7c72201a745b4c7cf8848dafb7b74e40"},
+    {file = "slack_sdk-3.33.2-py2.py3-none-any.whl", hash = "sha256:8107912488028f5a3f04ee9c58524418d3a2763a843db25530375b7733e6ec0a"},
+    {file = "slack_sdk-3.33.2.tar.gz", hash = "sha256:34c51cfb9c254553219a0bba7a741c913f5d4d372d6278c3e7e10fe7bb667724"},
 ]
 
 [[package]]
@@ -2541,7 +2553,7 @@ files = [
 
 [[package]]
 name = "yarl"
-version = "1.15.5"
+version = "1.16.0"
 requires_python = ">=3.9"
 summary = "Yet another URL library"
 groups = ["chaostoolkit"]
@@ -2551,24 +2563,24 @@ dependencies = [
     "propcache>=0.2.0",
 ]
 files = [
-    {file = "yarl-1.15.5-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:e652aa9f8dfa808bc5b2da4d1f4e286cf1d640570fdfa72ffc0c1d16ba114651"},
-    {file = "yarl-1.15.5-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:21050b6cd569980fe20ceeab4baeb900d3f7247270475e42bafe117416a5496c"},
-    {file = "yarl-1.15.5-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:18940191ec9a83bbfe63eea61c3e9d12474bb910d5613bce8fa46e84a80b75b2"},
-    {file = "yarl-1.15.5-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a082dc948045606f62dca0228ab24f13737180b253378d6443f5b2b9ef8beefe"},
-    {file = "yarl-1.15.5-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:0a843e692f9d5402b3455653f4607dc521de2385f01c5cad7ba4a87c46e2ea8d"},
-    {file = "yarl-1.15.5-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:5093a453176a4fad4f9c3006f507cf300546190bb3e27944275a37cfd6323a65"},
-    {file = "yarl-1.15.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2597a589859b94d0a5e2f5d30fee95081867926e57cb751f8b44a7dd92da4e79"},
-    {file = "yarl-1.15.5-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:1f5a1ca6eaabfe62718b87eac06d9a47b30cf92ffa065fee9196d3ecd24a3cf1"},
-    {file = "yarl-1.15.5-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:4ac83b307cc4b8907345b52994055c6c3c2601ceb6fcb94c5ed6a93c6b4e8257"},
-    {file = "yarl-1.15.5-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:325e2beb2cd8654b276e7686a3cd203628dd3fe32d5c616e632bc35a2901fb16"},
-    {file = "yarl-1.15.5-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:75d04ba8ed335042328086e643e01165e0c24598216f72da709b375930ae3bdb"},
-    {file = "yarl-1.15.5-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:7abd7d15aedb3961a967cc65f8144dbbca42e3626a21c5f4f29919cf43eeafb9"},
-    {file = "yarl-1.15.5-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:294c742a273f44511f14b03a9e06b66094dcdf4bbb75a5e23fead548fd5310ae"},
-    {file = "yarl-1.15.5-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:63d46606b20f80a6476f1044bab78e1a69c2e0747f174583e2f12fc70bad2170"},
-    {file = "yarl-1.15.5-cp311-cp311-win32.whl", hash = "sha256:b1217102a455e3ac9ac293081093f21f0183e978c7692171ff669fee5296fa28"},
-    {file = "yarl-1.15.5-cp311-cp311-win_amd64.whl", hash = "sha256:5848500b6a01497560969e8c3a7eb1b2570853c74a0ca6f67ebaf6064106c49b"},
-    {file = "yarl-1.15.5-py3-none-any.whl", hash = "sha256:625f31d6650829fba4030b4e7bdb2d69e41510dddfa29a1da27076c199521757"},
-    {file = "yarl-1.15.5.tar.gz", hash = "sha256:8249147ee81c1cf4d1dc6f26ba28a1b9d92751529f83c308ad02164bb93abd0d"},
+    {file = "yarl-1.16.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:d8643975a0080f361639787415a038bfc32d29208a4bf6b783ab3075a20b1ef3"},
+    {file = "yarl-1.16.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:676d96bafc8c2d0039cea0cd3fd44cee7aa88b8185551a2bb93354668e8315c2"},
+    {file = "yarl-1.16.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:d9525f03269e64310416dbe6c68d3b23e5d34aaa8f47193a1c45ac568cecbc49"},
+    {file = "yarl-1.16.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8b37d5ec034e668b22cf0ce1074d6c21fd2a08b90d11b1b73139b750a8b0dd97"},
+    {file = "yarl-1.16.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:4f32c4cb7386b41936894685f6e093c8dfaf0960124d91fe0ec29fe439e201d0"},
+    {file = "yarl-1.16.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:5b8e265a0545637492a7e12fd7038370d66c9375a61d88c5567d0e044ded9202"},
+    {file = "yarl-1.16.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:789a3423f28a5fff46fbd04e339863c169ece97c827b44de16e1a7a42bc915d2"},
+    {file = "yarl-1.16.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:f1d1f45e3e8d37c804dca99ab3cf4ab3ed2e7a62cd82542924b14c0a4f46d243"},
+    {file = "yarl-1.16.0-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:621280719c4c5dad4c1391160a9b88925bb8b0ff6a7d5af3224643024871675f"},
+    {file = "yarl-1.16.0-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:ed097b26f18a1f5ff05f661dc36528c5f6735ba4ce8c9645e83b064665131349"},
+    {file = "yarl-1.16.0-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:2f1fe2b2e3ee418862f5ebc0c0083c97f6f6625781382f828f6d4e9b614eba9b"},
+    {file = "yarl-1.16.0-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:87dd10bc0618991c66cee0cc65fa74a45f4ecb13bceec3c62d78ad2e42b27a16"},
+    {file = "yarl-1.16.0-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:4199db024b58a8abb2cfcedac7b1292c3ad421684571aeb622a02f242280e8d6"},
+    {file = "yarl-1.16.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:99a9dcd4b71dd5f5f949737ab3f356cfc058c709b4f49833aeffedc2652dac56"},
+    {file = "yarl-1.16.0-cp311-cp311-win32.whl", hash = "sha256:a9394c65ae0ed95679717d391c862dece9afacd8fa311683fc8b4362ce8a410c"},
+    {file = "yarl-1.16.0-cp311-cp311-win_amd64.whl", hash = "sha256:5b9101f528ae0f8f65ac9d64dda2bb0627de8a50344b2f582779f32fda747c1d"},
+    {file = "yarl-1.16.0-py3-none-any.whl", hash = "sha256:e6980a558d8461230c457218bd6c92dfc1d10205548215c2c21d79dc8d0a96f3"},
+    {file = "yarl-1.16.0.tar.gz", hash = "sha256:b6f687ced5510a9a2474bbae96a4352e5ace5fa34dc44a217b0537fec1db00b4"},
 ]
 
 [[package]]
