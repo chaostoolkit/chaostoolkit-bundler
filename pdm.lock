@@ -23,7 +23,7 @@ files = [
 
 [[package]]
 name = "aiohttp"
-version = "3.11.13"
+version = "3.11.14"
 requires_python = ">=3.9"
 summary = "Async http client/server framework (asyncio)"
 groups = ["chaostoolkit"]
@@ -38,23 +38,23 @@ dependencies = [
     "yarl<2.0,>=1.17.0",
 ]
 files = [
-    {file = "aiohttp-3.11.13-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:6b35aab22419ba45f8fc290d0010898de7a6ad131e468ffa3922b1b0b24e9d2e"},
-    {file = "aiohttp-3.11.13-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:f81cba651db8795f688c589dd11a4fbb834f2e59bbf9bb50908be36e416dc760"},
-    {file = "aiohttp-3.11.13-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:f55d0f242c2d1fcdf802c8fabcff25a9d85550a4cf3a9cf5f2a6b5742c992839"},
-    {file = "aiohttp-3.11.13-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c4bea08a6aad9195ac9b1be6b0c7e8a702a9cec57ce6b713698b4a5afa9c2e33"},
-    {file = "aiohttp-3.11.13-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:c6070bcf2173a7146bb9e4735b3c62b2accba459a6eae44deea0eb23e0035a23"},
-    {file = "aiohttp-3.11.13-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:718d5deb678bc4b9d575bfe83a59270861417da071ab44542d0fcb6faa686636"},
-    {file = "aiohttp-3.11.13-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0f6b2c5b4a4d22b8fb2c92ac98e0747f5f195e8e9448bfb7404cd77e7bfa243f"},
-    {file = "aiohttp-3.11.13-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:747ec46290107a490d21fe1ff4183bef8022b848cf9516970cb31de6d9460088"},
-    {file = "aiohttp-3.11.13-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:01816f07c9cc9d80f858615b1365f8319d6a5fd079cd668cc58e15aafbc76a54"},
-    {file = "aiohttp-3.11.13-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:a08ad95fcbd595803e0c4280671d808eb170a64ca3f2980dd38e7a72ed8d1fea"},
-    {file = "aiohttp-3.11.13-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:c97be90d70f7db3aa041d720bfb95f4869d6063fcdf2bb8333764d97e319b7d0"},
-    {file = "aiohttp-3.11.13-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:ab915a57c65f7a29353c8014ac4be685c8e4a19e792a79fe133a8e101111438e"},
-    {file = "aiohttp-3.11.13-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:35cda4e07f5e058a723436c4d2b7ba2124ab4e0aa49e6325aed5896507a8a42e"},
-    {file = "aiohttp-3.11.13-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:af55314407714fe77a68a9ccaab90fdb5deb57342585fd4a3a8102b6d4370080"},
-    {file = "aiohttp-3.11.13-cp311-cp311-win32.whl", hash = "sha256:42d689a5c0a0c357018993e471893e939f555e302313d5c61dfc566c2cad6185"},
-    {file = "aiohttp-3.11.13-cp311-cp311-win_amd64.whl", hash = "sha256:b73a2b139782a07658fbf170fe4bcdf70fc597fae5ffe75e5b67674c27434a9f"},
-    {file = "aiohttp-3.11.13.tar.gz", hash = "sha256:8ce789231404ca8fff7f693cdce398abf6d90fd5dae2b1847477196c243b1fbb"},
+    {file = "aiohttp-3.11.14-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:f296d637a50bb15fb6a229fbb0eb053080e703b53dbfe55b1e4bb1c5ed25d325"},
+    {file = "aiohttp-3.11.14-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:ec6cd1954ca2bbf0970f531a628da1b1338f594bf5da7e361e19ba163ecc4f3b"},
+    {file = "aiohttp-3.11.14-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:572def4aad0a4775af66d5a2b5923c7de0820ecaeeb7987dcbccda2a735a993f"},
+    {file = "aiohttp-3.11.14-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1c68e41c4d576cd6aa6c6d2eddfb32b2acfb07ebfbb4f9da991da26633a3db1a"},
+    {file = "aiohttp-3.11.14-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:99b8bbfc8111826aa8363442c0fc1f5751456b008737ff053570f06a151650b3"},
+    {file = "aiohttp-3.11.14-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:4b0a200e85da5c966277a402736a96457b882360aa15416bf104ca81e6f5807b"},
+    {file = "aiohttp-3.11.14-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d173c0ac508a2175f7c9a115a50db5fd3e35190d96fdd1a17f9cb10a6ab09aa1"},
+    {file = "aiohttp-3.11.14-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:413fe39fd929329f697f41ad67936f379cba06fcd4c462b62e5b0f8061ee4a77"},
+    {file = "aiohttp-3.11.14-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:65c75b14ee74e8eeff2886321e76188cbe938d18c85cff349d948430179ad02c"},
+    {file = "aiohttp-3.11.14-cp311-cp311-musllinux_1_2_armv7l.whl", hash = "sha256:321238a42ed463848f06e291c4bbfb3d15ba5a79221a82c502da3e23d7525d06"},
+    {file = "aiohttp-3.11.14-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:59a05cdc636431f7ce843c7c2f04772437dd816a5289f16440b19441be6511f1"},
+    {file = "aiohttp-3.11.14-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:daf20d9c3b12ae0fdf15ed92235e190f8284945563c4b8ad95b2d7a31f331cd3"},
+    {file = "aiohttp-3.11.14-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:05582cb2d156ac7506e68b5eac83179faedad74522ed88f88e5861b78740dc0e"},
+    {file = "aiohttp-3.11.14-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:12c5869e7ddf6b4b1f2109702b3cd7515667b437da90a5a4a50ba1354fe41881"},
+    {file = "aiohttp-3.11.14-cp311-cp311-win32.whl", hash = "sha256:92868f6512714efd4a6d6cb2bfc4903b997b36b97baea85f744229f18d12755e"},
+    {file = "aiohttp-3.11.14-cp311-cp311-win_amd64.whl", hash = "sha256:bccd2cb7aa5a3bfada72681bdb91637094d81639e116eac368f8b3874620a654"},
+    {file = "aiohttp-3.11.14.tar.gz", hash = "sha256:d6edc538c7480fa0a3b2bdd705f8010062d74700198da55d16498e1b49549b9c"},
 ]
 
 [[package]]
@@ -197,7 +197,7 @@ files = [
 
 [[package]]
 name = "azure-mgmt-containerservice"
-version = "34.1.0"
+version = "34.2.0"
 requires_python = ">=3.8"
 summary = "Microsoft Azure Container Service Management Client Library for Python"
 groups = ["chaostoolkit"]
@@ -208,8 +208,8 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_mgmt_containerservice-34.1.0-py3-none-any.whl", hash = "sha256:1faa1714e0100c6ee4cfb8d2eadb1c270b548a84b0070c74e9fe646056a5cb12"},
-    {file = "azure_mgmt_containerservice-34.1.0.tar.gz", hash = "sha256:637a6cf8f06636c016ad151d76f9c7ba75bd05d4334b3dd7837eb8b517f30dbe"},
+    {file = "azure_mgmt_containerservice-34.2.0-py3-none-any.whl", hash = "sha256:f655570fcd88ca55045bb4f662eccd9a4e3b074aef42aa1d8153f4d76ad89153"},
+    {file = "azure_mgmt_containerservice-34.2.0.tar.gz", hash = "sha256:141e05f146f28cd4628a83027d515bd253f3b2f8523be43b9841707118ef5a84"},
 ]
 
 [[package]]
@@ -328,23 +328,23 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.37.13"
+version = "1.37.18"
 requires_python = ">=3.8"
 summary = "The AWS SDK for Python"
 groups = ["chaostoolkit"]
 dependencies = [
-    "botocore<1.38.0,>=1.37.13",
+    "botocore<1.38.0,>=1.37.18",
     "jmespath<2.0.0,>=0.7.1",
     "s3transfer<0.12.0,>=0.11.0",
 ]
 files = [
-    {file = "boto3-1.37.13-py3-none-any.whl", hash = "sha256:90fa5a91d7d7456219f0b7c4a93b38335dc5cf4613d885da4d4c1d099e04c6b7"},
-    {file = "boto3-1.37.13.tar.gz", hash = "sha256:295648f887464ab74c5c301a44982df76f9ba39ebfc16be5b8f071ad1a81fe95"},
+    {file = "boto3-1.37.18-py3-none-any.whl", hash = "sha256:1545c943f36db41853cdfdb6ff09c4eda9220dd95bd2fae76fc73091603525d1"},
+    {file = "boto3-1.37.18.tar.gz", hash = "sha256:9b272268794172b0b8bb9fb1f3c470c3b6c0ffb92fbd4882465cc740e40fbdcd"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.37.13"
+version = "1.37.18"
 requires_python = ">=3.8"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["chaostoolkit"]
@@ -355,8 +355,8 @@ dependencies = [
     "urllib3<1.27,>=1.25.4; python_version < \"3.10\"",
 ]
 files = [
-    {file = "botocore-1.37.13-py3-none-any.whl", hash = "sha256:aa417bac0f4d79533080e6e17c0509e149353aec83cfe7879597a7942f7f08d0"},
-    {file = "botocore-1.37.13.tar.gz", hash = "sha256:60dfb831c54eb466db9b91891a6c8a0c223626caa049969d5d42858ad1e7f8c7"},
+    {file = "botocore-1.37.18-py3-none-any.whl", hash = "sha256:a8b97d217d82b3c4f6bcc906e264df7ebb51e2c6a62b3548a97cd173fb8759a1"},
+    {file = "botocore-1.37.18.tar.gz", hash = "sha256:99e8eefd5df6347ead15df07ce55f4e62a51ea7b54de1127522a08597923b726"},
 ]
 
 [[package]]
@@ -908,20 +908,20 @@ files = [
 
 [[package]]
 name = "google-api-python-client"
-version = "2.164.0"
+version = "2.165.0"
 requires_python = ">=3.7"
 summary = "Google API Client Library for Python"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0.dev0,>=1.32.0",
+    "google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0",
     "google-auth-httplib2<1.0.0,>=0.2.0",
-    "httplib2<1.dev0,>=0.19.0",
+    "httplib2<1.0.0,>=0.19.0",
     "uritemplate<5,>=3.0.1",
 ]
 files = [
-    {file = "google_api_python_client-2.164.0-py2.py3-none-any.whl", hash = "sha256:b2037c3d280793c8d5180b04317b16be4acd5f77af5dfa7213ace32d140a9ffe"},
-    {file = "google_api_python_client-2.164.0.tar.gz", hash = "sha256:116f5a05dfb95ed7f7ea0d0f561fc5464146709c583226cc814690f9bb221492"},
+    {file = "google_api_python_client-2.165.0-py2.py3-none-any.whl", hash = "sha256:4eaab7d4a20be0d3d1dde462fa95e9e0ccc2a3e177a656701bf73fe738ddef7d"},
+    {file = "google_api_python_client-2.165.0.tar.gz", hash = "sha256:0d2aee76727a104705630bebbc43669c864b766924e9329051ef7b7e2468eb72"},
 ]
 
 [[package]]
@@ -956,129 +956,129 @@ files = [
 
 [[package]]
 name = "google-cloud-appengine-logging"
-version = "1.6.0"
+version = "1.6.1"
 requires_python = ">=3.7"
 summary = "Google Cloud Appengine Logging API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_appengine_logging-1.6.0-py2.py3-none-any.whl", hash = "sha256:741557e5281e351ccc90f774685a1adb0e5996cc233bcd019ef072280aaad13f"},
-    {file = "google_cloud_appengine_logging-1.6.0.tar.gz", hash = "sha256:2f6ef52dfa88eca3bea078bc3c2b55ea61ff08b5e0c37912027fbb2a5f2d91ce"},
+    {file = "google_cloud_appengine_logging-1.6.1-py3-none-any.whl", hash = "sha256:48f4dcf43000899c7b411bc27181f70240e81a958a44e44ce800ba8e5d5184ac"},
+    {file = "google_cloud_appengine_logging-1.6.1.tar.gz", hash = "sha256:f97bde36c7f7ff541123c2570813158bdda0c3f2385c8d32fdf1211c561ae56d"},
 ]
 
 [[package]]
 name = "google-cloud-apphub"
-version = "0.1.7"
+version = "0.1.8"
 requires_python = ">=3.7"
 summary = "Google Cloud Apphub API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "grpc-google-iam-v1<1.0.0dev,>=0.14.0",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "grpc-google-iam-v1<1.0.0,>=0.14.0",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_apphub-0.1.7-py3-none-any.whl", hash = "sha256:6cfdff48acdb83dc03047946e9b71d15bfa2290268ddf1923ecccb6e3be17c82"},
-    {file = "google_cloud_apphub-0.1.7.tar.gz", hash = "sha256:a5017f002ad91866e68481a80aad38128133405023504bebaeb073fd6b477e9b"},
+    {file = "google_cloud_apphub-0.1.8-py3-none-any.whl", hash = "sha256:2fcf613db262c57a7ccee0815ade19b6f2c56c951fcce1459629966afe4ea2b6"},
+    {file = "google_cloud_apphub-0.1.8.tar.gz", hash = "sha256:ee2d8d0c8b45a4200d57d8b975ef6045a76084b987d5c0e93d098e3ad23f3cd1"},
 ]
 
 [[package]]
 name = "google-cloud-artifact-registry"
-version = "1.15.1"
+version = "1.15.2"
 requires_python = ">=3.7"
 summary = "Google Cloud Artifact Registry API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "grpc-google-iam-v1<1.0.0dev,>=0.14.0",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "grpc-google-iam-v1<1.0.0,>=0.14.0",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_artifact_registry-1.15.1-py2.py3-none-any.whl", hash = "sha256:1a2c7329e809a6bbd9ca7fc70b09938c9fa6b47ac1f331737bbe36fa4b2b1fe4"},
-    {file = "google_cloud_artifact_registry-1.15.1.tar.gz", hash = "sha256:93b49a39d93bf042611304e5591925af7f8996b45755cb5e9148f3825e177bfa"},
+    {file = "google_cloud_artifact_registry-1.15.2-py3-none-any.whl", hash = "sha256:9410bdafc8f5367f7c6c87cc97ba55b07c25f5831120fb16b72657e09c6ecb64"},
+    {file = "google_cloud_artifact_registry-1.15.2.tar.gz", hash = "sha256:d30e075413aa1e72de721a648959673ab08f8d2b906973fce230c6b54e90d911"},
 ]
 
 [[package]]
 name = "google-cloud-audit-log"
-version = "0.3.1"
+version = "0.3.2"
 requires_python = ">=3.7"
 summary = "Google Cloud Audit Protos"
 groups = ["chaostoolkit"]
 dependencies = [
-    "googleapis-common-protos<2.0dev,>=1.56.2",
-    "protobuf!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "googleapis-common-protos<2.0.0,>=1.56.2",
+    "protobuf!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_audit_log-0.3.1-py2.py3-none-any.whl", hash = "sha256:547828f17a1babbc4769e4577c4e1fcc2bba6254478ab1c7076b25fba8fdabb8"},
-    {file = "google_cloud_audit_log-0.3.1.tar.gz", hash = "sha256:8f26975bd8e69008e6d1edbd7c1bfe4924f4b08ba44643ee7e37cf6ca4728296"},
+    {file = "google_cloud_audit_log-0.3.2-py3-none-any.whl", hash = "sha256:daaedfb947a0d77f524e1bd2b560242ab4836fe1afd6b06b92f152b9658554ed"},
+    {file = "google_cloud_audit_log-0.3.2.tar.gz", hash = "sha256:2598f1533a7d7cdd6c7bf448c12e5519c1d53162d78784e10bcdd1df67791bc3"},
 ]
 
 [[package]]
 name = "google-cloud-compute"
-version = "1.26.0"
+version = "1.28.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Compute API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_compute-1.26.0-py2.py3-none-any.whl", hash = "sha256:ba016e19d7162e92989a69cec3dac0e9a441421f3555cf2dbb76c042f02b875b"},
-    {file = "google_cloud_compute-1.26.0.tar.gz", hash = "sha256:65b6c791060ac83cb8532f9336bd7e1458b06a155963b562b9b44e33eccd3030"},
+    {file = "google_cloud_compute-1.28.0-py3-none-any.whl", hash = "sha256:3be255670ef877ce64ece71fe47007b1a2c562f0d6530a9cb4f03caf06287323"},
+    {file = "google_cloud_compute-1.28.0.tar.gz", hash = "sha256:d0c7380c34cbbc7cc44623c30aaa67da55d4cf829ea04e60573def6bc849d478"},
 ]
 
 [[package]]
 name = "google-cloud-container"
-version = "2.56.0"
+version = "2.56.1"
 requires_python = ">=3.7"
 summary = "Google Cloud Container API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_container-2.56.0-py2.py3-none-any.whl", hash = "sha256:afd651226eb86f3f5e00fde1d979906d30b2a710724e3e99a76b2916413bccad"},
-    {file = "google_cloud_container-2.56.0.tar.gz", hash = "sha256:043d9eff86838726390acf79619c003b5b092bbb7eb3d5426306e9b2b9500e0f"},
+    {file = "google_cloud_container-2.56.1-py3-none-any.whl", hash = "sha256:b75a2568b10c804084126550a32dbf31d90d2c5aeb9e6427dc21ed94cb42f4f7"},
+    {file = "google_cloud_container-2.56.1.tar.gz", hash = "sha256:4000ee5cac27749bc60c45937ed3481915fbbf098925d928523702d70f2f4fa1"},
 ]
 
 [[package]]
 name = "google-cloud-containeranalysis"
-version = "2.17.1"
+version = "2.17.2"
 requires_python = ">=3.7"
 summary = "Google Cloud Containeranalysis API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "grafeas<2.0dev,>=1.4.1",
-    "grpc-google-iam-v1<1.0.0dev,>=0.14.0",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "grafeas<2.0,>=1.4.1",
+    "grpc-google-iam-v1<1.0.0,>=0.14.0",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_containeranalysis-2.17.1-py2.py3-none-any.whl", hash = "sha256:a2ce55fadea1d300c4a423ee3d173b4b30ee43491d0b65115aeb92458cb5c715"},
-    {file = "google_cloud_containeranalysis-2.17.1.tar.gz", hash = "sha256:767d1fc70c954a66cfccfd347557de4f30dea8d8c2bafdf4ec935efb909ecf6d"},
+    {file = "google_cloud_containeranalysis-2.17.2-py3-none-any.whl", hash = "sha256:8769dad074826936d8d1518153aa8bf0ef4afef1ace0a3537a8cba824766af64"},
+    {file = "google_cloud_containeranalysis-2.17.2.tar.gz", hash = "sha256:aa92d0153059fcdfee23d6dbf7c34b005e2f3c4169a091fbec987f4a0050fc10"},
 ]
 
 [[package]]
@@ -1123,77 +1123,77 @@ files = [
 
 [[package]]
 name = "google-cloud-monitoring"
-version = "2.27.0"
+version = "2.27.1"
 requires_python = ">=3.7"
 summary = "Google Cloud Monitoring API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_monitoring-2.27.0-py2.py3-none-any.whl", hash = "sha256:d51c006b778d2873955c23144a0a13de839c5ebe619e8fca77e1f3aa2643db35"},
-    {file = "google_cloud_monitoring-2.27.0.tar.gz", hash = "sha256:f66552528812e7b6a9f2fb7e0b7c3e7904cc0c13504f4fcb42035722b5da2bc4"},
+    {file = "google_cloud_monitoring-2.27.1-py3-none-any.whl", hash = "sha256:cb38e2295e87ff68644bda9eaa2cd9094ebb63f2f4efd1090a7af1c1f0b142cc"},
+    {file = "google_cloud_monitoring-2.27.1.tar.gz", hash = "sha256:f4700900a658cd6c9b7f714bb29d007facef0cf0d628d0075699c3a73bce8a55"},
 ]
 
 [[package]]
 name = "google-cloud-network-connectivity"
-version = "2.7.1"
+version = "2.7.2"
 requires_python = ">=3.7"
 summary = "Google Cloud Network Connectivity API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "grpc-google-iam-v1<1.0.0dev,>=0.14.0",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "grpc-google-iam-v1<1.0.0,>=0.14.0",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_network_connectivity-2.7.1-py2.py3-none-any.whl", hash = "sha256:1f1c44c3de594e894d1a6e529bfdf6630b60d3b1abfffdc63d7f3c940b844307"},
-    {file = "google_cloud_network_connectivity-2.7.1.tar.gz", hash = "sha256:71a3b2228e05286420a5ad31ee52b3aec68be67aeaaa0f10d621884d8ddfa0c1"},
+    {file = "google_cloud_network_connectivity-2.7.2-py3-none-any.whl", hash = "sha256:ee9618ac730c9b9c9937c9b7ae160617687858cb18fc04c5bbf0d423866578ad"},
+    {file = "google_cloud_network_connectivity-2.7.2.tar.gz", hash = "sha256:ef086b5ad012092b263cfebf823f4973976f9f9e87d903f212c7842f16e7d2d8"},
 ]
 
 [[package]]
 name = "google-cloud-resource-manager"
-version = "1.14.1"
+version = "1.14.2"
 requires_python = ">=3.7"
 summary = "Google Cloud Resource Manager API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "grpc-google-iam-v1<1.0.0dev,>=0.14.0",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "grpc-google-iam-v1<1.0.0,>=0.14.0",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_resource_manager-1.14.1-py2.py3-none-any.whl", hash = "sha256:68340599f85ebf07a6e18487e460ea07cc15e132068f6b188786d01c2cf25518"},
-    {file = "google_cloud_resource_manager-1.14.1.tar.gz", hash = "sha256:41e9e546aaa03d5160cdfa2341dbe81ef7596706c300a89b94c429f1f3411f87"},
+    {file = "google_cloud_resource_manager-1.14.2-py3-none-any.whl", hash = "sha256:d0fa954dedd1d2b8e13feae9099c01b8aac515b648e612834f9942d2795a9900"},
+    {file = "google_cloud_resource_manager-1.14.2.tar.gz", hash = "sha256:962e2d904c550d7bac48372607904ff7bb3277e3bb4a36d80cc9a37e28e6eb74"},
 ]
 
 [[package]]
 name = "google-cloud-run"
-version = "0.10.16"
+version = "0.10.17"
 requires_python = ">=3.7"
 summary = "Google Cloud Run API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "grpc-google-iam-v1<1.0.0dev,>=0.14.0",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "grpc-google-iam-v1<1.0.0,>=0.14.0",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_run-0.10.16-py2.py3-none-any.whl", hash = "sha256:bc66cc3000c4df9b607802edf955c1979c53004cc31c850ea9ccacf8d3f5e764"},
-    {file = "google_cloud_run-0.10.16.tar.gz", hash = "sha256:81e488956f71d39ec11fdbddd550ae9bfd9b8d72b82b42c8be42a2d56ac2deef"},
+    {file = "google_cloud_run-0.10.17-py3-none-any.whl", hash = "sha256:1f66c50605f3bb62a4b2a8d8fc6cb658bd5ea3a1c5989d33450e55b818b2f027"},
+    {file = "google_cloud_run-0.10.17.tar.gz", hash = "sha256:efb5413907897f50cc6cb6045f8e185b499d733d066325899a246ad954c9a518"},
 ]
 
 [[package]]
@@ -1217,25 +1217,25 @@ files = [
 
 [[package]]
 name = "google-cloud-trace"
-version = "1.16.0"
+version = "1.16.1"
 requires_python = ">=3.7"
 summary = "Google Cloud Trace API client library"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_trace-1.16.0-py2.py3-none-any.whl", hash = "sha256:a983d6f549e808393f2e99099598a715effeea4bd0b6f92c78ec4e8ab8f9b066"},
-    {file = "google_cloud_trace-1.16.0.tar.gz", hash = "sha256:9d27b163771572b561ebf753a5e4791f99d25e54edad4cb01217ab882f3df41a"},
+    {file = "google_cloud_trace-1.16.1-py3-none-any.whl", hash = "sha256:a4a6c90f7507823024c43ed7890baecf68ebd8cb20a6d7e03622c5f04087fef4"},
+    {file = "google_cloud_trace-1.16.1.tar.gz", hash = "sha256:15308b04f12d958f2b3831a4f76b97c61c0c7a46804bdc570d19024938029d9a"},
 ]
 
 [[package]]
 name = "google-crc32c"
-version = "1.6.0"
+version = "1.7.0"
 requires_python = ">=3.9"
 summary = "A python wrapper of the C library 'Google CRC32C'"
 groups = ["chaostoolkit"]
@@ -1243,12 +1243,14 @@ dependencies = [
     "importlib-resources>=1.3; python_version < \"3.9\" and os_name == \"nt\"",
 ]
 files = [
-    {file = "google_crc32c-1.6.0-cp311-cp311-macosx_12_0_arm64.whl", hash = "sha256:f7a1fc29803712f80879b0806cb83ab24ce62fc8daf0569f2204a0cfd7f68ed4"},
-    {file = "google_crc32c-1.6.0-cp311-cp311-macosx_12_0_x86_64.whl", hash = "sha256:40b05ab32a5067525670880eb5d169529089a26fe35dce8891127aeddc1950e8"},
-    {file = "google_crc32c-1.6.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:a9e4b426c3702f3cd23b933436487eb34e01e00327fac20c9aebb68ccf34117d"},
-    {file = "google_crc32c-1.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:51c4f54dd8c6dfeb58d1df5e4f7f97df8abf17a36626a217f169893d1d7f3e9f"},
-    {file = "google_crc32c-1.6.0-cp311-cp311-win_amd64.whl", hash = "sha256:bb8b3c75bd157010459b15222c3fd30577042a7060e29d42dabce449c087f2b3"},
-    {file = "google_crc32c-1.6.0.tar.gz", hash = "sha256:6eceb6ad197656a1ff49ebfbbfa870678c75be4344feb35ac1edf694309413dc"},
+    {file = "google_crc32c-1.7.0-cp311-cp311-macosx_12_0_arm64.whl", hash = "sha256:96e33b249776f5aa7017a494b78994cf3cc8461291d460b46e75f6bc6cc40dc8"},
+    {file = "google_crc32c-1.7.0-cp311-cp311-macosx_12_0_x86_64.whl", hash = "sha256:c2dc799827990dd06b777067e27f57c2a552ddde4c4cd2d883b1b615ee92f9cf"},
+    {file = "google_crc32c-1.7.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e4c29f7718f48e32810a41b17126e0ca588a0ae6158b4da2926d8074241a155d"},
+    {file = "google_crc32c-1.7.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5f30548e65291a4658c9e56f6f516159663f2b4a2c991b9af5846f0084ea25d4"},
+    {file = "google_crc32c-1.7.0-cp311-cp311-win_amd64.whl", hash = "sha256:9754f9eaa5ff82166512908f02745d5e883650d7b04d1732b5df3335986ad359"},
+    {file = "google_crc32c-1.7.0-pp311-pypy311_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1277c27428a6cc89a51f5afbc04b81fae0288fb631117383f0de4f2bf78ffad6"},
+    {file = "google_crc32c-1.7.0-pp311-pypy311_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:731921158ef113bf157b8e65f13303d627fb540f173a410260f2fb7570af644c"},
+    {file = "google_crc32c-1.7.0.tar.gz", hash = "sha256:c8c15a04b290c7556f277acc55ad98503a8bc0893ea6860fd5b5d210f3f558ce"},
 ]
 
 [[package]]
@@ -1267,66 +1269,66 @@ files = [
 
 [[package]]
 name = "googleapis-common-protos"
-version = "1.69.1"
+version = "1.69.2"
 requires_python = ">=3.7"
 summary = "Common protobufs used in Google APIs"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
-    "protobuf!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0.dev0,>=3.20.2",
+    "protobuf!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "googleapis_common_protos-1.69.1-py2.py3-none-any.whl", hash = "sha256:4077f27a6900d5946ee5a369fab9c8ded4c0ef1c6e880458ea2f70c14f7b70d5"},
-    {file = "googleapis_common_protos-1.69.1.tar.gz", hash = "sha256:e20d2d8dda87da6fe7340afbbdf4f0bcb4c8fae7e6cadf55926c31f946b0b9b1"},
+    {file = "googleapis_common_protos-1.69.2-py3-none-any.whl", hash = "sha256:0b30452ff9c7a27d80bfc5718954063e8ab53dd3697093d3bc99581f5fd24212"},
+    {file = "googleapis_common_protos-1.69.2.tar.gz", hash = "sha256:3e1b904a27a33c821b4b749fd31d334c0c9c30e6113023d495e48979a3dc9c5f"},
 ]
 
 [[package]]
 name = "googleapis-common-protos"
-version = "1.69.1"
+version = "1.69.2"
 extras = ["grpc"]
 requires_python = ">=3.7"
 summary = "Common protobufs used in Google APIs"
 groups = ["chaostoolkit"]
 dependencies = [
-    "googleapis-common-protos==1.69.1",
-    "grpcio<2.0.0.dev0,>=1.44.0",
+    "googleapis-common-protos==1.69.2",
+    "grpcio<2.0.0,>=1.44.0",
 ]
 files = [
-    {file = "googleapis_common_protos-1.69.1-py2.py3-none-any.whl", hash = "sha256:4077f27a6900d5946ee5a369fab9c8ded4c0ef1c6e880458ea2f70c14f7b70d5"},
-    {file = "googleapis_common_protos-1.69.1.tar.gz", hash = "sha256:e20d2d8dda87da6fe7340afbbdf4f0bcb4c8fae7e6cadf55926c31f946b0b9b1"},
+    {file = "googleapis_common_protos-1.69.2-py3-none-any.whl", hash = "sha256:0b30452ff9c7a27d80bfc5718954063e8ab53dd3697093d3bc99581f5fd24212"},
+    {file = "googleapis_common_protos-1.69.2.tar.gz", hash = "sha256:3e1b904a27a33c821b4b749fd31d334c0c9c30e6113023d495e48979a3dc9c5f"},
 ]
 
 [[package]]
 name = "grafeas"
-version = "1.14.0"
+version = "1.14.1"
 requires_python = ">=3.7"
 summary = "Grafeas API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1",
-    "google-auth!=2.24.0,!=2.25.0,<3.0.0dev,>=2.14.1",
-    "proto-plus<2.0.0dev,>=1.22.3",
-    "proto-plus<2.0.0dev,>=1.25.0; python_version >= \"3.13\"",
-    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1",
+    "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+    "proto-plus<2.0.0,>=1.22.3",
+    "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+    "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "grafeas-1.14.0-py2.py3-none-any.whl", hash = "sha256:ec16b0f6a5dbad6d2aa575911926f70635c940160f4899ddda30872d94a82385"},
-    {file = "grafeas-1.14.0.tar.gz", hash = "sha256:e1fde0823eb0b87a7420961a696f556cbc6fdae92fda71ccd1f59b196028c8ef"},
+    {file = "grafeas-1.14.1-py3-none-any.whl", hash = "sha256:35b8cd76a316e0094fb36a55b41fef4095ed3d2eb8e479f1efffca7707fca1e0"},
+    {file = "grafeas-1.14.1.tar.gz", hash = "sha256:7d07bf3f3ee6cf9efbcdbbb85f039b95d0a3d6c12633abbe8d5928120afa4311"},
 ]
 
 [[package]]
 name = "grpc-google-iam-v1"
-version = "0.14.1"
+version = "0.14.2"
 requires_python = ">=3.7"
 summary = "IAM API client library"
 groups = ["chaostoolkit"]
 dependencies = [
-    "googleapis-common-protos[grpc]<2.0.0dev,>=1.56.0",
-    "grpcio<2.0.0dev,>=1.44.0",
-    "protobuf!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.2",
+    "googleapis-common-protos[grpc]<2.0.0,>=1.56.0",
+    "grpcio<2.0.0,>=1.44.0",
+    "protobuf!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "grpc_google_iam_v1-0.14.1-py2.py3-none-any.whl", hash = "sha256:b4eca35b2231dd76066ebf1728f3cd30d51034db946827ef63ef138da14eea16"},
-    {file = "grpc_google_iam_v1-0.14.1.tar.gz", hash = "sha256:14149f37af0e5779fa8a22a8ae588663269e8a479d9c2e69a5056e589bf8a891"},
+    {file = "grpc_google_iam_v1-0.14.2-py3-none-any.whl", hash = "sha256:a3171468459770907926d56a440b2bb643eec1d7ba215f48f3ecece42b4d8351"},
+    {file = "grpc_google_iam_v1-0.14.2.tar.gz", hash = "sha256:b3e1fc387a1a329e41672197d0ace9de22c78dd7d215048c4c78712073f7bd20"},
 ]
 
 [[package]]
@@ -1558,31 +1560,31 @@ files = [
 
 [[package]]
 name = "multidict"
-version = "6.1.0"
-requires_python = ">=3.8"
+version = "6.2.0"
+requires_python = ">=3.9"
 summary = "multidict implementation"
 groups = ["chaostoolkit"]
 dependencies = [
     "typing-extensions>=4.1.0; python_version < \"3.11\"",
 ]
 files = [
-    {file = "multidict-6.1.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:3efe2c2cb5763f2f1b275ad2bf7a287d3f7ebbef35648a9726e3b69284a4f3d6"},
-    {file = "multidict-6.1.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:c7053d3b0353a8b9de430a4f4b4268ac9a4fb3481af37dfe49825bf45ca24156"},
-    {file = "multidict-6.1.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:27e5fc84ccef8dfaabb09d82b7d179c7cf1a3fbc8a966f8274fcb4ab2eb4cadb"},
-    {file = "multidict-6.1.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0e2b90b43e696f25c62656389d32236e049568b39320e2735d51f08fd362761b"},
-    {file = "multidict-6.1.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:d83a047959d38a7ff552ff94be767b7fd79b831ad1cd9920662db05fec24fe72"},
-    {file = "multidict-6.1.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:d1a9dd711d0877a1ece3d2e4fea11a8e75741ca21954c919406b44e7cf971304"},
-    {file = "multidict-6.1.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ec2abea24d98246b94913b76a125e855eb5c434f7c46546046372fe60f666351"},
-    {file = "multidict-6.1.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:4867cafcbc6585e4b678876c489b9273b13e9fff9f6d6d66add5e15d11d926cb"},
-    {file = "multidict-6.1.0-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:5b48204e8d955c47c55b72779802b219a39acc3ee3d0116d5080c388970b76e3"},
-    {file = "multidict-6.1.0-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:d8fff389528cad1618fb4b26b95550327495462cd745d879a8c7c2115248e399"},
-    {file = "multidict-6.1.0-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:a7a9541cd308eed5e30318430a9c74d2132e9a8cb46b901326272d780bf2d423"},
-    {file = "multidict-6.1.0-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:da1758c76f50c39a2efd5e9859ce7d776317eb1dd34317c8152ac9251fc574a3"},
-    {file = "multidict-6.1.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:c943a53e9186688b45b323602298ab727d8865d8c9ee0b17f8d62d14b56f0753"},
-    {file = "multidict-6.1.0-cp311-cp311-win32.whl", hash = "sha256:90f8717cb649eea3504091e640a1b8568faad18bd4b9fcd692853a04475a4b80"},
-    {file = "multidict-6.1.0-cp311-cp311-win_amd64.whl", hash = "sha256:82176036e65644a6cc5bd619f65f6f19781e8ec2e5330f51aa9ada7504cc1926"},
-    {file = "multidict-6.1.0-py3-none-any.whl", hash = "sha256:48e171e52d1c4d33888e529b999e5900356b9ae588c2f09a52dcefb158b27506"},
-    {file = "multidict-6.1.0.tar.gz", hash = "sha256:22ae2ebf9b0c69d206c003e2f6a914ea33f0a932d4aa16f236afc049d9958f4a"},
+    {file = "multidict-6.2.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:84e87a7d75fa36839a3a432286d719975362d230c70ebfa0948549cc38bd5b46"},
+    {file = "multidict-6.2.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:8de4d42dffd5ced9117af2ce66ba8722402541a3aa98ffdf78dde92badb68932"},
+    {file = "multidict-6.2.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:e7d91a230c7f8af86c904a5a992b8c064b66330544693fd6759c3d6162382ecf"},
+    {file = "multidict-6.2.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9f6cad071960ba1914fa231677d21b1b4a3acdcce463cee41ea30bc82e6040cf"},
+    {file = "multidict-6.2.0-cp311-cp311-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:0f74f2fc51555f4b037ef278efc29a870d327053aba5cb7d86ae572426c7cccc"},
+    {file = "multidict-6.2.0-cp311-cp311-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:14ed9ed1bfedd72a877807c71113deac292bf485159a29025dfdc524c326f3e1"},
+    {file = "multidict-6.2.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4ac3fcf9a2d369bd075b2c2965544036a27ccd277fc3c04f708338cc57533081"},
+    {file = "multidict-6.2.0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:2fc6af8e39f7496047c7876314f4317736eac82bf85b54c7c76cf1a6f8e35d98"},
+    {file = "multidict-6.2.0-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:5f8cb1329f42fadfb40d6211e5ff568d71ab49be36e759345f91c69d1033d633"},
+    {file = "multidict-6.2.0-cp311-cp311-musllinux_1_2_i686.whl", hash = "sha256:5389445f0173c197f4a3613713b5fb3f3879df1ded2a1a2e4bc4b5b9c5441b7e"},
+    {file = "multidict-6.2.0-cp311-cp311-musllinux_1_2_ppc64le.whl", hash = "sha256:94a7bb972178a8bfc4055db80c51efd24baefaced5e51c59b0d598a004e8305d"},
+    {file = "multidict-6.2.0-cp311-cp311-musllinux_1_2_s390x.whl", hash = "sha256:da51d8928ad8b4244926fe862ba1795f0b6e68ed8c42cd2f822d435db9c2a8f4"},
+    {file = "multidict-6.2.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:063be88bd684782a0715641de853e1e58a2f25b76388538bd62d974777ce9bc2"},
+    {file = "multidict-6.2.0-cp311-cp311-win32.whl", hash = "sha256:52b05e21ff05729fbea9bc20b3a791c3c11da61649ff64cce8257c82a020466d"},
+    {file = "multidict-6.2.0-cp311-cp311-win_amd64.whl", hash = "sha256:1e2a2193d3aa5cbf5758f6d5680a52aa848e0cf611da324f71e5e48a9695cc86"},
+    {file = "multidict-6.2.0-py3-none-any.whl", hash = "sha256:5d26547423e5e71dcc562c4acdc134b900640a39abd9066d7326a7cc2324c530"},
+    {file = "multidict-6.2.0.tar.gz", hash = "sha256:0085b0afb2446e57050140240a8595846ed64d1cbd26cef936bfab3192c673b8"},
 ]
 
 [[package]]
@@ -1598,7 +1600,7 @@ files = [
 
 [[package]]
 name = "opentelemetry-api"
-version = "1.31.0"
+version = "1.31.1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry Python API"
 groups = ["chaostoolkit", "extra"]
@@ -1607,8 +1609,8 @@ dependencies = [
     "importlib-metadata<8.7.0,>=6.0",
 ]
 files = [
-    {file = "opentelemetry_api-1.31.0-py3-none-any.whl", hash = "sha256:145b72c6c16977c005c568ec32f4946054ab793d8474a17fd884b0397582c5f2"},
-    {file = "opentelemetry_api-1.31.0.tar.gz", hash = "sha256:d8da59e83e8e3993b4726e4c1023cd46f57c4d5a73142e239247e7d814309de1"},
+    {file = "opentelemetry_api-1.31.1-py3-none-any.whl", hash = "sha256:1511a3f470c9c8a32eeea68d4ea37835880c0eed09dd1a0187acc8b1301da0a1"},
+    {file = "opentelemetry_api-1.31.1.tar.gz", hash = "sha256:137ad4b64215f02b3000a0292e077641c8611aab636414632a9b9068593b7e91"},
 ]
 
 [[package]]
@@ -1630,21 +1632,21 @@ files = [
 
 [[package]]
 name = "opentelemetry-exporter-otlp-proto-common"
-version = "1.31.0"
+version = "1.31.1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry Protobuf encoding"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
-    "opentelemetry-proto==1.31.0",
+    "opentelemetry-proto==1.31.1",
 ]
 files = [
-    {file = "opentelemetry_exporter_otlp_proto_common-1.31.0-py3-none-any.whl", hash = "sha256:42b402f2340c0612907799d91d13b928314f06c57c362dfa0c074e20b673f43d"},
-    {file = "opentelemetry_exporter_otlp_proto_common-1.31.0.tar.gz", hash = "sha256:e7fa0fe8cf2f87c190a59d820b6ba0821234178bc1227b5bd40ca057622d4ddc"},
+    {file = "opentelemetry_exporter_otlp_proto_common-1.31.1-py3-none-any.whl", hash = "sha256:7cadf89dbab12e217a33c5d757e67c76dd20ce173f8203e7370c4996f2e9efd8"},
+    {file = "opentelemetry_exporter_otlp_proto_common-1.31.1.tar.gz", hash = "sha256:c748e224c01f13073a2205397ba0e415dcd3be9a0f95101ba4aace5fc730e0da"},
 ]
 
 [[package]]
 name = "opentelemetry-exporter-otlp-proto-http"
-version = "1.31.0"
+version = "1.31.1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry Collector Protobuf over HTTP Exporter"
 groups = ["chaostoolkit", "extra"]
@@ -1652,117 +1654,117 @@ dependencies = [
     "deprecated>=1.2.6",
     "googleapis-common-protos~=1.52",
     "opentelemetry-api~=1.15",
-    "opentelemetry-exporter-otlp-proto-common==1.31.0",
-    "opentelemetry-proto==1.31.0",
-    "opentelemetry-sdk~=1.31.0",
+    "opentelemetry-exporter-otlp-proto-common==1.31.1",
+    "opentelemetry-proto==1.31.1",
+    "opentelemetry-sdk~=1.31.1",
     "requests~=2.7",
 ]
 files = [
-    {file = "opentelemetry_exporter_otlp_proto_http-1.31.0-py3-none-any.whl", hash = "sha256:d9f00fd0684324e8c2dc13cd9580f94d85b6e10040c5f89a533f611c7583f910"},
-    {file = "opentelemetry_exporter_otlp_proto_http-1.31.0.tar.gz", hash = "sha256:09cbe2f96a1996cae94a426fbc59cc2f5bbe9a246233f15832d295e750b407de"},
+    {file = "opentelemetry_exporter_otlp_proto_http-1.31.1-py3-none-any.whl", hash = "sha256:5dee1f051f096b13d99706a050c39b08e3f395905f29088bfe59e54218bd1cf4"},
+    {file = "opentelemetry_exporter_otlp_proto_http-1.31.1.tar.gz", hash = "sha256:723bd90eb12cfb9ae24598641cb0c92ca5ba9f1762103902f6ffee3341ba048e"},
 ]
 
 [[package]]
 name = "opentelemetry-exporter-prometheus"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "Prometheus Metric Exporter for OpenTelemetry"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
     "opentelemetry-api~=1.12",
-    "opentelemetry-sdk~=1.31.0",
+    "opentelemetry-sdk~=1.31.1",
     "prometheus-client<1.0.0,>=0.5.0",
 ]
 files = [
-    {file = "opentelemetry_exporter_prometheus-0.52b0-py3-none-any.whl", hash = "sha256:89aea248f4e34039f2bf720253476262f933643d256d9d7b499d15892d3249b3"},
-    {file = "opentelemetry_exporter_prometheus-0.52b0.tar.gz", hash = "sha256:fc0a00a46e596a3a6a5085a7a2640fd2fc08a912af657f53894f588a75eb34b9"},
+    {file = "opentelemetry_exporter_prometheus-0.52b1-py3-none-any.whl", hash = "sha256:41c9ccb364558f6d32ea0d961109f22e2c8c3f6c65a8e9b353681210967b178e"},
+    {file = "opentelemetry_exporter_prometheus-0.52b1.tar.gz", hash = "sha256:1801b5c0defa622d24a77e56e83ed2540fd4596a5b90b4c80d5546715c3f4f48"},
 ]
 
 [[package]]
 name = "opentelemetry-instrumentation"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "Instrumentation Tools & Auto Instrumentation for OpenTelemetry Python"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
     "opentelemetry-api~=1.4",
-    "opentelemetry-semantic-conventions==0.52b0",
+    "opentelemetry-semantic-conventions==0.52b1",
     "packaging>=18.0",
     "wrapt<2.0.0,>=1.0.0",
 ]
 files = [
-    {file = "opentelemetry_instrumentation-0.52b0-py3-none-any.whl", hash = "sha256:0c93ca9fa1d438e2b741f21d6aa870c991e0e3b0f1367c8626bb3981b12ad2fe"},
-    {file = "opentelemetry_instrumentation-0.52b0.tar.gz", hash = "sha256:da75d328f9dbd59c6e61af6adec29f4bb581f5cbf3ddfae348268f9c1edaceeb"},
+    {file = "opentelemetry_instrumentation-0.52b1-py3-none-any.whl", hash = "sha256:8c0059c4379d77bbd8015c8d8476020efe873c123047ec069bb335e4b8717477"},
+    {file = "opentelemetry_instrumentation-0.52b1.tar.gz", hash = "sha256:739f3bfadbbeec04dd59297479e15660a53df93c131d907bb61052e3d3c1406f"},
 ]
 
 [[package]]
 name = "opentelemetry-instrumentation-botocore"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry Botocore instrumentation"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
     "opentelemetry-api~=1.30",
-    "opentelemetry-instrumentation==0.52b0",
+    "opentelemetry-instrumentation==0.52b1",
     "opentelemetry-propagator-aws-xray~=1.0",
-    "opentelemetry-semantic-conventions==0.52b0",
+    "opentelemetry-semantic-conventions==0.52b1",
 ]
 files = [
-    {file = "opentelemetry_instrumentation_botocore-0.52b0-py3-none-any.whl", hash = "sha256:ffd552569e1d1ce44c3990f634e33df96edfa05aba98cbe8d29ab081f830702e"},
-    {file = "opentelemetry_instrumentation_botocore-0.52b0.tar.gz", hash = "sha256:9f2ffd2047ab65285e0cb18517c7ce9b32ba86076dd842c667b338de4bcfd140"},
+    {file = "opentelemetry_instrumentation_botocore-0.52b1-py3-none-any.whl", hash = "sha256:1cf2a758e936943d43bf724d2baf541a9c9a95d793e9ce3e914fc102bc4e2cb7"},
+    {file = "opentelemetry_instrumentation_botocore-0.52b1.tar.gz", hash = "sha256:78bbb929fd98d60e2ae1b6f3a528e5e7b64f48b3f29f975f0b4454eb72399b13"},
 ]
 
 [[package]]
 name = "opentelemetry-instrumentation-httpx"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry HTTPX Instrumentation"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
     "opentelemetry-api~=1.12",
-    "opentelemetry-instrumentation==0.52b0",
-    "opentelemetry-semantic-conventions==0.52b0",
-    "opentelemetry-util-http==0.52b0",
+    "opentelemetry-instrumentation==0.52b1",
+    "opentelemetry-semantic-conventions==0.52b1",
+    "opentelemetry-util-http==0.52b1",
     "wrapt<2.0.0,>=1.0.0",
 ]
 files = [
-    {file = "opentelemetry_instrumentation_httpx-0.52b0-py3-none-any.whl", hash = "sha256:1016464d95a30581fdfcde7779182f4e72dc84c8bd16e4859e856bce1785b770"},
-    {file = "opentelemetry_instrumentation_httpx-0.52b0.tar.gz", hash = "sha256:171ae5f68b6fdf56a1eb9524589245c8dfdb73e2da76c10706547904da9c50d8"},
+    {file = "opentelemetry_instrumentation_httpx-0.52b1-py3-none-any.whl", hash = "sha256:8476c3133dc28c7192e17f0f7a28170d2410b125551b7c450dd76eb7192cb89f"},
+    {file = "opentelemetry_instrumentation_httpx-0.52b1.tar.gz", hash = "sha256:b32252f21fff7f1bd88cc42716dcf948b3f9e8fc689d3d5d479222491f443c8d"},
 ]
 
 [[package]]
 name = "opentelemetry-instrumentation-requests"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry requests instrumentation"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
     "opentelemetry-api~=1.12",
-    "opentelemetry-instrumentation==0.52b0",
-    "opentelemetry-semantic-conventions==0.52b0",
-    "opentelemetry-util-http==0.52b0",
+    "opentelemetry-instrumentation==0.52b1",
+    "opentelemetry-semantic-conventions==0.52b1",
+    "opentelemetry-util-http==0.52b1",
 ]
 files = [
-    {file = "opentelemetry_instrumentation_requests-0.52b0-py3-none-any.whl", hash = "sha256:2806a8f522a27fab150761d69e768aa479b076cf2b0e3ca1ddf6c4ff1bda4683"},
-    {file = "opentelemetry_instrumentation_requests-0.52b0.tar.gz", hash = "sha256:8a36ac5bc92ca17454f208720de8a147518cdaf0a5b82ed1615b5367e1dbbf2a"},
+    {file = "opentelemetry_instrumentation_requests-0.52b1-py3-none-any.whl", hash = "sha256:58ae3c415543d8ba2b0091b81ac13b65f2993adef0a4b9a5d3d7ebbe0023986a"},
+    {file = "opentelemetry_instrumentation_requests-0.52b1.tar.gz", hash = "sha256:711a2ef90e32a0ffd4650b21376b8e102473845ba9121efca0d94314d529b501"},
 ]
 
 [[package]]
 name = "opentelemetry-instrumentation-urllib3"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry urllib3 instrumentation"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
     "opentelemetry-api~=1.12",
-    "opentelemetry-instrumentation==0.52b0",
-    "opentelemetry-semantic-conventions==0.52b0",
-    "opentelemetry-util-http==0.52b0",
+    "opentelemetry-instrumentation==0.52b1",
+    "opentelemetry-semantic-conventions==0.52b1",
+    "opentelemetry-util-http==0.52b1",
     "wrapt<2.0.0,>=1.0.0",
 ]
 files = [
-    {file = "opentelemetry_instrumentation_urllib3-0.52b0-py3-none-any.whl", hash = "sha256:55b7405d9037d59e0b15a4be5361703003946d1c4c7c9b69cedc33a1e4293f1e"},
-    {file = "opentelemetry_instrumentation_urllib3-0.52b0.tar.gz", hash = "sha256:89059178a8a7b5ab70c3885315f022a8a5b09dabb0b74a6bdfc6a662990fa129"},
+    {file = "opentelemetry_instrumentation_urllib3-0.52b1-py3-none-any.whl", hash = "sha256:4011bac1639a6336c443252d93709eff17e316523f335ddee4ddb47bf464305e"},
+    {file = "opentelemetry_instrumentation_urllib3-0.52b1.tar.gz", hash = "sha256:b607aefd2c02ff7fbf6eea4b863f63348e64b29592ffa90dcc970a5bbcbe3c6b"},
 ]
 
 [[package]]
@@ -1781,7 +1783,7 @@ files = [
 
 [[package]]
 name = "opentelemetry-propagator-b3"
-version = "1.31.0"
+version = "1.31.1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry B3 Propagator"
 groups = ["chaostoolkit", "extra"]
@@ -1790,8 +1792,8 @@ dependencies = [
     "opentelemetry-api~=1.3",
 ]
 files = [
-    {file = "opentelemetry_propagator_b3-1.31.0-py3-none-any.whl", hash = "sha256:5776cd5efdae5b581bab3142c7261925ffb48365dd0ea944cf008f638f7a282d"},
-    {file = "opentelemetry_propagator_b3-1.31.0.tar.gz", hash = "sha256:469f90efaedacd565907f05a45dacc09862b1f7c7a6f7cf7856a165ddc5d513d"},
+    {file = "opentelemetry_propagator_b3-1.31.1-py3-none-any.whl", hash = "sha256:4d1beacf0de191a90195b126899669195348f1fe972e03de10b6d6bbd9d254f9"},
+    {file = "opentelemetry_propagator_b3-1.31.1.tar.gz", hash = "sha256:97b14c1a223a2ebaff648396c7d056c05ecdfa1ef591b0b30b974b14519dd4f0"},
 ]
 
 [[package]]
@@ -1810,7 +1812,7 @@ files = [
 
 [[package]]
 name = "opentelemetry-proto"
-version = "1.31.0"
+version = "1.31.1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry Python Proto"
 groups = ["chaostoolkit", "extra"]
@@ -1818,8 +1820,8 @@ dependencies = [
     "protobuf<6.0,>=5.0",
 ]
 files = [
-    {file = "opentelemetry_proto-1.31.0-py3-none-any.whl", hash = "sha256:ad4ded738e3d48d3280b37984eae75e63be01d8a0b04c83c743714aba960670d"},
-    {file = "opentelemetry_proto-1.31.0.tar.gz", hash = "sha256:5efe313788a8f4b739a94beb207749587a449a5e90c68b0b6a931567e8ca721d"},
+    {file = "opentelemetry_proto-1.31.1-py3-none-any.whl", hash = "sha256:1398ffc6d850c2f1549ce355744e574c8cd7c1dba3eea900d630d52c41d07178"},
+    {file = "opentelemetry_proto-1.31.1.tar.gz", hash = "sha256:d93e9c2b444e63d1064fb50ae035bcb09e5822274f1683886970d2734208e790"},
 ]
 
 [[package]]
@@ -1841,18 +1843,18 @@ files = [
 
 [[package]]
 name = "opentelemetry-sdk"
-version = "1.31.0"
+version = "1.31.1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry Python SDK"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
-    "opentelemetry-api==1.31.0",
-    "opentelemetry-semantic-conventions==0.52b0",
+    "opentelemetry-api==1.31.1",
+    "opentelemetry-semantic-conventions==0.52b1",
     "typing-extensions>=3.7.4",
 ]
 files = [
-    {file = "opentelemetry_sdk-1.31.0-py3-none-any.whl", hash = "sha256:97c9a03865e69723725fb64fe04343a488c3e61e684eb804bd7d6da2215dfc60"},
-    {file = "opentelemetry_sdk-1.31.0.tar.gz", hash = "sha256:452d7d5b3c1db2e5e4cb64abede0ddd20690cb244a559c73a59652fdf6726070"},
+    {file = "opentelemetry_sdk-1.31.1-py3-none-any.whl", hash = "sha256:882d021321f223e37afaca7b4e06c1d8bbc013f9e17ff48a7aa017460a8e7dae"},
+    {file = "opentelemetry_sdk-1.31.1.tar.gz", hash = "sha256:c95f61e74b60769f8ff01ec6ffd3d29684743404603df34b20aa16a49dc8d903"},
 ]
 
 [[package]]
@@ -1871,28 +1873,28 @@ files = [
 
 [[package]]
 name = "opentelemetry-semantic-conventions"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "OpenTelemetry Semantic Conventions"
 groups = ["chaostoolkit", "extra"]
 dependencies = [
     "deprecated>=1.2.6",
-    "opentelemetry-api==1.31.0",
+    "opentelemetry-api==1.31.1",
 ]
 files = [
-    {file = "opentelemetry_semantic_conventions-0.52b0-py3-none-any.whl", hash = "sha256:4d843652ae1f9f3c0d4d8df0bfef740627c90495ac043fc33f0a04bad3b606e2"},
-    {file = "opentelemetry_semantic_conventions-0.52b0.tar.gz", hash = "sha256:f8bc8873a69d0a2f45746c31980baad2bb10ccee16b1816497ccf99417770386"},
+    {file = "opentelemetry_semantic_conventions-0.52b1-py3-none-any.whl", hash = "sha256:72b42db327e29ca8bb1b91e8082514ddf3bbf33f32ec088feb09526ade4bc77e"},
+    {file = "opentelemetry_semantic_conventions-0.52b1.tar.gz", hash = "sha256:7b3d226ecf7523c27499758a58b542b48a0ac8d12be03c0488ff8ec60c5bae5d"},
 ]
 
 [[package]]
 name = "opentelemetry-util-http"
-version = "0.52b0"
+version = "0.52b1"
 requires_python = ">=3.8"
 summary = "Web util for OpenTelemetry"
 groups = ["chaostoolkit", "extra"]
 files = [
-    {file = "opentelemetry_util_http-0.52b0-py3-none-any.whl", hash = "sha256:89154382584ac42cd2362bdbcf825129d4dd61fe2b0cbd901b79de6964bfc72d"},
-    {file = "opentelemetry_util_http-0.52b0.tar.gz", hash = "sha256:2e0c2a206ff3a8a7ffabbdfcc1088c3eddc8f2415ecb35c01ecc2fd4fe9dfcfe"},
+    {file = "opentelemetry_util_http-0.52b1-py3-none-any.whl", hash = "sha256:6a6ab6bfa23fef96f4995233e874f67602adf9d224895981b4ab9d4dde23de78"},
+    {file = "opentelemetry_util_http-0.52b1.tar.gz", hash = "sha256:c03c8c23f1b75fadf548faece7ead3aecd50761c5593a2b2831b48730eee5b31"},
 ]
 
 [[package]]
@@ -2026,18 +2028,18 @@ files = [
 
 [[package]]
 name = "protobuf"
-version = "5.29.3"
+version = "5.29.4"
 requires_python = ">=3.8"
 summary = ""
 groups = ["chaostoolkit", "extra"]
 files = [
-    {file = "protobuf-5.29.3-cp310-abi3-win32.whl", hash = "sha256:3ea51771449e1035f26069c4c7fd51fba990d07bc55ba80701c78f886bf9c888"},
-    {file = "protobuf-5.29.3-cp310-abi3-win_amd64.whl", hash = "sha256:a4fa6f80816a9a0678429e84973f2f98cbc218cca434abe8db2ad0bffc98503a"},
-    {file = "protobuf-5.29.3-cp38-abi3-macosx_10_9_universal2.whl", hash = "sha256:a8434404bbf139aa9e1300dbf989667a83d42ddda9153d8ab76e0d5dcaca484e"},
-    {file = "protobuf-5.29.3-cp38-abi3-manylinux2014_aarch64.whl", hash = "sha256:daaf63f70f25e8689c072cfad4334ca0ac1d1e05a92fc15c54eb9cf23c3efd84"},
-    {file = "protobuf-5.29.3-cp38-abi3-manylinux2014_x86_64.whl", hash = "sha256:c027e08a08be10b67c06bf2370b99c811c466398c357e615ca88c91c07f0910f"},
-    {file = "protobuf-5.29.3-py3-none-any.whl", hash = "sha256:0a18ed4a24198528f2333802eb075e59dea9d679ab7a6c5efb017a59004d849f"},
-    {file = "protobuf-5.29.3.tar.gz", hash = "sha256:5da0f41edaf117bde316404bad1a486cb4ededf8e4a54891296f648e8e076620"},
+    {file = "protobuf-5.29.4-cp310-abi3-win32.whl", hash = "sha256:13eb236f8eb9ec34e63fc8b1d6efd2777d062fa6aaa68268fb67cf77f6839ad7"},
+    {file = "protobuf-5.29.4-cp310-abi3-win_amd64.whl", hash = "sha256:bcefcdf3976233f8a502d265eb65ea740c989bacc6c30a58290ed0e519eb4b8d"},
+    {file = "protobuf-5.29.4-cp38-abi3-macosx_10_9_universal2.whl", hash = "sha256:307ecba1d852ec237e9ba668e087326a67564ef83e45a0189a772ede9e854dd0"},
+    {file = "protobuf-5.29.4-cp38-abi3-manylinux2014_aarch64.whl", hash = "sha256:aec4962f9ea93c431d5714ed1be1c93f13e1a8618e70035ba2b0564d9e633f2e"},
+    {file = "protobuf-5.29.4-cp38-abi3-manylinux2014_x86_64.whl", hash = "sha256:d7d3f7d1d5a66ed4942d4fefb12ac4b14a29028b209d4bfb25c68ae172059922"},
+    {file = "protobuf-5.29.4-py3-none-any.whl", hash = "sha256:3fde11b505e1597f71b875ef2fc52062b6a9740e5f7c8997ce878b6009145862"},
+    {file = "protobuf-5.29.4.tar.gz", hash = "sha256:4f1dfcd7997b31ef8f53ec82781ff434a28bf71d9102ddde14d076adcfc78c99"},
 ]
 
 [[package]]
@@ -2121,7 +2123,7 @@ files = [
 
 [[package]]
 name = "pyinstaller-hooks-contrib"
-version = "2025.1"
+version = "2025.2"
 requires_python = ">=3.8"
 summary = "Community maintained hooks for PyInstaller"
 groups = ["default"]
@@ -2131,8 +2133,8 @@ dependencies = [
     "setuptools>=42.0.0",
 ]
 files = [
-    {file = "pyinstaller_hooks_contrib-2025.1-py3-none-any.whl", hash = "sha256:d3c799470cbc0bda60dcc8e6b4ab976777532b77621337f2037f558905e3a8e9"},
-    {file = "pyinstaller_hooks_contrib-2025.1.tar.gz", hash = "sha256:130818f9e9a0a7f2261f1fd66054966a3a50c99d000981c5d1db11d3ad0c6ab2"},
+    {file = "pyinstaller_hooks_contrib-2025.2-py3-none-any.whl", hash = "sha256:0b2bc7697075de5eb071ff13ef4a156d3beae6c19c7cbdcd70f37978d2013e30"},
+    {file = "pyinstaller_hooks_contrib-2025.2.tar.gz", hash = "sha256:ccdd41bc30290f725f3e48f4a39985d11855af81d614d167e3021e303acb9102"},
 ]
 
 [[package]]
@@ -2355,13 +2357,13 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "76.0.0"
+version = "77.0.3"
 requires_python = ">=3.9"
 summary = "Easily download, build, install, upgrade, and uninstall Python packages"
 groups = ["default"]
 files = [
-    {file = "setuptools-76.0.0-py3-none-any.whl", hash = "sha256:199466a166ff664970d0ee145839f5582cb9bca7a0a3a2e795b6a9cb2308e9c6"},
-    {file = "setuptools-76.0.0.tar.gz", hash = "sha256:43b4ee60e10b0d0ee98ad11918e114c70701bc6051662a9a675a0496c1a158f4"},
+    {file = "setuptools-77.0.3-py3-none-any.whl", hash = "sha256:67122e78221da5cf550ddd04cf8742c8fe12094483749a792d56cd669d6cf58c"},
+    {file = "setuptools-77.0.3.tar.gz", hash = "sha256:583b361c8da8de57403743e756609670de6fb2345920e36dc5c2d914c319c945"},
 ]
 
 [[package]]
@@ -2377,13 +2379,13 @@ files = [
 
 [[package]]
 name = "slack-sdk"
-version = "3.34.0"
+version = "3.35.0"
 requires_python = ">=3.6"
 summary = "The Slack API Platform SDK for Python"
 groups = ["chaostoolkit"]
 files = [
-    {file = "slack_sdk-3.34.0-py2.py3-none-any.whl", hash = "sha256:c61f57f310d85be83466db5a98ab6ae3bb2e5587437b54fa0daa8fae6a0feffa"},
-    {file = "slack_sdk-3.34.0.tar.gz", hash = "sha256:ff61db7012160eed742285ea91f11c72b7a38a6500a7f6c5335662b4bc6b853d"},
+    {file = "slack_sdk-3.35.0-py2.py3-none-any.whl", hash = "sha256:00933d171fbd8a068b321ebb5f89612cc781d3183d8e3447c85499eca9d865be"},
+    {file = "slack_sdk-3.35.0.tar.gz", hash = "sha256:8183b6cbf26a0c1e2441478cd9c0dc4eef08d60c1394cfdc9a769e309a9b6459"},
 ]
 
 [[package]]
@@ -2451,13 +2453,13 @@ files = [
 
 [[package]]
 name = "tzdata"
-version = "2025.1"
+version = "2025.2"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
 groups = ["chaostoolkit"]
 files = [
-    {file = "tzdata-2025.1-py2.py3-none-any.whl", hash = "sha256:7e127113816800496f027041c570f50bcd464a020098a3b6b199517772303639"},
-    {file = "tzdata-2025.1.tar.gz", hash = "sha256:24894909e88cdb28bd1636c6887801df64cb485bd593f2fd83ef29075a81d694"},
+    {file = "tzdata-2025.2-py2.py3-none-any.whl", hash = "sha256:1a403fada01ff9221ca8044d701868fa132215d84beb92242d9acd2147f667a8"},
+    {file = "tzdata-2025.2.tar.gz", hash = "sha256:b60a638fcc0daffadf82fe0f57e53d06bdec2f36c4df66280ae79bce6bd6f2b9"},
 ]
 
 [[package]]
