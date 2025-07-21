@@ -148,7 +148,7 @@ files = [
 
 [[package]]
 name = "azure-identity"
-version = "1.23.0"
+version = "1.23.1"
 requires_python = ">=3.9"
 summary = "Microsoft Azure Identity Library for Python"
 groups = ["chaostoolkit"]
@@ -160,8 +160,8 @@ dependencies = [
     "typing-extensions>=4.0.0",
 ]
 files = [
-    {file = "azure_identity-1.23.0-py3-none-any.whl", hash = "sha256:dbbeb64b8e5eaa81c44c565f264b519ff2de7ff0e02271c49f3cb492762a50b0"},
-    {file = "azure_identity-1.23.0.tar.gz", hash = "sha256:d9cdcad39adb49d4bb2953a217f62aec1f65bbb3c63c9076da2be2a47e53dde4"},
+    {file = "azure_identity-1.23.1-py3-none-any.whl", hash = "sha256:7eed28baa0097a47e3fb53bd35a63b769e6b085bb3cb616dfce2b67f28a004a1"},
+    {file = "azure_identity-1.23.1.tar.gz", hash = "sha256:226c1ef982a9f8d5dcf6e0f9ed35eaef2a4d971e7dd86317e9b9d52e70a035e4"},
 ]
 
 [[package]]
@@ -199,7 +199,7 @@ files = [
 
 [[package]]
 name = "azure-mgmt-containerservice"
-version = "37.0.0"
+version = "38.0.0"
 requires_python = ">=3.9"
 summary = "Microsoft Azure Container Service Management Client Library for Python"
 groups = ["chaostoolkit"]
@@ -210,8 +210,8 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_mgmt_containerservice-37.0.0-py3-none-any.whl", hash = "sha256:2174cad7126876e48ecc450788c42bd02a393395ce4e674d8a6d034c82681da2"},
-    {file = "azure_mgmt_containerservice-37.0.0.tar.gz", hash = "sha256:174d9c5661a162ec43a0af7905bcf11cd209a6e80045a8f4237d53701d2a913b"},
+    {file = "azure_mgmt_containerservice-38.0.0-py3-none-any.whl", hash = "sha256:e08989940054d905a8ab68e134152f076b785f9b84a5903074347d3815606004"},
+    {file = "azure_mgmt_containerservice-38.0.0.tar.gz", hash = "sha256:5b0217e07679d9a205cddab37501481be92632816ac1e6dde131a2deee2f9984"},
 ]
 
 [[package]]
@@ -330,23 +330,23 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.39.4"
+version = "1.39.9"
 requires_python = ">=3.9"
 summary = "The AWS SDK for Python"
 groups = ["chaostoolkit"]
 dependencies = [
-    "botocore<1.40.0,>=1.39.4",
+    "botocore<1.40.0,>=1.39.9",
     "jmespath<2.0.0,>=0.7.1",
     "s3transfer<0.14.0,>=0.13.0",
 ]
 files = [
-    {file = "boto3-1.39.4-py3-none-any.whl", hash = "sha256:f8e9534b429121aa5c5b7c685c6a94dd33edf14f87926e9a182d5b50220ba284"},
-    {file = "boto3-1.39.4.tar.gz", hash = "sha256:6c955729a1d70181bc8368e02a7d3f350884290def63815ebca8408ee6d47571"},
+    {file = "boto3-1.39.9-py3-none-any.whl", hash = "sha256:5bc85e9fdec4e21ef5ca2c22b4d51a3e32b53f3da36ce51f5a3ea4dbde07b132"},
+    {file = "boto3-1.39.9.tar.gz", hash = "sha256:e3d3a6b617e1575e7ec854c820a882ab2e189a0421e74dc0dca2c9e13d4370a5"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.39.4"
+version = "1.39.9"
 requires_python = ">=3.9"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["chaostoolkit"]
@@ -357,8 +357,8 @@ dependencies = [
     "urllib3<1.27,>=1.25.4; python_version < \"3.10\"",
 ]
 files = [
-    {file = "botocore-1.39.4-py3-none-any.whl", hash = "sha256:c41e167ce01cfd1973c3fa9856ef5244a51ddf9c82cb131120d8617913b6812a"},
-    {file = "botocore-1.39.4.tar.gz", hash = "sha256:e662ac35c681f7942a93f2ec7b4cde8f8b56dd399da47a79fa3e370338521a56"},
+    {file = "botocore-1.39.9-py3-none-any.whl", hash = "sha256:a9691cbe03a3bc8b2720b3c36e5c5a2eecace6acd72bfb1107f00e75edaec4f3"},
+    {file = "botocore-1.39.9.tar.gz", hash = "sha256:02f141c2849e4589a79feea245ce4ecc478d48b7865572445af8aae3b041772d"},
 ]
 
 [[package]]
@@ -374,13 +374,13 @@ files = [
 
 [[package]]
 name = "certifi"
-version = "2025.7.9"
+version = "2025.7.14"
 requires_python = ">=3.7"
 summary = "Python package for providing Mozilla's CA Bundle."
 groups = ["default", "chaostoolkit", "extra"]
 files = [
-    {file = "certifi-2025.7.9-py3-none-any.whl", hash = "sha256:d842783a14f8fdd646895ac26f719a061408834473cfc10203f6a575beb15d39"},
-    {file = "certifi-2025.7.9.tar.gz", hash = "sha256:c1d2ec05395148ee10cf672ffc28cd37ea0ab0d99f9cc74c43e588cbd111b079"},
+    {file = "certifi-2025.7.14-py3-none-any.whl", hash = "sha256:6b31f564a415d79ee77df69d757bb49a5bb53bd9f756cbbe24394ffd6fc1f4b2"},
+    {file = "certifi-2025.7.14.tar.gz", hash = "sha256:8ea99dbdfaaf2ba2f9bac77b9249ef62ec5218e7c2b2e903378ed5fccf765995"},
 ]
 
 [[package]]
@@ -1018,7 +1018,7 @@ files = [
 
 [[package]]
 name = "google-cloud-compute"
-version = "1.32.0"
+version = "1.33.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Compute API client library"
 groups = ["chaostoolkit"]
@@ -1030,13 +1030,13 @@ dependencies = [
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_compute-1.32.0-py3-none-any.whl", hash = "sha256:3635558c5194be9d801bfed61055c3b57e872fb19733864dabb0082d396ba15e"},
-    {file = "google_cloud_compute-1.32.0.tar.gz", hash = "sha256:76d775da26aefbf05eb6b95703f6015e0698e63c97219bbe74ffd34012b01386"},
+    {file = "google_cloud_compute-1.33.0-py3-none-any.whl", hash = "sha256:8237b455a66e4b4360c7401c0241c29b99c626a103132f6c2db9fa3359fc7188"},
+    {file = "google_cloud_compute-1.33.0.tar.gz", hash = "sha256:0ffc56bfca9583c2fa5f2b6271b6756a4d6f5cdbefe2656420711297292e42ee"},
 ]
 
 [[package]]
 name = "google-cloud-container"
-version = "2.57.0"
+version = "2.58.0"
 requires_python = ">=3.7"
 summary = "Google Cloud Container API client library"
 groups = ["chaostoolkit"]
@@ -1048,8 +1048,8 @@ dependencies = [
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_container-2.57.0-py3-none-any.whl", hash = "sha256:811cb7043ea4fa9edca29f575fe180c07cce14b841f71a8e03ce6d1b6b4273e2"},
-    {file = "google_cloud_container-2.57.0.tar.gz", hash = "sha256:fa7e6f593f58348b98bd6dd59344c9a6038e9fba6c0b9858e23d9d278346f129"},
+    {file = "google_cloud_container-2.58.0-py3-none-any.whl", hash = "sha256:f7fe8a8bfe6156802810f87d8519dd5f25880b3198ba7cbf9932e1af3f29c2cd"},
+    {file = "google_cloud_container-2.58.0.tar.gz", hash = "sha256:740ee5b167f7066c485d79cf7a392c8b6d40ecdf55d0a6b6ecc7844fc4cd9adb"},
 ]
 
 [[package]]
@@ -1170,7 +1170,7 @@ files = [
 
 [[package]]
 name = "google-cloud-run"
-version = "0.10.18"
+version = "0.10.19"
 requires_python = ">=3.7"
 summary = "Google Cloud Run API client library"
 groups = ["chaostoolkit"]
@@ -1183,8 +1183,8 @@ dependencies = [
     "protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2",
 ]
 files = [
-    {file = "google_cloud_run-0.10.18-py3-none-any.whl", hash = "sha256:754974343bde47f0ccbe30b0bfebd0632369126898ee6a305783ab7a6afcea3c"},
-    {file = "google_cloud_run-0.10.18.tar.gz", hash = "sha256:53e61a0b313ce266c16e57165a9cb29bb801799beb944fd87c206cfca72c76cc"},
+    {file = "google_cloud_run-0.10.19-py3-none-any.whl", hash = "sha256:cf9feea66898d57ef8c2d6095d599cab2c013750aef71c58f04a88495e370fca"},
+    {file = "google_cloud_run-0.10.19.tar.gz", hash = "sha256:e95f9337c4a66c8a094881864c86f708b6a519b938bef890eef43606e44e7538"},
 ]
 
 [[package]]
@@ -1953,8 +1953,8 @@ files = [
 
 [[package]]
 name = "pg8000"
-version = "1.31.2"
-requires_python = ">=3.8"
+version = "1.31.4"
+requires_python = ">=3.9"
 summary = "PostgreSQL interface library"
 groups = ["chaostoolkit"]
 dependencies = [
@@ -1962,8 +1962,8 @@ dependencies = [
     "scramp>=1.4.5",
 ]
 files = [
-    {file = "pg8000-1.31.2-py3-none-any.whl", hash = "sha256:436c771ede71af4d4c22ba867a30add0bc5c942d7ab27fadbb6934a487ecc8f6"},
-    {file = "pg8000-1.31.2.tar.gz", hash = "sha256:1ea46cf09d8eca07fe7eaadefd7951e37bee7fabe675df164f1a572ffb300876"},
+    {file = "pg8000-1.31.4-py3-none-any.whl", hash = "sha256:d14fb2054642ee80f9a216721892e99e19db60a005358460ffa48872351423d4"},
+    {file = "pg8000-1.31.4.tar.gz", hash = "sha256:e7ecce4339891f27b0b22e2f79eb9efe44118bd384207359fc18350f788ace00"},
 ]
 
 [[package]]
@@ -2115,7 +2115,7 @@ files = [
 
 [[package]]
 name = "pyinstaller-hooks-contrib"
-version = "2025.5"
+version = "2025.6"
 requires_python = ">=3.8"
 summary = "Community maintained hooks for PyInstaller"
 groups = ["default"]
@@ -2125,8 +2125,8 @@ dependencies = [
     "setuptools>=42.0.0",
 ]
 files = [
-    {file = "pyinstaller_hooks_contrib-2025.5-py3-none-any.whl", hash = "sha256:ebfae1ba341cb0002fb2770fad0edf2b3e913c2728d92df7ad562260988ca373"},
-    {file = "pyinstaller_hooks_contrib-2025.5.tar.gz", hash = "sha256:707386770b8fe066c04aad18a71bc483c7b25e18b4750a756999f7da2ab31982"},
+    {file = "pyinstaller_hooks_contrib-2025.6-py3-none-any.whl", hash = "sha256:06779d024f7d60dd75b05520923bba16b17df5f64073434b23e570ffb71094dc"},
+    {file = "pyinstaller_hooks_contrib-2025.6.tar.gz", hash = "sha256:223ae773733fb7a0ee9cb5e817480998a90a6c7a9c3d2b7b580d2dfa2b325751"},
 ]
 
 [[package]]
@@ -2310,7 +2310,7 @@ files = [
 
 [[package]]
 name = "s3transfer"
-version = "0.13.0"
+version = "0.13.1"
 requires_python = ">=3.9"
 summary = "An Amazon S3 Transfer Manager"
 groups = ["chaostoolkit"]
@@ -2318,8 +2318,8 @@ dependencies = [
     "botocore<2.0a.0,>=1.37.4",
 ]
 files = [
-    {file = "s3transfer-0.13.0-py3-none-any.whl", hash = "sha256:0148ef34d6dd964d0d8cf4311b2b21c474693e57c2e069ec708ce043d2b527be"},
-    {file = "s3transfer-0.13.0.tar.gz", hash = "sha256:f5e6db74eb7776a37208001113ea7aa97695368242b364d73e91c981ac522177"},
+    {file = "s3transfer-0.13.1-py3-none-any.whl", hash = "sha256:a981aa7429be23fe6dfc13e80e4020057cbab622b08c0315288758d67cabc724"},
+    {file = "s3transfer-0.13.1.tar.gz", hash = "sha256:c3fdba22ba1bd367922f27ec8032d6a1cf5f10c934fb5d68cf60fd5a23d936cf"},
 ]
 
 [[package]]
