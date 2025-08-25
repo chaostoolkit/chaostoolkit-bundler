@@ -199,19 +199,19 @@ files = [
 
 [[package]]
 name = "azure-mgmt-containerservice"
-version = "39.0.0"
+version = "39.1.0"
 requires_python = ">=3.9"
 summary = "Microsoft Azure Container Service Management Client Library for Python"
 groups = ["chaostoolkit"]
 dependencies = [
     "azure-common>=1.1",
-    "azure-mgmt-core>=1.5.0",
+    "azure-mgmt-core>=1.6.0",
     "isodate>=0.6.1",
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_mgmt_containerservice-39.0.0-py3-none-any.whl", hash = "sha256:e9281b13b49aac53017b181cec9c75fed029b862b590d25f03964c4f7ac01496"},
-    {file = "azure_mgmt_containerservice-39.0.0.tar.gz", hash = "sha256:aa001691edd63d07374b582081c0bb20c8be6ffb885a592a1577d21f4118a837"},
+    {file = "azure_mgmt_containerservice-39.1.0-py3-none-any.whl", hash = "sha256:b46d0eac51a4cfb80533e41b266246ccbe7607d21c4ae6bfbb1f9fb90c6e1244"},
+    {file = "azure_mgmt_containerservice-39.1.0.tar.gz", hash = "sha256:6f0c3fe44e937e8efd0b6037be1023923599a52ce57b811e3056d80b7f9738d0"},
 ]
 
 [[package]]
@@ -230,19 +230,19 @@ files = [
 
 [[package]]
 name = "azure-mgmt-netapp"
-version = "13.6.0"
+version = "13.7.0"
 requires_python = ">=3.9"
 summary = "Microsoft Azure NetApp Files Management Client Library for Python"
 groups = ["chaostoolkit"]
 dependencies = [
     "azure-common>=1.1",
-    "azure-mgmt-core>=1.5.0",
+    "azure-mgmt-core>=1.6.0",
     "isodate>=0.6.1",
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_mgmt_netapp-13.6.0-py3-none-any.whl", hash = "sha256:fcfc67bceef4a568a2680af65ccf196fb9cc37b3e92dcf43b07980f6d4308c53"},
-    {file = "azure_mgmt_netapp-13.6.0.tar.gz", hash = "sha256:da2781b42e0d2ffe8dfa28c5fb49f11f52d5bacdf0980cbdd1387618282dfb95"},
+    {file = "azure_mgmt_netapp-13.7.0-py3-none-any.whl", hash = "sha256:7a2df7291bcf1406ed82ff4692f3e57d18800f680681d16c7d8d509d38e05f0a"},
+    {file = "azure_mgmt_netapp-13.7.0.tar.gz", hash = "sha256:03905e0c6cbcd587569d5865e3853cafdd455061400c8c68b603407b06b5cd3a"},
 ]
 
 [[package]]
@@ -330,23 +330,23 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.40.11"
+version = "1.40.16"
 requires_python = ">=3.9"
 summary = "The AWS SDK for Python"
 groups = ["chaostoolkit"]
 dependencies = [
-    "botocore<1.41.0,>=1.40.11",
+    "botocore<1.41.0,>=1.40.16",
     "jmespath<2.0.0,>=0.7.1",
     "s3transfer<0.14.0,>=0.13.0",
 ]
 files = [
-    {file = "boto3-1.40.11-py3-none-any.whl", hash = "sha256:9d2d211d9cb3efc9a2b2ceec3c510b4e62e389618fd5c871e74d2cbca4561ff5"},
-    {file = "boto3-1.40.11.tar.gz", hash = "sha256:0c03da130467d51c6b940d19be295c56314e14ce0f0464cc86145e98d3c9e983"},
+    {file = "boto3-1.40.16-py3-none-any.whl", hash = "sha256:4b7fbd2b469d5fa6325f0e90310b2d430c9a35e8a984a9919103e6d248422537"},
+    {file = "boto3-1.40.16.tar.gz", hash = "sha256:667bc3a9bd1f26579957d95a2612359103c343dd74d44f202d09a155ed4189c6"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.40.11"
+version = "1.40.16"
 requires_python = ">=3.9"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["chaostoolkit"]
@@ -357,8 +357,8 @@ dependencies = [
     "urllib3<1.27,>=1.25.4; python_version < \"3.10\"",
 ]
 files = [
-    {file = "botocore-1.40.11-py3-none-any.whl", hash = "sha256:4beca0c5f92201da1bf1bc0a55038538ad2defded32ab0638cb68f5631dcc665"},
-    {file = "botocore-1.40.11.tar.gz", hash = "sha256:95af22e1b2230bdd5faa9d1c87e8b147028b14b531770a1148bf495967ccba5e"},
+    {file = "botocore-1.40.16-py3-none-any.whl", hash = "sha256:0296a245cb349431279d825522ae70270edf8d8be7b91108fdcc086ea347c0b6"},
+    {file = "botocore-1.40.16.tar.gz", hash = "sha256:522a8b7e3837667aca978b5b2dd2d12c3834f58f13df3c8d3369070d883d608d"},
 ]
 
 [[package]]
@@ -2261,8 +2261,8 @@ files = [
 
 [[package]]
 name = "requests"
-version = "2.32.4"
-requires_python = ">=3.8"
+version = "2.32.5"
+requires_python = ">=3.9"
 summary = "Python HTTP for Humans."
 groups = ["default", "chaostoolkit", "extra"]
 dependencies = [
@@ -2272,8 +2272,8 @@ dependencies = [
     "urllib3<3,>=1.21.1",
 ]
 files = [
-    {file = "requests-2.32.4-py3-none-any.whl", hash = "sha256:27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c"},
-    {file = "requests-2.32.4.tar.gz", hash = "sha256:27d0316682c8a29834d3264820024b62a36942083d52caf2f14c0591336d3422"},
+    {file = "requests-2.32.5-py3-none-any.whl", hash = "sha256:2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6"},
+    {file = "requests-2.32.5.tar.gz", hash = "sha256:dbba0bac56e100853db0ea71b82b4dfd5fe2bf6d3754a8893c3af500cec7d7cf"},
 ]
 
 [[package]]
