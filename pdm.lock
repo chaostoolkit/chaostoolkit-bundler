@@ -119,8 +119,8 @@ files = [
 
 [[package]]
 name = "azure-core"
-version = "1.39.0"
-requires_python = ">=3.9"
+version = "1.40.0"
+requires_python = ">=3.10"
 summary = "Microsoft Azure Core Library for Python"
 groups = ["chaostoolkit"]
 dependencies = [
@@ -128,8 +128,8 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_core-1.39.0-py3-none-any.whl", hash = "sha256:4ac7b70fab5438c3f68770649a78daf97833caa83827f91df9c14e0e0ea7d34f"},
-    {file = "azure_core-1.39.0.tar.gz", hash = "sha256:8a90a562998dd44ce84597590fff6249701b98c0e8797c95fcdd695b54c35d74"},
+    {file = "azure_core-1.40.0-py3-none-any.whl", hash = "sha256:7f3ea02579b1bb1d34e45043423b650621d11d7c2ea3b05e5554010080b78dfd"},
+    {file = "azure_core-1.40.0.tar.gz", hash = "sha256:ecf5b6ddf2564471fae9d576147b7e77a4da285958b2d9f4fd6c3af104f3e9d7"},
 ]
 
 [[package]]
@@ -168,7 +168,7 @@ files = [
 
 [[package]]
 name = "azure-mgmt-compute"
-version = "37.2.0"
+version = "38.0.0"
 requires_python = ">=3.9"
 summary = "Microsoft Azure Compute Management Client Library for Python"
 groups = ["chaostoolkit"]
@@ -178,8 +178,8 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_mgmt_compute-37.2.0-py3-none-any.whl", hash = "sha256:70741c26ac94c30408a3b20f4fdfe93e6481e308b3c14a6dbefdfd4794028616"},
-    {file = "azure_mgmt_compute-37.2.0.tar.gz", hash = "sha256:23499d4d5ad2b2bf40a4c59df2684cc4c9cef0f9672a4e842bb9a1cf6b62f628"},
+    {file = "azure_mgmt_compute-38.0.0-py3-none-any.whl", hash = "sha256:6307edc4d1dabb540dadf11204be7663565d3108e16bcd253494457300cb3609"},
+    {file = "azure_mgmt_compute-38.0.0.tar.gz", hash = "sha256:46cb0864f943b88463ed50ad006738023120cf7e53f50f7e4a740ccd5337abaf"},
 ]
 
 [[package]]
@@ -310,35 +310,34 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.42.96"
-requires_python = ">=3.9"
+version = "1.43.2"
+requires_python = ">=3.10"
 summary = "The AWS SDK for Python"
 groups = ["chaostoolkit"]
 dependencies = [
-    "botocore<1.43.0,>=1.42.96",
+    "botocore<1.44.0,>=1.43.2",
     "jmespath<2.0.0,>=0.7.1",
-    "s3transfer<0.17.0,>=0.16.0",
+    "s3transfer<0.18.0,>=0.17.0",
 ]
 files = [
-    {file = "boto3-1.42.96-py3-none-any.whl", hash = "sha256:2f4566da2c209a98bdbfc874d813ef231c84ad24e4f815e9bc91de5f63351a24"},
-    {file = "boto3-1.42.96.tar.gz", hash = "sha256:b38a9e4a3fbbee9017252576f1379780d0a5814768676c08df2f539d31fcdd68"},
+    {file = "boto3-1.43.2-py3-none-any.whl", hash = "sha256:796e859cfb5e93c55276ce746f8020f691eda6b68a0ec4ce4f6fd07a1cca6859"},
+    {file = "boto3-1.43.2.tar.gz", hash = "sha256:be951cc22769fbcda73fac523b031ee38db45c3ae2b0d828c76b8f6e8e683073"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.42.96"
-requires_python = ">=3.9"
+version = "1.43.2"
+requires_python = ">=3.10"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["chaostoolkit"]
 dependencies = [
     "jmespath<2.0.0,>=0.7.1",
     "python-dateutil<3.0.0,>=2.1",
-    "urllib3!=2.2.0,<3,>=1.25.4; python_version >= \"3.10\"",
-    "urllib3<1.27,>=1.25.4; python_version < \"3.10\"",
+    "urllib3!=2.2.0,<3,>=1.25.4",
 ]
 files = [
-    {file = "botocore-1.42.96-py3-none-any.whl", hash = "sha256:db2c3e2006628be6fde81a24124a6563c363d6982fb92728837cf174bad9d98a"},
-    {file = "botocore-1.42.96.tar.gz", hash = "sha256:75b3b841ffacaa944f645196655a21ca777591dd8911e732bfb6614545af0250"},
+    {file = "botocore-1.43.2-py3-none-any.whl", hash = "sha256:b823454d751a1c24bb403b5b07ab65007689654abb21787df923684e0743976c"},
+    {file = "botocore-1.43.2.tar.gz", hash = "sha256:7b2ec87b6d0720bff920451ce930e71c2a99cdea48d0eaa66ccf0b21ea747e03"},
 ]
 
 [[package]]
@@ -879,7 +878,7 @@ files = [
 
 [[package]]
 name = "google-api-python-client"
-version = "2.194.0"
+version = "2.195.0"
 requires_python = ">=3.7"
 summary = "Google API Client Library for Python"
 groups = ["chaostoolkit"]
@@ -891,13 +890,13 @@ dependencies = [
     "uritemplate<5,>=3.0.1",
 ]
 files = [
-    {file = "google_api_python_client-2.194.0-py3-none-any.whl", hash = "sha256:61eaaac3b8fc8fdf11c08af87abc3d1342d1b37319cc1b57405f86ef7697e717"},
-    {file = "google_api_python_client-2.194.0.tar.gz", hash = "sha256:db92647bd1a90f40b79c9618461553c2b20b6a43ce7395fa6de07132dc14f023"},
+    {file = "google_api_python_client-2.195.0-py3-none-any.whl", hash = "sha256:753e62057f23049a89534bea0162b60fe391b85fb86d80bcdf884d05ec91c5bf"},
+    {file = "google_api_python_client-2.195.0.tar.gz", hash = "sha256:c72cf2661c3addf01c880ce60541e83e1df354644b874f7f9d8d5ed2070446ae"},
 ]
 
 [[package]]
 name = "google-auth"
-version = "2.49.2"
+version = "2.50.0"
 requires_python = ">=3.8"
 summary = "Google Authentication Library"
 groups = ["chaostoolkit", "extra"]
@@ -906,8 +905,8 @@ dependencies = [
     "pyasn1-modules>=0.2.1",
 ]
 files = [
-    {file = "google_auth-2.49.2-py3-none-any.whl", hash = "sha256:c2720924dfc82dedb962c9f52cabb2ab16714fd0a6a707e40561d217574ed6d5"},
-    {file = "google_auth-2.49.2.tar.gz", hash = "sha256:c1ae38500e73065dcae57355adb6278cf8b5c8e391994ae9cbadbcb9631ab409"},
+    {file = "google_auth-2.50.0-py3-none-any.whl", hash = "sha256:04382175e28b94f49694977f0a792688b59a668def1499e9d8de996dc9ce5b15"},
+    {file = "google_auth-2.50.0.tar.gz", hash = "sha256:f35eafb191195328e8ce10a7883970877e7aeb49c2bfaa54aa0e394316d353d0"},
 ]
 
 [[package]]
@@ -1609,7 +1608,7 @@ files = [
 
 [[package]]
 name = "opentelemetry-exporter-gcp-trace"
-version = "1.11.0"
+version = "1.12.0"
 requires_python = ">=3.9"
 summary = "Google Cloud Trace exporter for OpenTelemetry"
 groups = ["chaostoolkit", "extra"]
@@ -1620,8 +1619,8 @@ dependencies = [
     "opentelemetry-sdk~=1.30",
 ]
 files = [
-    {file = "opentelemetry_exporter_gcp_trace-1.11.0-py3-none-any.whl", hash = "sha256:b3dcb314e1a9985e9185cb7720b693eb393886fde98ae4c095ffc0893de6cefa"},
-    {file = "opentelemetry_exporter_gcp_trace-1.11.0.tar.gz", hash = "sha256:c947ab4ab53e16517ade23d6fe71fe88cf7ca3f57a42c9f0e4162d2b929fecb6"},
+    {file = "opentelemetry_exporter_gcp_trace-1.12.0-py3-none-any.whl", hash = "sha256:1538dab654bcb25e757ed34c94f27a2e30d90dc7deb3630f8d46d1111fcb3bad"},
+    {file = "opentelemetry_exporter_gcp_trace-1.12.0.tar.gz", hash = "sha256:18c6e56fe123eed020d5005fdd819b196d64f651545bce1ca7e2e2cbaf9d343b"},
 ]
 
 [[package]]
@@ -1793,7 +1792,7 @@ files = [
 
 [[package]]
 name = "opentelemetry-propagator-gcp"
-version = "1.11.0"
+version = "1.12.0"
 requires_python = ">=3.9"
 summary = "Google Cloud propagator for OpenTelemetry"
 groups = ["chaostoolkit", "extra"]
@@ -1801,8 +1800,8 @@ dependencies = [
     "opentelemetry-api~=1.0",
 ]
 files = [
-    {file = "opentelemetry_propagator_gcp-1.11.0-py3-none-any.whl", hash = "sha256:d96d57a8f46c4395ea65be44c46bd7d01e57c43cf93d8a13568e51fe2525f673"},
-    {file = "opentelemetry_propagator_gcp-1.11.0.tar.gz", hash = "sha256:a8a9ffae6e769fc2155359a4ee35c4d2bae0826a2637fcde67334f596293683d"},
+    {file = "opentelemetry_propagator_gcp-1.12.0-py3-none-any.whl", hash = "sha256:8b7d6b5a2b21cdc8ae6d546c01f38335db44c03125b6248e92a4aa8fbbfdd36f"},
+    {file = "opentelemetry_propagator_gcp-1.12.0.tar.gz", hash = "sha256:5495b891e7c816688d4e12fda7b365572dc8cb7ea8027a4390c5d2d868db1b98"},
 ]
 
 [[package]]
@@ -1821,7 +1820,7 @@ files = [
 
 [[package]]
 name = "opentelemetry-resourcedetector-gcp"
-version = "1.11.0a0"
+version = "1.12.0a0"
 requires_python = ">=3.9"
 summary = "Google Cloud resource detector for OpenTelemetry"
 groups = ["chaostoolkit", "extra"]
@@ -1832,8 +1831,8 @@ dependencies = [
     "typing-extensions~=4.0",
 ]
 files = [
-    {file = "opentelemetry_resourcedetector_gcp-1.11.0a0-py3-none-any.whl", hash = "sha256:5d65a2a039b1d40c6f41421dbb08d5f441368275ac6de6e76a8fccd1f6acb67e"},
-    {file = "opentelemetry_resourcedetector_gcp-1.11.0a0.tar.gz", hash = "sha256:915a1d6fd15daca9eedd3fc52b0f705375054f2ef140e2e7a6b4cca95a47cdb1"},
+    {file = "opentelemetry_resourcedetector_gcp-1.12.0a0-py3-none-any.whl", hash = "sha256:e803688d14e2969fe816077be81f7b034368314d485863f12ce49daba7c81919"},
+    {file = "opentelemetry_resourcedetector_gcp-1.12.0a0.tar.gz", hash = "sha256:d5e3f78283a272eb92547e00bbeff45b7332a34ae791a70ab4eba81af9bc3baf"},
 ]
 
 [[package]]
@@ -2205,12 +2204,12 @@ files = [
 
 [[package]]
 name = "pytz"
-version = "2026.1.post1"
+version = "2026.2"
 summary = "World timezone definitions, modern and historical"
 groups = ["chaostoolkit"]
 files = [
-    {file = "pytz-2026.1.post1-py2.py3-none-any.whl", hash = "sha256:f2fd16142fda348286a75e1a524be810bb05d444e5a081f37f7affc635035f7a"},
-    {file = "pytz-2026.1.post1.tar.gz", hash = "sha256:3378dde6a0c3d26719182142c56e60c7f9af7e968076f31aae569d72a0358ee1"},
+    {file = "pytz-2026.2-py2.py3-none-any.whl", hash = "sha256:04156e608bee23d3792fd45c94ae47fae1036688e75032eea2e3bf0323d1f126"},
+    {file = "pytz-2026.2.tar.gz", hash = "sha256:0e60b47b29f21574376f218fe21abc009894a2321ea16c6754f3cad6eb7cdd6a"},
 ]
 
 [[package]]
@@ -2304,16 +2303,16 @@ files = [
 
 [[package]]
 name = "s3transfer"
-version = "0.16.1"
-requires_python = ">=3.9"
+version = "0.17.0"
+requires_python = ">=3.10"
 summary = "An Amazon S3 Transfer Manager"
 groups = ["chaostoolkit"]
 dependencies = [
     "botocore<2.0a.0,>=1.37.4",
 ]
 files = [
-    {file = "s3transfer-0.16.1-py3-none-any.whl", hash = "sha256:61bcd00ccb83b21a0fe7e91a553fff9729d46c83b4e0106e7c314a733891f7c2"},
-    {file = "s3transfer-0.16.1.tar.gz", hash = "sha256:8e424355754b9ccb32467bdc568edf55be82692ef2002d934b1311dbb3b9e524"},
+    {file = "s3transfer-0.17.0-py3-none-any.whl", hash = "sha256:ce3801712acf4ad3e89fb9990df97b4972e93f4b3b0004d214be5bce12814c20"},
+    {file = "s3transfer-0.17.0.tar.gz", hash = "sha256:9edeb6d1c3c2f89d6050348548834ad8289610d886e5bf7b7207728bd43ce33a"},
 ]
 
 [[package]]
