@@ -12,14 +12,14 @@ requires_python = "==3.11.*"
 
 [[package]]
 name = "aiohappyeyeballs"
-version = "2.6.2"
+version = "2.7.1"
 requires_python = ">=3.10"
 summary = "Happy Eyeballs for asyncio"
 groups = ["chaostoolkit"]
 marker = "python_version == \"3.11\""
 files = [
-    {file = "aiohappyeyeballs-2.6.2-py3-none-any.whl", hash = "sha256:4708045e2d7a6c6bdf8aafa8ed39649eaf926a4543b54560659129e3365953c4"},
-    {file = "aiohappyeyeballs-2.6.2.tar.gz", hash = "sha256:e202810ee718bd01fc6ef49e8ea53d023d5cb6b581076d7925aa499fa55dbe64"},
+    {file = "aiohappyeyeballs-2.7.1-py3-none-any.whl", hash = "sha256:9243213661e29250eb41368e5daa826fc017156c3b8a11440826b2e3ed376472"},
+    {file = "aiohappyeyeballs-2.7.1.tar.gz", hash = "sha256:065665c041c42a5938ed220bdcd7230f22527fbec085e1853d2402c8a3615d9d"},
 ]
 
 [[package]]
@@ -229,8 +229,8 @@ files = [
 
 [[package]]
 name = "azure-mgmt-netapp"
-version = "16.0.0"
-requires_python = ">=3.9"
+version = "17.0.0"
+requires_python = ">=3.10"
 summary = "Microsoft Azure Netapp Management Client Library for Python"
 groups = ["chaostoolkit"]
 marker = "python_version == \"3.11\""
@@ -240,14 +240,14 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_mgmt_netapp-16.0.0-py3-none-any.whl", hash = "sha256:d93977742aa6070e56d7ab6905373baa2626a769430663eb8ad3f5b9a7641330"},
-    {file = "azure_mgmt_netapp-16.0.0.tar.gz", hash = "sha256:fed70ed7ea4831c0767be4f57f60a51f12e34b3aafd0f85ead33cc808d76fc16"},
+    {file = "azure_mgmt_netapp-17.0.0-py3-none-any.whl", hash = "sha256:ce374df7370c5d5c360a0768f8294c58832166b90620999b6a22d50861f15c0c"},
+    {file = "azure_mgmt_netapp-17.0.0.tar.gz", hash = "sha256:66cd6404a280c8cb3bf1c1f83684b886e3d08c4ce4a13c3f3bb6d3eff38d1fd0"},
 ]
 
 [[package]]
 name = "azure-mgmt-network"
-version = "30.2.0"
-requires_python = ">=3.9"
+version = "31.0.1"
+requires_python = ">=3.10"
 summary = "Microsoft Azure Network Management Client Library for Python"
 groups = ["chaostoolkit"]
 marker = "python_version == \"3.11\""
@@ -257,8 +257,8 @@ dependencies = [
     "typing-extensions>=4.6.0",
 ]
 files = [
-    {file = "azure_mgmt_network-30.2.0-py3-none-any.whl", hash = "sha256:a87edffd7c38aa9d3494daa8d42914213b0863a9072cf8c7c7e48018b12b6532"},
-    {file = "azure_mgmt_network-30.2.0.tar.gz", hash = "sha256:9b17c259e6344808aaa80a34bbc4b13f16bc01185dd9db137eaa0ae26664861a"},
+    {file = "azure_mgmt_network-31.0.1-py3-none-any.whl", hash = "sha256:cb36bff1a08237211093b0c3b900cadfd344d08d4a437d526c1239fee3331d0c"},
+    {file = "azure_mgmt_network-31.0.1.tar.gz", hash = "sha256:2112f720eedca76173be4d47acb8bc58af16a90debc7b601bf11b37faaaed137"},
 ]
 
 [[package]]
@@ -331,24 +331,24 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.43.36"
+version = "1.43.40"
 requires_python = ">=3.10"
 summary = "The AWS SDK for Python"
 groups = ["chaostoolkit"]
 marker = "python_version == \"3.11\""
 dependencies = [
-    "botocore<1.44.0,>=1.43.36",
+    "botocore<1.44.0,>=1.43.40",
     "jmespath<2.0.0,>=0.7.1",
     "s3transfer<0.20.0,>=0.19.0",
 ]
 files = [
-    {file = "boto3-1.43.36-py3-none-any.whl", hash = "sha256:42942dde254673abcbc9e6e60017c88341a4f49d99d24e1f2e290fb38138c26f"},
-    {file = "boto3-1.43.36.tar.gz", hash = "sha256:587d7ee92a12e440ad12b0e7f11f3358f0c4d65b19f64726efc94aaf194aff28"},
+    {file = "boto3-1.43.40-py3-none-any.whl", hash = "sha256:5fa80de4b4b7bab383dd8c563e235d51fcc7df4502662af56f0a2472c3c15651"},
+    {file = "boto3-1.43.40.tar.gz", hash = "sha256:a7108b9ce25b8f92d1ce96b9e35090794d5c58b219ff2f6a7a65c8986a4ed6f4"},
 ]
 
 [[package]]
 name = "botocore"
-version = "1.43.36"
+version = "1.43.40"
 requires_python = ">=3.10"
 summary = "Low-level, data-driven core of boto 3."
 groups = ["chaostoolkit"]
@@ -359,8 +359,8 @@ dependencies = [
     "urllib3!=2.2.0,<3,>=1.25.4",
 ]
 files = [
-    {file = "botocore-1.43.36-py3-none-any.whl", hash = "sha256:3c65fdc39ed01d8dfde1e961b34038aed03c459f8ddf80717a12ac006475e49d"},
-    {file = "botocore-1.43.36.tar.gz", hash = "sha256:4cae47d1b2d426316b85a0087d9e69e048f13bc003b5177d74639fe9dfd28205"},
+    {file = "botocore-1.43.40-py3-none-any.whl", hash = "sha256:0bc9d352267c9e48415c5d7bb61ff05c3f193eac2fc7e69cfd229a05fbab67d6"},
+    {file = "botocore-1.43.40.tar.gz", hash = "sha256:2085a4314cfd2c8bc1d08ab8039f76c92e99278db0d2a0e2437010526d5d5d70"},
 ]
 
 [[package]]
@@ -1448,14 +1448,14 @@ files = [
 
 [[package]]
 name = "humanize"
-version = "4.15.0"
+version = "4.16.0"
 requires_python = ">=3.10"
 summary = "Python humanize utilities"
 groups = ["chaostoolkit"]
 marker = "python_version == \"3.11\""
 files = [
-    {file = "humanize-4.15.0-py3-none-any.whl", hash = "sha256:b1186eb9f5a9749cd9cb8565aee77919dd7c8d076161cf44d70e59e3301e1769"},
-    {file = "humanize-4.15.0.tar.gz", hash = "sha256:1dd098483eb1c7ee8e32eb2e99ad1910baefa4b75c3aff3a82f4d78688993b10"},
+    {file = "humanize-4.16.0-py3-none-any.whl", hash = "sha256:353eb2f34c09d098b2880eee8bef21832eae6d174f48c5762fff7e5fcb74d01d"},
+    {file = "humanize-4.16.0.tar.gz", hash = "sha256:7dc2244a2f84a4bfb1d36c37bac80cd78e35cdc5c119206d87b018e1445f3a3f"},
 ]
 
 [[package]]
@@ -2450,7 +2450,7 @@ files = [
 
 [[package]]
 name = "scramp"
-version = "1.4.10"
+version = "1.4.12"
 requires_python = ">=3.10"
 summary = "An implementation of the SCRAM protocol."
 groups = ["chaostoolkit"]
@@ -2459,8 +2459,8 @@ dependencies = [
     "asn1crypto>=1.5.1",
 ]
 files = [
-    {file = "scramp-1.4.10-py3-none-any.whl", hash = "sha256:e187fe49290718406cdaf2f1b56507965e8d9f5f458f478ef946a811eeea382e"},
-    {file = "scramp-1.4.10.tar.gz", hash = "sha256:084a1d2784a2399ca5021209b490120458882e85e03105c338446ccfe19bee1e"},
+    {file = "scramp-1.4.12-py3-none-any.whl", hash = "sha256:6adb2828c5d64bd7785a6878eed30f66ce0fae60bf5fc07c26ce1f521db3ec3e"},
+    {file = "scramp-1.4.12.tar.gz", hash = "sha256:94b38decf26005b835050d06541a5aefb9914497f4de789c6d82a0abc4b934de"},
 ]
 
 [[package]]
@@ -2477,14 +2477,14 @@ files = [
 
 [[package]]
 name = "setuptools"
-version = "82.0.1"
-requires_python = ">=3.9"
+version = "83.0.0"
+requires_python = ">=3.10"
 summary = "Most extensible Python build backend with support for C/C++ extension modules"
 groups = ["default"]
 marker = "python_version == \"3.11\""
 files = [
-    {file = "setuptools-82.0.1-py3-none-any.whl", hash = "sha256:a59e362652f08dcd477c78bb6e7bd9d80a7995bc73ce773050228a348ce2e5bb"},
-    {file = "setuptools-82.0.1.tar.gz", hash = "sha256:7d872682c5d01cfde07da7bccc7b65469d3dca203318515ada1de5eda35efbf9"},
+    {file = "setuptools-83.0.0-py3-none-any.whl", hash = "sha256:29b23c360f22f414dc7336bb39178cc7bcbf6021ed2733cde173f09dba19abb3"},
+    {file = "setuptools-83.0.0.tar.gz", hash = "sha256:025bccbbf0fa05b6192bc64ae1e7b16e001fd6d6d4d5de03c97b1c1ade523bef"},
 ]
 
 [[package]]
@@ -2501,14 +2501,14 @@ files = [
 
 [[package]]
 name = "slack-sdk"
-version = "3.42.0"
+version = "3.43.0"
 requires_python = ">=3.7"
 summary = "The Slack API Platform SDK for Python"
 groups = ["chaostoolkit"]
 marker = "python_version == \"3.11\""
 files = [
-    {file = "slack_sdk-3.42.0-py2.py3-none-any.whl", hash = "sha256:eb39aff97e476e10cc5a8ac29bd2e79a9959e880d9fe0c03b4e8f05b2ac996ff"},
-    {file = "slack_sdk-3.42.0.tar.gz", hash = "sha256:873db9e1f632ac650ffdbf9d8ba825f3e9e7e576a1e4f9604ccb2a15b3727e3d"},
+    {file = "slack_sdk-3.43.0-py2.py3-none-any.whl", hash = "sha256:4b6557c65577fc172f685af218b811f9f3b4909e24cddd839ada09565f10c585"},
+    {file = "slack_sdk-3.43.0.tar.gz", hash = "sha256:0553152e46c4259eb69f7464cdadc35ba4802ca10f9f5a849c92cf03d6c2ba07"},
 ]
 
 [[package]]
@@ -2542,14 +2542,14 @@ files = [
 
 [[package]]
 name = "typing-extensions"
-version = "4.15.0"
+version = "4.16.0"
 requires_python = ">=3.9"
 summary = "Backported and Experimental Type Hints for Python 3.9+"
 groups = ["chaostoolkit", "extra"]
 marker = "python_version == \"3.11\""
 files = [
-    {file = "typing_extensions-4.15.0-py3-none-any.whl", hash = "sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548"},
-    {file = "typing_extensions-4.15.0.tar.gz", hash = "sha256:0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466"},
+    {file = "typing_extensions-4.16.0-py3-none-any.whl", hash = "sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"},
+    {file = "typing_extensions-4.16.0.tar.gz", hash = "sha256:dc983d19a509c94dba722ee6abd33940f7c05a89e243c47e907eb4db6f1a43e5"},
 ]
 
 [[package]]
@@ -2566,7 +2566,7 @@ files = [
 
 [[package]]
 name = "tzlocal"
-version = "5.4.3"
+version = "5.4.4"
 requires_python = ">=3.10"
 summary = "tzinfo object for the local timezone"
 groups = ["chaostoolkit"]
@@ -2575,8 +2575,8 @@ dependencies = [
     "tzdata; platform_system == \"Windows\"",
 ]
 files = [
-    {file = "tzlocal-5.4.3-py3-none-any.whl", hash = "sha256:24ce97bb58e2a973f7640ec2553ab4e6f6d5a0d0d1aa9dc43bca21d89e1feb82"},
-    {file = "tzlocal-5.4.3.tar.gz", hash = "sha256:3a8c9bc18cf47e1dcde252ea0e6a72a6cde320a400b6ac6db1f1f8cccd553c00"},
+    {file = "tzlocal-5.4.4-py3-none-any.whl", hash = "sha256:aae09f0126a8a86fa736be266eb4a471380d26a0de3bc14844e7821fee3e2a15"},
+    {file = "tzlocal-5.4.4.tar.gz", hash = "sha256:8dbb8660838688a7b6ba4fed31d18dedf842afb4d47ca050d6d891c2c15f3be4"},
 ]
 
 [[package]]
